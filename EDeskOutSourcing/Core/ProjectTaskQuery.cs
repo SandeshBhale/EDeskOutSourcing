@@ -14,8 +14,8 @@ namespace Core
         [Key]
         public Int64 ProjectTaskQueryId { get; set; }
         public string QueryTitle { get; set; }
-        public Int64 TaskId { get; set; }
-        public virtual Task Task { get; set; }
+        public Int64 ProjectTaskId { get; set; }
+        public virtual ProjectTask ProjectTask { get; set; }
         public string QueryDescription { get; set; }
         public bool IsSolved { get; set; }
     }

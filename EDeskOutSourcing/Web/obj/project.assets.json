@@ -11345,11 +11345,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Web\\Web.csproj",
+      "projectUniqueName": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Web.csproj",
       "projectName": "Web",
-      "projectPath": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Web\\Web.csproj",
+      "projectPath": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Web.csproj",
       "packagesPath": "C:\\Users\\SANDESH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Web\\obj\\",
+      "outputPath": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SANDESH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11366,14 +11366,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Core\\Core.csproj"
+            "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Core.csproj"
             },
-            "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Infra\\Infra.csproj": {
-              "projectPath": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Infra\\Infra.csproj"
+            "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Infra\\Infra.csproj": {
+              "projectPath": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Infra\\Infra.csproj"
             },
-            "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Repo\\Repo.csproj": {
-              "projectPath": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Repo\\Repo.csproj"
+            "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\Repo.csproj": {
+              "projectPath": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\Repo.csproj"
             }
           }
         }

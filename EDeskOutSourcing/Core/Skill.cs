@@ -15,6 +15,6 @@ namespace Core
         public Int64 SkillId { get; set; }
         public string SkillName { get; set; }
         public Int64 SkillCategoryId { get; set; }
-        public SkillCategory SkillCategory { get; set; }
+        public virtual SkillCategory SkillCategory { get; set; }
     }
 }

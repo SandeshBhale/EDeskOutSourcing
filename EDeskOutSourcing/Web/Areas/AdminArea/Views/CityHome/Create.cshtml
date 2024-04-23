@@ -47,14 +47,12 @@
 <script type="text/javascript">
     $(function () {
          $("#country").change(function () {
-
              $.ajax({
                  url: "/Home/GetCountryJson/"+$("#country").val(),
                  type:"Get",
                  contentType:"application/json",
                  success:function(result)
                  {
-                     //alert(JSON.stringify(result));
                      $("#country").empty();
                      for(var i=0;i<result.length;i++)
                      {

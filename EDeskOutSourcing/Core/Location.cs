@@ -15,6 +15,6 @@ namespace Core
         public Int64 LocationId { get; set; }
         public string LocationName { get; set; }
         public Int64 CityId { get; set; }
-        public City City { get; set; }
+        public virtual City City { get; set; }
     }
 }

@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Repo;
+using Web.CustFilter;
 
 namespace Web.Areas.AdminArea.Controllers
 {
+    [AdminAuth]
     [Area("AdminArea")]
     public class CityHomeController : Controller
     {
@@ -26,7 +28,7 @@ namespace Web.Areas.AdminArea.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-           // ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
+            ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
             ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName");
             return View();
         }
@@ -34,7 +36,7 @@ namespace Web.Areas.AdminArea.Controllers
         [HttpPost]
         public IActionResult Create(City rec)
         {
-            //ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
+            ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
             ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName");
             if (ModelState.IsValid)
             {
@@ -47,7 +49,7 @@ namespace Web.Areas.AdminArea.Controllers
         [HttpGet]
         public IActionResult Edit(Int64 id)
         {
-           // ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
+            ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
             ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName");
             var rec = this.cityrepo.GetById(id);
             return View(rec);
@@ -56,7 +58,7 @@ namespace Web.Areas.AdminArea.Controllers
         [HttpPost]
         public IActionResult Edit(City rec)
         {
-           // ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
+            ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
             ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName");
             if (ModelState.IsValid)
             {

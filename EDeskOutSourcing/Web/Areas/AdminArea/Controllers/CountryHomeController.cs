@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Repo;
+using Web.CustFilter;
 
 namespace Web.Areas.AdminArea.Controllers
 {
+    [AdminAuth]
     [Area("AdminArea")]
     public class CountryHomeController : Controller
     {

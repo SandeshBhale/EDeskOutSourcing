@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Repo;
 using Repo.ViewModels;
+using Web.CustFilter;
 
 namespace Web.Areas.AdminHome.Controllers
 {
+    [AdminAuth]
     [Area("AdminArea")]
     public class AdminHomeController : Controller
     {
