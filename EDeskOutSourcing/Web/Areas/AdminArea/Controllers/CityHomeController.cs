@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Core;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Repo;
 
 namespace Web.Areas.AdminArea.Controllers
@@ -19,6 +21,62 @@ namespace Web.Areas.AdminArea.Controllers
         public IActionResult Index()
         {
             return View(this.cityrepo.GetAll());
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+           // ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
+            ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName");
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(City rec)
+        {
+            //ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
+            ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName");
+            if (ModelState.IsValid)
+            {
+                this.cityrepo.Add(rec);
+                return RedirectToAction("Index");
+            }
+            return View(rec);
+        }
+
+        [HttpGet]
+        public IActionResult Edit(Int64 id)
+        {
+           // ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
+            ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName");
+            var rec = this.cityrepo.GetById(id);
+            return View(rec);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(City rec)
+        {
+           // ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
+            ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName");
+            if (ModelState.IsValid)
+            {
+                this.cityrepo.Edit(rec);
+                return RedirectToAction("Index");
+            }
+            return View(rec);
+        }
+
+        [HttpGet]
+        public IActionResult Delete(Int64 id)
+        {
+            this.cityrepo.Delete(id);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult GetCountryJson(Int64 id)
+        {
+            var rec = this.countryrepo.GetCountryById(id);
+            return Json(rec.ToList());
         }
     }
 }

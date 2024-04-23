@@ -1,22 +1,154 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\",
+  "WorkspaceRootPath": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\ri-tech\\project\\git\\edeskoutsourcing\\web\\areas\\adminarea\\views\\cityhome\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\areas\\adminarea\\views\\cityhome\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\projecttaskquerysolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\projecttaskquerysolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\ri-tech\\project\\git\\edeskoutsourcing\\web\\areas\\adminarea\\views\\statehome\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\areas\\adminarea\\views\\statehome\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\projecttaskquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\projecttaskquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\ri-tech\\project\\git\\edeskoutsourcing\\web\\areas\\adminarea\\controllers\\statehomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\areas\\adminarea\\controllers\\statehomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\projecttaskreportreleasepaymentconflictsolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\projecttaskreportreleasepaymentconflictsolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\ri-tech\\project\\git\\edeskoutsourcing\\web\\areas\\adminarea\\controllers\\cityhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\areas\\adminarea\\controllers\\cityhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\projecttaskreportreleasepayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\projecttaskreportreleasepayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\projecttaskreportreleasepaymentconflict.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\projecttaskreportreleasepaymentconflict.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\projecttaskreportconflictsolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\projecttaskreportconflictsolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\projecttaskreportconflict.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\projecttaskreportconflict.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\projecttaskreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\projecttaskreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\projecttaskassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\projecttaskassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\projecttaskdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\projecttaskdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\projecttask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\projecttask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\projectassigned.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\projectassigned.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\selectedapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\selectedapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\projectapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\projectapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\freelancercertifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\freelancercertifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\freelancereducation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\freelancereducation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\freelancerpriviousprojects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\freelancerpriviousprojects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\education.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\education.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\freelancerexperience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\freelancerexperience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\freelancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\freelancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\projectdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\projectdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\finishedproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\finishedproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\terminatedproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\terminatedproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\projectstages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\projectstages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\tnccompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\tnccompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\tncfreelancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\tncfreelancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\skillcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\skillcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\technologies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\technologies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\paymentmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\paymentmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\companyfaq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\companyfaq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\core\\freelancerfaq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C8126D-2EAF-450A-B012-A7768595AECE}|Core\\Core.csproj|solutionrelative:core\\freelancerfaq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +158,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjectTaskQuerySolution.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskQuerySolution.cs",
+              "RelativeDocumentMoniker": "Core\\ProjectTaskQuerySolution.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskQuerySolution.cs",
+              "RelativeToolTip": "Core\\ProjectTaskQuerySolution.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAADwvw4AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T09:42:26.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectTaskQuery.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskQuery.cs",
+              "RelativeDocumentMoniker": "Core\\ProjectTaskQuery.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskQuery.cs",
+              "RelativeToolTip": "Core\\ProjectTaskQuery.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAADwvxMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T09:38:36.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjectTaskReportReleasePayment.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskReportReleasePayment.cs",
+              "RelativeDocumentMoniker": "Core\\ProjectTaskReportReleasePayment.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskReportReleasePayment.cs",
+              "RelativeToolTip": "Core\\ProjectTaskReportReleasePayment.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T09:33:01.267Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -38,55 +209,420 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Web\\Areas\\AdminArea\\Views\\StateHome\\Index.cshtml",
-              "RelativeDocumentMoniker": "Web\\Areas\\AdminArea\\Views\\StateHome\\Index.cshtml",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Web\\Areas\\AdminArea\\Views\\StateHome\\Index.cshtml",
-              "RelativeToolTip": "Web\\Areas\\AdminArea\\Views\\StateHome\\Index.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAqwCsAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-23T00:22:06.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Web\\Areas\\AdminArea\\Views\\CityHome\\Index.cshtml",
-              "RelativeDocumentMoniker": "Web\\Areas\\AdminArea\\Views\\CityHome\\Index.cshtml",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Web\\Areas\\AdminArea\\Views\\CityHome\\Index.cshtml",
-              "RelativeToolTip": "Web\\Areas\\AdminArea\\Views\\CityHome\\Index.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-23T00:21:58.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CityHomeController.cs",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Web\\Areas\\AdminArea\\Controllers\\CityHomeController.cs",
-              "RelativeDocumentMoniker": "Web\\Areas\\AdminArea\\Controllers\\CityHomeController.cs",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Web\\Areas\\AdminArea\\Controllers\\CityHomeController.cs",
-              "RelativeToolTip": "Web\\Areas\\AdminArea\\Controllers\\CityHomeController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T00:17:42.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "StateHomeController.cs",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Web\\Areas\\AdminArea\\Controllers\\StateHomeController.cs",
-              "RelativeDocumentMoniker": "Web\\Areas\\AdminArea\\Controllers\\StateHomeController.cs",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Web\\Areas\\AdminArea\\Controllers\\StateHomeController.cs",
-              "RelativeToolTip": "Web\\Areas\\AdminArea\\Controllers\\StateHomeController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBQAAAAJAAAA",
+              "Title": "ProjectTaskReportReleasePaymentConflictSolution.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskReportReleasePaymentConflictSolution.cs",
+              "RelativeDocumentMoniker": "Core\\ProjectTaskReportReleasePaymentConflictSolution.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskReportReleasePaymentConflictSolution.cs",
+              "RelativeToolTip": "Core\\ProjectTaskReportReleasePaymentConflictSolution.cs",
+              "ViewState": "AQIAAAsAAACgmZmZmVk3wBMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T13:47:45.847Z",
+              "WhenOpened": "2024-04-23T09:23:30.761Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProjectTaskReportConflictSolution.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskReportConflictSolution.cs",
+              "RelativeDocumentMoniker": "Core\\ProjectTaskReportConflictSolution.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskReportConflictSolution.cs",
+              "RelativeToolTip": "Core\\ProjectTaskReportConflictSolution.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T09:16:21.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProjectTaskReportReleasePaymentConflict.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskReportReleasePaymentConflict.cs",
+              "RelativeDocumentMoniker": "Core\\ProjectTaskReportReleasePaymentConflict.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskReportReleasePaymentConflict.cs",
+              "RelativeToolTip": "Core\\ProjectTaskReportReleasePaymentConflict.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T09:11:52.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProjectTaskReportConflict.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskReportConflict.cs",
+              "RelativeDocumentMoniker": "Core\\ProjectTaskReportConflict.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskReportConflict.cs",
+              "RelativeToolTip": "Core\\ProjectTaskReportConflict.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T09:03:34.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProjectTaskReport.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskReport.cs",
+              "RelativeDocumentMoniker": "Core\\ProjectTaskReport.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskReport.cs",
+              "RelativeToolTip": "Core\\ProjectTaskReport.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA3wBUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T08:59:39.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProjectTaskAssignment.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskAssignment.cs",
+              "RelativeDocumentMoniker": "Core\\ProjectTaskAssignment.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskAssignment.cs",
+              "RelativeToolTip": "Core\\ProjectTaskAssignment.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAwBMAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T08:54:32.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProjectTaskDocument.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskDocument.cs",
+              "RelativeDocumentMoniker": "Core\\ProjectTaskDocument.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTaskDocument.cs",
+              "RelativeToolTip": "Core\\ProjectTaskDocument.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T08:51:40.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProjectTask.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTask.cs",
+              "RelativeDocumentMoniker": "Core\\ProjectTask.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectTask.cs",
+              "RelativeToolTip": "Core\\ProjectTask.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwBMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T08:47:48.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProjectAssigned.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectAssigned.cs",
+              "RelativeDocumentMoniker": "Core\\ProjectAssigned.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectAssigned.cs",
+              "RelativeToolTip": "Core\\ProjectAssigned.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAUwBQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:41:09.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SelectedApplications.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\SelectedApplications.cs",
+              "RelativeDocumentMoniker": "Core\\SelectedApplications.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\SelectedApplications.cs",
+              "RelativeToolTip": "Core\\SelectedApplications.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:34:21.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProjectApplications.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectApplications.cs",
+              "RelativeDocumentMoniker": "Core\\ProjectApplications.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectApplications.cs",
+              "RelativeToolTip": "Core\\ProjectApplications.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAQwBMAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:15:05.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FreelancerCertifications.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\FreelancerCertifications.cs",
+              "RelativeDocumentMoniker": "Core\\FreelancerCertifications.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\FreelancerCertifications.cs",
+              "RelativeToolTip": "Core\\FreelancerCertifications.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAQwBIAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:05:16.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FreelancerPriviousProjects.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\FreelancerPriviousProjects.cs",
+              "RelativeDocumentMoniker": "Core\\FreelancerPriviousProjects.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\FreelancerPriviousProjects.cs",
+              "RelativeToolTip": "Core\\FreelancerPriviousProjects.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T06:57:37.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FreelancerEducation.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\FreelancerEducation.cs",
+              "RelativeDocumentMoniker": "Core\\FreelancerEducation.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\FreelancerEducation.cs",
+              "RelativeToolTip": "Core\\FreelancerEducation.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAEwBQAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T06:49:50.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FreelancerExperience.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\FreelancerExperience.cs",
+              "RelativeDocumentMoniker": "Core\\FreelancerExperience.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\FreelancerExperience.cs",
+              "RelativeToolTip": "Core\\FreelancerExperience.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T06:44:09.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Admin.cs",
+              "RelativeDocumentMoniker": "Core\\Admin.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Admin.cs",
+              "RelativeToolTip": "Core\\Admin.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwBcAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T06:43:10.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Freelancer.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Freelancer.cs",
+              "RelativeDocumentMoniker": "Core\\Freelancer.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Freelancer.cs",
+              "RelativeToolTip": "Core\\Freelancer.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAkwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T06:32:20.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProjectDocument.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectDocument.cs",
+              "RelativeDocumentMoniker": "Core\\ProjectDocument.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectDocument.cs",
+              "RelativeToolTip": "Core\\ProjectDocument.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T06:29:11.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FinishedProject.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\FinishedProject.cs",
+              "RelativeDocumentMoniker": "Core\\FinishedProject.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\FinishedProject.cs",
+              "RelativeToolTip": "Core\\FinishedProject.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T06:25:44.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Education.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Education.cs",
+              "RelativeDocumentMoniker": "Core\\Education.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Education.cs",
+              "RelativeToolTip": "Core\\Education.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T05:47:51.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TerminatedProject.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\TerminatedProject.cs",
+              "RelativeDocumentMoniker": "Core\\TerminatedProject.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\TerminatedProject.cs",
+              "RelativeToolTip": "Core\\TerminatedProject.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAQwBEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T06:22:37.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProjectStages.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectStages.cs",
+              "RelativeDocumentMoniker": "Core\\ProjectStages.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\ProjectStages.cs",
+              "RelativeToolTip": "Core\\ProjectStages.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T06:17:31.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Project.cs",
+              "RelativeDocumentMoniker": "Core\\Project.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Project.cs",
+              "RelativeToolTip": "Core\\Project.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAmwBIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T06:12:02.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Company.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Company.cs",
+              "RelativeDocumentMoniker": "Core\\Company.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Company.cs",
+              "RelativeToolTip": "Core\\Company.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBIAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T06:01:05.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "City.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\City.cs",
+              "RelativeDocumentMoniker": "Core\\City.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\City.cs",
+              "RelativeToolTip": "Core\\City.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T06:20:19.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TNCCompany.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\TNCCompany.cs",
+              "RelativeDocumentMoniker": "Core\\TNCCompany.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\TNCCompany.cs",
+              "RelativeToolTip": "Core\\TNCCompany.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T05:58:19.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TNCFreelancer.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\TNCFreelancer.cs",
+              "RelativeDocumentMoniker": "Core\\TNCFreelancer.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\TNCFreelancer.cs",
+              "RelativeToolTip": "Core\\TNCFreelancer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T05:55:37.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Skill.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Skill.cs",
+              "RelativeDocumentMoniker": "Core\\Skill.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Skill.cs",
+              "RelativeToolTip": "Core\\Skill.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T05:53:03.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SkillCategory.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\SkillCategory.cs",
+              "RelativeDocumentMoniker": "Core\\SkillCategory.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\SkillCategory.cs",
+              "RelativeToolTip": "Core\\SkillCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T05:49:49.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Location.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Location.cs",
+              "RelativeDocumentMoniker": "Core\\Location.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Location.cs",
+              "RelativeToolTip": "Core\\Location.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T05:40:21.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Technologies.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Technologies.cs",
+              "RelativeDocumentMoniker": "Core\\Technologies.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Technologies.cs",
+              "RelativeToolTip": "Core\\Technologies.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T05:37:53.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PaymentMode.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\PaymentMode.cs",
+              "RelativeDocumentMoniker": "Core\\PaymentMode.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\PaymentMode.cs",
+              "RelativeToolTip": "Core\\PaymentMode.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T05:26:05.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CompanyFAQ.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\CompanyFAQ.cs",
+              "RelativeDocumentMoniker": "Core\\CompanyFAQ.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\CompanyFAQ.cs",
+              "RelativeToolTip": "Core\\CompanyFAQ.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T05:24:14.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "FreelancerFAQ.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\FreelancerFAQ.cs",
+              "RelativeDocumentMoniker": "Core\\FreelancerFAQ.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\FreelancerFAQ.cs",
+              "RelativeToolTip": "Core\\FreelancerFAQ.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T05:21:07.815Z"
             }
           ]
         }

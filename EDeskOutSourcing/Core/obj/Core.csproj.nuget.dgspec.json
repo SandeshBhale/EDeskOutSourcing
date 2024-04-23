@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Core\\Core.csproj": {}
+    "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Core\\Core.csproj": {
+    "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\SANDESH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Git\\EDeskOutSourcing\\Core\\obj\\",
+        "outputPath": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SANDESH\\AppData\\Roaming\\NuGet\\NuGet.Config",

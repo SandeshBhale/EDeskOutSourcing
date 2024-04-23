@@ -21,6 +21,7 @@ namespace Core
             }         
         }
         public string Email { get; set; }
+        [RegularExpression("^[0-9]{10}$", ErrorMessage = "Number should be 10 digit")]
         public string Mobile { get; set; }
         public string Password { get; set; }
     }

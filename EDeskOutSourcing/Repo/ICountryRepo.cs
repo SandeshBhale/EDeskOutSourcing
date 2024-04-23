@@ -1,4 +1,5 @@
 ﻿using Core;
+using Repo.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,6 @@ namespace Repo
 {
     public interface ICountryRepo : IGenRepo<Country>
     {
+        List<CountryVM> GetCountryById(Int64 CountryId);
     }
 }
