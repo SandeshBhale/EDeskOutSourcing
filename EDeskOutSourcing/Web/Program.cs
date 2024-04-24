@@ -21,6 +21,7 @@ builder.Services.AddScoped<IAdmin, AdminRepo>();
 builder.Services.AddScoped<ICountryRepo, CountryRepo>();
 builder.Services.AddScoped<ICityRepo, CityRepo>();
 builder.Services.AddScoped<IStateRepo, StateRepo>();    
+builder.Services.AddScoped<ICompany, CompanyRepo>();
 
 var app = builder.Build();
 app.UseStaticFiles();

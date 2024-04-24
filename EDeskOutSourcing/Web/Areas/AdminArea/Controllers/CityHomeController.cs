@@ -74,11 +74,5 @@ namespace Web.Areas.AdminArea.Controllers
             this.cityrepo.Delete(id);
             return RedirectToAction("Index");
         }
-
-        public IActionResult GetCountryJson(Int64 id)
-        {
-            var rec = this.countryrepo.GetCountryById(id);
-            return Json(rec.ToList());
-        }
     }
 }

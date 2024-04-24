@@ -17,6 +17,6 @@ namespace Repo.ViewModels
         public string Email { get; set; }
         [Required(ErrorMessage ="Mobile No Required")]
         public string Mobile { get; set; }
-        
     }
 }
+    

@@ -1,0 +1,72 @@
+﻿@model CompanyProfileVM
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div class="header-title">
+            <h4 class="card-title">Edit Company Profile</h4>
+        </div>
+    </div>
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">@ViewBag.Message</div>
+        }
+
+    </div>
+    <div class="card-body">
+        <form class="form-horizontal" asp-action="EditProfile" method="post">
+            <div class="form-group row">
+                <label class="control-label col-sm-3 align-self-center mb-0" for="email1">Company Name : </label>
+                <div class="col-sm-9">
+                    <input asp-for="CompanyName" class="form-control" />
+                    <span asp-validation-for="CompanyName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="control-label col-sm-3 align-self-center mb-0" for="email1">Contact Person Name : </label>
+                <div class="col-sm-9">
+                    <input asp-for="ContactPersonName" class="form-control" />
+                    <span asp-validation-for="ContactPersonName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="control-label col-sm-3 align-self-center mb-0" for="email1">Address : </label>
+                <div class="col-sm-9">
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="control-label col-sm-3 align-self-center mb-0" for="email1">Email Id : </label>
+                <div class="col-sm-9">
+                    <input asp-for="EmailId" class="form-control" />
+                    <span asp-validation-for="EmailId" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="control-label col-sm-3 align-self-center mb-0" for="email1">Mobile No : </label>
+                <div class="col-sm-9">
+                    <input asp-for="Mobile" class="form-control" />
+                    <span asp-validation-for="Mobile" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <label class="form-label">Select City :</label>
+                <select class="form-select" asp-for="CityId" asp-items="@ViewBag.City">
+                    <option> Select City</option>
+                </select>
+                <span asp-validation-for="CityId" class="text-danger"></span>
+            </div>
+
+
+            
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Update</button>
+            </div>
+        </form>
+    </div>
+</div>
