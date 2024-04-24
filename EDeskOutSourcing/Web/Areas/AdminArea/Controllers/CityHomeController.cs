@@ -28,16 +28,16 @@ namespace Web.Areas.AdminArea.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
             ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName");
+            ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
             return View();
         }
 
         [HttpPost]
         public IActionResult Create(City rec)
         {
-            ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
             ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName");
+            ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
             if (ModelState.IsValid)
             {
                 this.cityrepo.Add(rec);
@@ -73,6 +73,12 @@ namespace Web.Areas.AdminArea.Controllers
         {
             this.cityrepo.Delete(id);
             return RedirectToAction("Index");
+        }
+
+        public IActionResult GetStatesJson(Int64 id)
+        {
+            var rec = this.staterepo.GetStatesByCountryId(id);
+            return Json(rec.ToList());
         }
     }
 }

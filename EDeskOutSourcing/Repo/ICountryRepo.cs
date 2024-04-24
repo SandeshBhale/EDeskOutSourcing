@@ -10,6 +10,5 @@ namespace Repo
 {
     public interface ICountryRepo : IGenRepo<Country>
     {
-        List<CountryVM> GetCountryById(Int64 CountryId);
     }
 }

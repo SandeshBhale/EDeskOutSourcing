@@ -27,4 +27,24 @@
     <Folder Include="Areas\CompanyArea\Models\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Areas\AdminArea\Views\CompanyFAQHome\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Areas\AdminArea\Views\CompanyFAQHome\Create.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Areas\AdminArea\Views\CompanyFAQHome\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\AdminArea\Views\CompanyFAQHome\Edit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Areas\AdminArea\Views\CompanyFAQHome\Edit.cshtml" />
+  </ItemGroup>
+
 </Project>
