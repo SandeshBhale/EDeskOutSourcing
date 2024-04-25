@@ -1,0 +1,38 @@
+﻿@model FreelancerFAQ
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div class="header-title">
+            <h4 class="card-title">Add FAQ</h4>
+        </div>
+    </div>
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">@ViewBag.Message</div>
+        }
+
+    </div>
+    <div class="card-body">
+        <form class="form-horizontal" asp-action="Create" method="post">
+            <div class="form-group row">
+                <label class="control-label" for="email1">FAQ : </label>
+                <div class="col-md-12">
+                    <input asp-for="FAQ" class="form-control" />
+                    <span asp-validation-for="FAQ" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="control-label" for="email1">Answer : </label>
+                <div class="col-md-12">
+                    <input asp-for="Answer" class="form-control" />
+                    <span asp-validation-for="Answer" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Create</button>
+            </div>
+        </form>
+    </div>
+</div>

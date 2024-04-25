@@ -18,5 +18,6 @@ namespace Core
         public virtual Project Project { get; set; }
         public string TaskDescription { get; set; }
         public decimal TaskAmount { get; set; }
+        public int TaskStatus { get; set; }
     }
 }

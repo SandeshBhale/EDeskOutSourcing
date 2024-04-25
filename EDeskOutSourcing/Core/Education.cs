@@ -14,5 +14,6 @@ namespace Core
         [Key]
         public Int64 EducationId { get; set; }
         public string EducationName { get; set; }
+        public int EducationType { get; set; }
     }
 }

@@ -14,6 +14,6 @@ namespace Core
         [Key]
         public Int64 TNCCompanyId { get; set; }
         public string CompanyRule { get; set; }
-        public DateTime AddedDate { get; set; }
+        public DateTime AddedDate { get; set; } = DateTime.Now;
     }
 }

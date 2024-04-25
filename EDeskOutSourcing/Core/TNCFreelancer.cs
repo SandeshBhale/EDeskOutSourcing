@@ -12,8 +12,8 @@ namespace Core
     public class TNCFreelancer
     {
         [Key]
-        public Int64 INCFreelancerId { get; set; }
+        public Int64 TNCFreelancerId { get; set; }
         public string FreelancerRule { get; set; }
-        public DateTime AddedDate { get; set; }
+        public DateTime AddedDate { get; set; } = DateTime.Now;
     }
 }

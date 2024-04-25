@@ -7,12 +7,12 @@ namespace Web.Areas.AdminArea.Controllers
 {
     [AdminAuth]
     [Area("AdminArea")]
-    public class CompanyFAQHomeController : Controller
+    public class FreelancerFAQHomeController : Controller
     {
 
-        ICompanyFAQRepo repo;
+        IFreelancerFAQRepo repo;
 
-        public CompanyFAQHomeController(ICompanyFAQRepo repo)
+        public FreelancerFAQHomeController(IFreelancerFAQRepo repo)
         {
             this.repo = repo;
         }
@@ -29,7 +29,7 @@ namespace Web.Areas.AdminArea.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(CompanyFAQ rec)
+        public IActionResult Create(FreelancerFAQ rec)
         {
             if (ModelState.IsValid)
             {
@@ -47,7 +47,7 @@ namespace Web.Areas.AdminArea.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(CompanyFAQ rec)
+        public IActionResult Edit(FreelancerFAQ rec)
         {
             if (ModelState.IsValid)
             {

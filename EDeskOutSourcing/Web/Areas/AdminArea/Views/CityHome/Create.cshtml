@@ -1,18 +1,18 @@
-﻿@model City
+﻿@model CityVM
 
 <script type="text/javascript">
     $(function () {
         $("#CountryId").change(function () {
 
             $.ajax({
-                url: "/AdminArea/GetStatesJson/" + $("#CountryId").val(),
+                url: "/AdminArea/CityHome/GetStatesJson/" + $("#CountryId").val(),
                 type: "Get",
                 contentType: "application/json",
                 success: function (result) {
                     //alert(JSON.stringify(result));
                     $("#State").empty();
                     for (var i = 0; i < result.length; i++) {
-                        var str = "<option value='" + result[i].stateID + "'>" + result[i].stateName + "</option>";
+                        var str = "<option value='" + result[i].stateId + "'>" + result[i].stateName + "</option>";
                         $("#State").append(str);
                     }
                 },
@@ -50,15 +50,15 @@
             </div>
             <div class="col-12">
                 <label class="form-label">Country Name</label>
-                <select class="form-select" asp-for="State.CountryId" asp-items="@ViewBag.Country" id="CountryId">
+                <select class="form-select" asp-for="CountryId" asp-items="@ViewBag.Country" id="CountryId">
                     <option value="0"> Select Country</option>
                 </select>
-                <span asp-validation-for="State.CountryId" class="text-danger"></span>
+                <span asp-validation-for="CountryId" class="text-danger"></span>
             </div>
             <div class="col-12">
                 <label class="form-label">State Name</label>
                 <select class="form-select" asp-for="StateId" id="State" name="StateId" asp-items="@ViewBag.State">
-                    <option> Select State</option>
+                    <option value="0"> Select State</option>
                 </select>
                 <span asp-validation-for="StateId" class="text-danger"></span>
             </div>

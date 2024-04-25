@@ -6,18 +6,27 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Infra.Migrations
 {
     /// <inheritdoc />
-    public partial class model1 : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_CityTable_StateTable_StateId",
-                table: "CityTable");
-
-            migrationBuilder.DropForeignKey(
-                name: "FK_StateTable_CountryTable_CountryId",
-                table: "StateTable");
+            migrationBuilder.CreateTable(
+                name: "AdminTable",
+                columns: table => new
+                {
+                    AdminId = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Mobile = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AdminTable", x => x.AdminId);
+                });
 
             migrationBuilder.CreateTable(
                 name: "CompanyFAQTable",
@@ -35,29 +44,16 @@ namespace Infra.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "CompanyTable",
+                name: "CountryTable",
                 columns: table => new
                 {
-                    CompanyId = table.Column<long>(type: "bigint", nullable: false)
+                    CountryId = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    CompanyName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    EmailId = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    MobileNo = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ContactPersonName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CityId = table.Column<long>(type: "bigint", nullable: false),
-                    JoinedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    CountryName = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CompanyTable", x => x.CompanyId);
-                    table.ForeignKey(
-                        name: "FK_CompanyTable_CityTable_CityId",
-                        column: x => x.CityId,
-                        principalTable: "CityTable",
-                        principalColumn: "CityId",
-                        onDelete: ReferentialAction.Restrict);
+                    table.PrimaryKey("PK_CountryTable", x => x.CountryId);
                 });
 
             migrationBuilder.CreateTable(
@@ -66,7 +62,8 @@ namespace Infra.Migrations
                 {
                     EducationId = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    EducationName = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    EducationName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    EducationType = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -104,26 +101,6 @@ namespace Infra.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_FreelancerTable", x => x.FreelancerId);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "LocationTable",
-                columns: table => new
-                {
-                    LocationId = table.Column<long>(type: "bigint", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    LocationName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CityId = table.Column<long>(type: "bigint", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_LocationTable", x => x.LocationId);
-                    table.ForeignKey(
-                        name: "FK_LocationTable_CityTable_CityId",
-                        column: x => x.CityId,
-                        principalTable: "CityTable",
-                        principalColumn: "CityId",
-                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -183,37 +160,33 @@ namespace Infra.Migrations
                 name: "TermsAndConditionsForFreelancer",
                 columns: table => new
                 {
-                    INCFreelancerId = table.Column<long>(type: "bigint", nullable: false)
+                    TNCFreelancerId = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FreelancerRule = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     AddedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TermsAndConditionsForFreelancer", x => x.INCFreelancerId);
+                    table.PrimaryKey("PK_TermsAndConditionsForFreelancer", x => x.TNCFreelancerId);
                 });
 
             migrationBuilder.CreateTable(
-                name: "ProjectTable",
+                name: "StateTable",
                 columns: table => new
                 {
-                    ProjectId = table.Column<long>(type: "bigint", nullable: false)
+                    StateId = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    ProjectName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ProjectDescription = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CompanyId = table.Column<long>(type: "bigint", nullable: false),
-                    ProjectTermsAndConditions = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Budget = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    ExpectedCompletionDurationInDays = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    StateName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CountryId = table.Column<long>(type: "bigint", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ProjectTable", x => x.ProjectId);
+                    table.PrimaryKey("PK_StateTable", x => x.StateId);
                     table.ForeignKey(
-                        name: "FK_ProjectTable_CompanyTable_CompanyId",
-                        column: x => x.CompanyId,
-                        principalTable: "CompanyTable",
-                        principalColumn: "CompanyId",
+                        name: "FK_StateTable_CountryTable_CountryId",
+                        column: x => x.CountryId,
+                        principalTable: "CountryTable",
+                        principalColumn: "CountryId",
                         onDelete: ReferentialAction.Restrict);
                 });
 
@@ -330,6 +303,98 @@ namespace Infra.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "CityTable",
+                columns: table => new
+                {
+                    CityId = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CityName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    StateId = table.Column<long>(type: "bigint", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CityTable", x => x.CityId);
+                    table.ForeignKey(
+                        name: "FK_CityTable_StateTable_StateId",
+                        column: x => x.StateId,
+                        principalTable: "StateTable",
+                        principalColumn: "StateId",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "CompanyTable",
+                columns: table => new
+                {
+                    CompanyId = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CompanyName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    EmailId = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MobileNo = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ContactPersonName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CityId = table.Column<long>(type: "bigint", nullable: false),
+                    JoinedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CompanyTable", x => x.CompanyId);
+                    table.ForeignKey(
+                        name: "FK_CompanyTable_CityTable_CityId",
+                        column: x => x.CityId,
+                        principalTable: "CityTable",
+                        principalColumn: "CityId",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "LocationTable",
+                columns: table => new
+                {
+                    LocationId = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LocationName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CityId = table.Column<long>(type: "bigint", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_LocationTable", x => x.LocationId);
+                    table.ForeignKey(
+                        name: "FK_LocationTable_CityTable_CityId",
+                        column: x => x.CityId,
+                        principalTable: "CityTable",
+                        principalColumn: "CityId",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ProjectTable",
+                columns: table => new
+                {
+                    ProjectId = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ProjectName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ProjectDescription = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CompanyId = table.Column<long>(type: "bigint", nullable: false),
+                    ProjectStatus = table.Column<int>(type: "int", nullable: false),
+                    ProjectPaymentTerms = table.Column<int>(type: "int", nullable: false),
+                    ProjectTermsAndConditions = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Budget = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    ExpectedCompletionDurationInDays = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ProjectTable", x => x.ProjectId);
+                    table.ForeignKey(
+                        name: "FK_ProjectTable_CompanyTable_CompanyId",
+                        column: x => x.CompanyId,
+                        principalTable: "CompanyTable",
+                        principalColumn: "CompanyId",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "FinishedProjectTable",
                 columns: table => new
                 {
@@ -430,7 +495,8 @@ namespace Infra.Migrations
                     TaskTitle = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ProjectId = table.Column<long>(type: "bigint", nullable: false),
                     TaskDescription = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    TaskAmount = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    TaskAmount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    TaskStatus = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -739,6 +805,11 @@ namespace Infra.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_CityTable_StateId",
+                table: "CityTable",
+                column: "StateId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_CompanyTable_CityId",
                 table: "CompanyTable",
                 column: "CityId");
@@ -889,37 +960,21 @@ namespace Infra.Migrations
                 column: "SkillCategoryId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_StateTable_CountryId",
+                table: "StateTable",
+                column: "CountryId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_TerminatedProjectTable_ProjectId",
                 table: "TerminatedProjectTable",
                 column: "ProjectId");
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_CityTable_StateTable_StateId",
-                table: "CityTable",
-                column: "StateId",
-                principalTable: "StateTable",
-                principalColumn: "StateId",
-                onDelete: ReferentialAction.Restrict);
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_StateTable_CountryTable_CountryId",
-                table: "StateTable",
-                column: "CountryId",
-                principalTable: "CountryTable",
-                principalColumn: "CountryId",
-                onDelete: ReferentialAction.Restrict);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_CityTable_StateTable_StateId",
-                table: "CityTable");
-
-            migrationBuilder.DropForeignKey(
-                name: "FK_StateTable_CountryTable_CountryId",
-                table: "StateTable");
+            migrationBuilder.DropTable(
+                name: "AdminTable");
 
             migrationBuilder.DropTable(
                 name: "CompanyFAQTable");
@@ -1026,21 +1081,14 @@ namespace Infra.Migrations
             migrationBuilder.DropTable(
                 name: "CompanyTable");
 
-            migrationBuilder.AddForeignKey(
-                name: "FK_CityTable_StateTable_StateId",
-                table: "CityTable",
-                column: "StateId",
-                principalTable: "StateTable",
-                principalColumn: "StateId",
-                onDelete: ReferentialAction.Cascade);
+            migrationBuilder.DropTable(
+                name: "CityTable");
 
-            migrationBuilder.AddForeignKey(
-                name: "FK_StateTable_CountryTable_CountryId",
-                table: "StateTable",
-                column: "CountryId",
-                principalTable: "CountryTable",
-                principalColumn: "CountryId",
-                onDelete: ReferentialAction.Cascade);
+            migrationBuilder.DropTable(
+                name: "StateTable");
+
+            migrationBuilder.DropTable(
+                name: "CountryTable");
         }
     }
 }

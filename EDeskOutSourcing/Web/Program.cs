@@ -23,6 +23,12 @@ builder.Services.AddScoped<ICityRepo, CityRepo>();
 builder.Services.AddScoped<IStateRepo, StateRepo>();    
 builder.Services.AddScoped<ICompany, CompanyRepo>();
 builder.Services.AddScoped<ICompanyFAQRepo, CompanyFAQRepo>();
+builder.Services.AddScoped<IFreelancerFAQRepo, FreelancerFAQRepo>();
+builder.Services.AddScoped<ITNCCompanyRepo, TNCCompanyRepo>();
+builder.Services.AddScoped<ITNCFreelancerRepo, TNCFreelancerRepo>();
+builder.Services.AddScoped<IPaymentModeRepo, PaymentModeRepo>();
+builder.Services.AddScoped<ISkillCategoryRepo, SkillCategoryRepo>();
+builder.Services.AddScoped<IEducationRepo,EducationRepo>();
 
 var app = builder.Build();
 app.UseStaticFiles();

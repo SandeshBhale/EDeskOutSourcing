@@ -13,18 +13,6 @@ namespace Infra
             {
                 relationship.DeleteBehavior = DeleteBehavior.Restrict;
             }
-       
-        mb.Entity<Admin>().HasData(
-                new Admin()
-                {
-                    AdminId = 1,
-                    FirstName = "Sandesh",
-                    LastName = "Bhale",
-                    Email = "sandesh@gmail.com",
-                    Password = "1234",
-                }
-                );
-            ;;
         }
 
         public EDeskContext(DbContextOptions<EDeskContext> opt) : base(opt) 

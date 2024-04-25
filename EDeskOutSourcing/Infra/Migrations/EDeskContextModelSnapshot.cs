@@ -51,16 +51,6 @@ namespace Infra.Migrations
                     b.HasKey("AdminId");
 
                     b.ToTable("AdminTable");
-
-                    b.HasData(
-                        new
-                        {
-                            AdminId = 1L,
-                            Email = "sandesh@gmail.com",
-                            FirstName = "Sandesh",
-                            LastName = "Bhale",
-                            Password = "1234"
-                        });
                 });
 
             modelBuilder.Entity("Core.City", b =>
@@ -171,6 +161,9 @@ namespace Infra.Migrations
 
                     b.Property<string>("EducationName")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("EducationType")
+                        .HasColumnType("int");
 
                     b.HasKey("EducationId");
 
@@ -418,6 +411,12 @@ namespace Infra.Migrations
                     b.Property<string>("ProjectName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("ProjectPaymentTerms")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProjectStatus")
+                        .HasColumnType("int");
+
                     b.Property<string>("ProjectTermsAndConditions")
                         .HasColumnType("nvarchar(max)");
 
@@ -556,6 +555,9 @@ namespace Infra.Migrations
 
                     b.Property<string>("TaskDescription")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TaskStatus")
+                        .HasColumnType("int");
 
                     b.Property<string>("TaskTitle")
                         .HasColumnType("nvarchar(max)");
@@ -920,11 +922,11 @@ namespace Infra.Migrations
 
             modelBuilder.Entity("Core.TNCFreelancer", b =>
                 {
-                    b.Property<long>("INCFreelancerId")
+                    b.Property<long>("TNCFreelancerId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("INCFreelancerId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("TNCFreelancerId"));
 
                     b.Property<DateTime>("AddedDate")
                         .HasColumnType("datetime2");
@@ -932,7 +934,7 @@ namespace Infra.Migrations
                     b.Property<string>("FreelancerRule")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("INCFreelancerId");
+                    b.HasKey("TNCFreelancerId");
 
                     b.ToTable("TermsAndConditionsForFreelancer");
                 });

@@ -15,6 +15,6 @@ namespace Core
         public Int64 FreelancerFAQId { get; set; }
         public string FAQ { get; set; }
         public string Answer { get; set; }
-        public DateTime AddedDate { get; set; }
+        public DateTime AddedDate { get; set; } = DateTime.Now;
     }
 }
