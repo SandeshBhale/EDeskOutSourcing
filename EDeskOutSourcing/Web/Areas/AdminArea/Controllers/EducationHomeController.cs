@@ -1,6 +1,8 @@
 ﻿using Core;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Repo;
+using Repo.Enums;
 using Web.CustFilter;
 
 namespace Web.Areas.AdminArea.Controllers

@@ -35,8 +35,8 @@
                             <td>@temp.ProjectName</td>
                             <td>@temp.ProjectDescription</td>
                             <td>@temp.Company.CompanyName</td>
-                            <td>@temp.ProjectStatus</td>
-                            <td>@temp.ProjectPaymentTerms</td>
+                            <td>@Enum.GetName(typeof(ProjectStatus),temp.ProjectStatus)</td>
+                            <td>@Enum.GetName(typeof(ProjectPaymentTerms),temp.ProjectPaymentTerms)</td>
                             <td>@temp.ProjectTermsAndConditions</td>
                             <td>@temp.Budget</td>
                             <td>@temp.ExpectedCompletionDurationInDays</td>

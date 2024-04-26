@@ -1,6 +1,7 @@
 ﻿using Core;
 using Microsoft.AspNetCore.Mvc;
 using Repo;
+using System.ComponentModel.Design;
 using Web.CustFilter;
 
 namespace Web.Areas.AdminArea.Controllers
@@ -10,9 +11,9 @@ namespace Web.Areas.AdminArea.Controllers
     public class ProjectHomeController : Controller
     {
 
-        IProjcetRepo repo;
+        IProjectRepo repo;
 
-        public ProjectHomeController(IProjcetRepo repo)
+        public ProjectHomeController(IProjectRepo repo)
         {
             this.repo = repo;
         }
@@ -25,6 +26,8 @@ namespace Web.Areas.AdminArea.Controllers
         [HttpGet]
         public IActionResult Create()
         {
+            int companyId = Convert.ToInt32(HttpContext.Session.GetString("CompanyId"));
+            ViewBag.CompanyId = companyId;
             return View();
         }
 
@@ -42,6 +45,8 @@ namespace Web.Areas.AdminArea.Controllers
         [HttpGet]
         public IActionResult Edit(Int64 id)
         {
+            int companyId = Convert.ToInt32(HttpContext.Session.GetString("CompanyId"));
+            ViewBag.CompanyId = companyId;
             var rec = this.repo.GetById(id);
             return View(rec);
         }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Repo
 {
-    public class ProjectRepo : GenRepo<Project>, IProjcetRepo
+    public class ProjectRepo : GenRepo<Project>, IProjectRepo
     {
         EDeskContext ec;
 

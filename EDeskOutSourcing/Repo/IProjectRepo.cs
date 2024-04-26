@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Repo
 {
-    public interface IProjcetRepo : IGenRepo<Project>
+    public interface IProjectRepo : IGenRepo<Project>
     {
     }
 }

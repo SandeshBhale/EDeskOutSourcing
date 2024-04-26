@@ -8,7 +8,7 @@ builder.Services.AddSession(
     opt =>
     {
         opt.Cookie.HttpOnly = true;
-        opt.IdleTimeout = TimeSpan.FromSeconds(20);
+        opt.IdleTimeout = TimeSpan.FromMinutes(20);
         opt.Cookie.IsEssential = true;
     }
     );
@@ -30,7 +30,8 @@ builder.Services.AddScoped<IPaymentModeRepo, PaymentModeRepo>();
 builder.Services.AddScoped<ISkillCategoryRepo, SkillCategoryRepo>();
 builder.Services.AddScoped<IEducationRepo,EducationRepo>();
 builder.Services.AddScoped<ILocationRepo,LocationRepo>();
-builder.Services.AddScoped<IProjcetRepo, ProjectRepo>();
+builder.Services.AddScoped<IProjectRepo, ProjectRepo>();
+builder.Services.AddScoped<IProjectStagesRepo, ProjectStagesRepo>();
 
 var app = builder.Build();
 app.UseStaticFiles();
