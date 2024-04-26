@@ -1,7 +1,8 @@
-﻿using Core;
+﻿ using Core;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Repo;
+using Repo.ViewModels;
 using Web.CustFilter;
 
 namespace Web.Areas.AdminArea.Controllers
@@ -49,9 +50,10 @@ namespace Web.Areas.AdminArea.Controllers
         [HttpGet]
         public IActionResult Edit(Int64 id)
         {
-            ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
-            ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName");
+
             var rec = this.cityrepo.GetById(id);
+            ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName",rec.StateId);
+            ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName",rec.State.CountryId);
             return View(rec);
         }
 
@@ -80,5 +82,7 @@ namespace Web.Areas.AdminArea.Controllers
             var rec = this.staterepo.GetStatesByCountryId(id);
             return Json(rec.ToList());
         }
+
+        
     }
 }

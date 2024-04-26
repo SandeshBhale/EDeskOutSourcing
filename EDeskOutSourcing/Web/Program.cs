@@ -29,6 +29,8 @@ builder.Services.AddScoped<ITNCFreelancerRepo, TNCFreelancerRepo>();
 builder.Services.AddScoped<IPaymentModeRepo, PaymentModeRepo>();
 builder.Services.AddScoped<ISkillCategoryRepo, SkillCategoryRepo>();
 builder.Services.AddScoped<IEducationRepo,EducationRepo>();
+builder.Services.AddScoped<ILocationRepo,LocationRepo>();
+builder.Services.AddScoped<IProjcetRepo, ProjectRepo>();
 
 var app = builder.Build();
 app.UseStaticFiles();

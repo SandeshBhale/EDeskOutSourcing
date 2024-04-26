@@ -1,0 +1,76 @@
+﻿@model City
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $("#CountryId").change(function () {
+
+            $.ajax({
+                url: "/AdminArea/CityHome/GetStatesJson/" + $("#CountryId").val(),
+                type: "Get",
+                contentType: "application/json",
+                success: function (result) {
+                    //alert(JSON.stringify(result));
+                    $("#State").empty();
+                    for (var i = 0; i < result.length; i++) {
+                        var str = "<option value='" + result[i].stateId + "'>" + result[i].stateName + "</option>";
+                        $("#State").append(str);
+                    }
+                },
+                error: function (err) {
+                    alert(JSON.stringify(err));
+                }
+            });
+
+        });
+
+    });
+</script>
+
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div class="header-title">
+            <h4 class="card-title">City List</h4>
+        </div>
+    </div>
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">@ViewBag.Message</div>
+        }
+
+    </div>
+    <div class="card-body" mx-auto w-75>
+        <form class="form-horizontal" asp-action="Edit" method="post">
+            <input type="hidden" asp-for="CityId" />
+
+            <div class="form-group row">
+                <label class="control-label col-sm-3 align-self-center mb-0">City Name : </label>
+                <div class="col-sm-9">
+                    <input asp-for="CityName" class="form-control" />
+                    <span asp-validation-for="CityName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <label class="form-label">Country Name</label>
+                <select class="form-select" asp-for="State.CountryId" asp-items="@ViewBag.Country" id="CountryId">
+                    <option value="0"> Select Country</option>
+                </select>
+                <span asp-validation-for="State.CountryId" class="text-danger"></span>
+            </div>
+            <div class="col-12">
+                <label class="form-label">State Name</label>
+                <select class="form-select" asp-for="StateId" id="State" name="StateId" asp-items="@ViewBag.State">
+                    <option value="0"> Select State</option>
+                </select>
+                <span asp-validation-for="StateId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Update</button>
+            </div>
+        </form>
+    </div>
+</div>

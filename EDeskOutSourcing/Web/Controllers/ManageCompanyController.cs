@@ -41,6 +41,23 @@ namespace Web.Controllers
         }
 
         [HttpGet]
+        public IActionResult SignUp()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult SignUp(SignUpVM rec)
+        {
+            if (ModelState.IsValid)
+            {
+                
+                return RedirectToAction("Index");
+            }
+            return View(rec);
+        }
+
+        [HttpGet]
         public IActionResult SignOut()
         {
             HttpContext.Session.Clear();

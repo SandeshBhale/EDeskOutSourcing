@@ -1,0 +1,105 @@
+﻿@model LocationVM
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $("#CountryId").change(function () {
+
+            $.ajax({
+                url: "/AdminArea/LocationHome/GetStatesJson/" + $("#CountryId").val(),
+                type: "GET",
+                contentType: "application/json",
+                success: function (result) {
+                    $("#State").empty();
+                    for (var i = 0; i < result.length; i++) {
+                        var str = "<option value='" + result[i].stateId + "'>" + result[i].stateName + "</option>";
+                        $("#State").append(str);
+                    }
+                },
+                error: function (err) {
+                    alert(JSON.stringify(err));
+                }
+            });
+
+        });
+
+        $("#State").change(function () {
+
+            $.ajax({
+                url: "/AdminArea/LocationHome/GetCitiesJson/" + $("#State").val(),
+                type: "GET",
+                contentType: "application/json",
+                success: function (result) {
+                    $("#City").empty();
+                    for (var i = 0; i < result.length; i++) {
+                        var str = "<option value='" + result[i].cityId + "'>" + result[i].cityName + "</option>";
+                        $("#City").append(str);
+                    }
+                },
+                error: function (err) {
+                    alert(JSON.stringify(err));
+                }
+            });
+
+        });
+
+    });
+</script>
+
+
+
+
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div class="header-title">
+            <h4 class="card-title">Add Location</h4>
+        </div>
+    </div>
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">@ViewBag.Message</div>
+        }
+
+    </div>
+    <div class="card-body">
+        <form class="form-horizontal" asp-action="Create" method="post">
+            <div class="form-group row">
+                <label class="control-label" for="email1">Location Name : </label>
+                <div class="col-sm-12">
+                    <input asp-for="LocationName" class="form-control" />
+                    <span asp-validation-for="LocationName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <label class="form-label">Country Name</label>
+                <select class="form-select" asp-for="CountryId" asp-items="@ViewBag.Country" id="CountryId">
+                    <option value="0"> Select Country</option>
+                </select>
+                <span asp-validation-for="CountryId" class="text-danger"></span>
+            </div>
+            <div class="col-12">
+                <label class="form-label">State Name</label>
+                <select class="form-select" asp-for="StateId" id="State" name="StateId" asp-items="@ViewBag.State">
+                    <option value="0"> Select State</option>
+                </select>
+                <span asp-validation-for="StateId" class="text-danger"></span>
+            </div>
+            <div class="col-12">
+                <label class="form-label">City Name</label>
+                <select class="form-select" asp-for="CityId" id="City" name="CityId" asp-items="@ViewBag.City">
+                    <option value="0"> Select City</option>
+                </select>
+                <span asp-validation-for="CityId" class="text-danger"></span>
+            </div>
+
+            
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Create</button>
+            </div>
+        </form>
+    </div>
+</div>

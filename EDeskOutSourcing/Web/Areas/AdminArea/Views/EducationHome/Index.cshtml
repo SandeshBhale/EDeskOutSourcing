@@ -25,7 +25,7 @@
                     <tr>
                         <th scope="row">@srno</th>
                         <td>@temp.EducationName</td>
-                        <td>@temp.EducationType</td>
+                        <td>@Enum.GetName(typeof(EducationType), temp.EducationType)</td>
                         <td>
                             <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@temp.EducationId">Edit</a>
                             |
