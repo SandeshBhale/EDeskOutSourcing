@@ -15,7 +15,6 @@
                         <th scope="col">#</th>
                         <th scope="col">Project Name</th>
                         <th scope="col">Project Desc</th>
-                        <th scope="col">Company Name</th>
                         <th scope="col">Project Status</th>
                         <th scope="col">Project Payment Terms</th>
                         <th scope="col">Project T&C</th>
@@ -34,7 +33,6 @@
                             <th scope="row">@srno</th>
                             <td>@temp.ProjectName</td>
                             <td>@temp.ProjectDescription</td>
-                            <td>@temp.Company.CompanyName</td>
                             <td>@Enum.GetName(typeof(ProjectStatus),temp.ProjectStatus)</td>
                             <td>@Enum.GetName(typeof(ProjectPaymentTerms),temp.ProjectPaymentTerms)</td>
                             <td>@temp.ProjectTermsAndConditions</td>

@@ -1,4 +1,4 @@
-﻿@model ProjectStages
+﻿@model ProjectStagesVM
 <div class="card">
     <div class="card-header d-flex justify-content-between">
         <div class="header-title">
@@ -14,7 +14,6 @@
     </div>
     <div class="card-body">
         <form class="form-horizontal" asp-action="Create" method="post">
-
             <div class="col-12">
                 <label class="form-label">Project Name</label>
                 <select class="form-select" asp-for="ProjectId" asp-items="@ViewBag.Project">
@@ -23,104 +22,49 @@
                 <span asp-validation-for="ProjectId" class="text-danger"></span>
             </div>
             <br />
+
             <div class="row">
                 <div class="col-4">
                     <label class="form-label">Stage Name</label>
-                    <div class="col-md-12">
-                        <input asp-for="ProjectStageName" class="form-control" />
-                        <span asp-validation-for="ProjectStageName" class="text-danger"></span>
-                    </div>
-                    <br />
-                    <br />
-                    <div class="col-md-12">
-                        <input asp-for="ProjectStageName" class="form-control" />
-                        <span asp-validation-for="ProjectStageName" class="text-danger"></span>
-                    </div>
-                    <br />
-                    <br />
-                    <div class="col-md-12">
-                        <input asp-for="ProjectStageName" class="form-control" />
-                        <span asp-validation-for="ProjectStageName" class="text-danger"></span>
-                    </div>
-                    <br>
-                    <br />
-                    <div class="col-md-12">
-                        <input asp-for="ProjectStageName" class="form-control" />
-                        <span asp-validation-for="ProjectStageName" class="text-danger"></span>
-                    </div>
-                    <br />
-                    <br />
-                    <div class="col-md-12">
-                        <input asp-for="ProjectStageName" class="form-control" />
-                        <span asp-validation-for="ProjectStageName" class="text-danger"></span>
-                    </div>
                 </div>
-                <br />
                 <div class="col-4">
                     <label class="form-label">Duration in Hours</label>
-                    <div class="col-md-12">
-                        <input asp-for="DurationInHours" class="form-control" />
-                        <span asp-validation-for="DurationInHours" class="text-danger"></span>
+                </div>
+                <div class="col-4">
+                    <label class="form-label">Step Description</label>
+                </div>
+            </div>
+
+            @for (int i = 0; i < 5; i++)
+            {
+                <div class="row">
+                    <div class="col-4">
+                        <div class="col-md-12">
+                            <input asp-for="ProjectStages[i].ProjectStageName" class="form-control" />
+                            <span asp-validation-for="ProjectStages[i].ProjectStageName" class="text-danger"></span>
+                        </div>
                     </div>
-                    <br />
-                    <br />
-                    <div class="col-md-12">
-                        <input asp-for="DurationInHours" class="form-control" />
-                        <span asp-validation-for="DurationInHours" class="text-danger"></span>
+                    <div class="col-4">
+                        <div class="col-md-12">
+                            <input asp-for="ProjectStages[i].DurationInHours" class="form-control" />
+                            <span asp-validation-for="ProjectStages[i].DurationInHours" class="text-danger"></span>
+                        </div>
                     </div>
-                    <br />
-                    <br />
-                    <div class="col-md-12">
-                        <input asp-for="DurationInHours" class="form-control" />
-                        <span asp-validation-for="DurationInHours" class="text-danger"></span>
-                    </div>
-                    <br />
-                    <br />
-                    <div class="col-md-12">
-                        <input asp-for="DurationInHours" class="form-control" />
-                        <span asp-validation-for="DurationInHours" class="text-danger"></span>
-                    </div>
-                    <br />
-                    <br />
-                    <div class="col-md-12">
-                        <input asp-for="DurationInHours" class="form-control" />
-                        <span asp-validation-for="DurationInHours" class="text-danger"></span>
+                    <div class="col-4">
+                        <div class="col-md-12">
+                            <textarea asp-for="ProjectStages[i].StageDescription" class="form-control"></textarea>
+                            <span asp-validation-for="ProjectStages[i].StageDescription" class="text-danger"></span>
+                        </div>
                     </div>
                 </div>
                 <br />
-                <div class="col-4">
-                    <label class="form-label">Step Description</label>
-                    <div class="col-md-12">
-                        <textarea asp-for="StageDescription" class="form-control"></textarea>
-                        <span asp-validation-for="StageDescription" class="text-danger"></span>
-                    </div>
-                    <br />
-                    <div class="col-md-12">
-                        <textarea asp-for="StageDescription" class="form-control"></textarea>
-                        <span asp-validation-for="StageDescription" class="text-danger"></span>
-                    </div>
-                    <br />
-                    <div class="col-md-12">
-                        <textarea asp-for="StageDescription" class="form-control"></textarea>
-                        <span asp-validation-for="StageDescription" class="text-danger"></span>
-                    </div>
-                    <br />
-                    <div class="col-md-12">
-                        <textarea asp-for="StageDescription" class="form-control"></textarea>
-                        <span asp-validation-for="StageDescription" class="text-danger"></span>
-                    </div>
-                    <br />
-                    <div class="col-md-12">
-                        <textarea asp-for="StageDescription" class="form-control"></textarea>
-                        <span asp-validation-for="StageDescription" class="text-danger"></span>
-                    </div>
-                </div>
-            </div>
-            
-            <br />
+            }
+
+
             <div class="form-group">
                 <button type="submit" class="btn btn-success">Create</button>
             </div>
         </form>
+
     </div>
 </div>
