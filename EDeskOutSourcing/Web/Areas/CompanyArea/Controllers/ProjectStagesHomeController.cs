@@ -1,8 +1,6 @@
 ﻿using Core;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using NuGet.ProjectModel;
 using Repo;
 using Repo.ViewModels;
 using System.ComponentModel.Design;
@@ -14,14 +12,12 @@ namespace Web.Areas.AdminArea.Controllers
     [Area("CompanyArea")]
     public class ProjectStagesHomeController : Controller
     {
-
         IProjectStagesRepo repo;
         IProjectRepo prepo;
-
-        public ProjectStagesHomeController(IProjectStagesRepo repo, IProjectRepo prepo)
+        public ProjectStagesHomeController(IProjectStagesRepo repo,IProjectRepo prepo)
         {
-            this.repo = repo;
             this.prepo = prepo;
+            this.repo = repo;
         }
 
         public IActionResult Index()
@@ -29,38 +25,29 @@ namespace Web.Areas.AdminArea.Controllers
             return View(this.repo.GetAll());
         }
 
-
         [HttpGet]
         public IActionResult Create()
         {
-            //var viewModel = new ProjectStagesVM
-            //{
-            //    ProjectStages = new List<ProjectStages>() 
-            //};
-            ViewBag.Project = new SelectList(this.prepo.GetAll(), "ProjectId", "ProjectName");
-            //return View(viewModel);
+            ViewBag.ProjectId = new SelectList(this.prepo.GetAll(), "ProjectId", "ProjectName");
             return View();
         }
 
         [HttpPost]
-        public IActionResult Create(ProjectStagesVM viewModel)
+        public IActionResult Create(int ProjectId, ProjectStagesVM rec)
         {
-            if (ModelState.IsValid)
-            {
-                foreach (var stage in viewModel.ProjectStages)
-                {
-                    this.repo.Add(stage);
-                }
-                return RedirectToAction("Index");
-            }
-            ViewBag.Project = new SelectList(this.prepo.GetAll(), "ProjectId", "ProjectName");
-            return View(viewModel); // Pass the ViewModel back to the view in case of validation errors
+            ViewBag.ProjectId = new SelectList(this.prepo.GetAll(), "ProjectId", "ProjectName");
+            //if (ModelState.IsValid)
+            //{
+            //    return RedirectToAction("Index");
+            //}
+            return View(rec);
         }
-
 
         [HttpGet]
         public IActionResult Edit(Int64 id)
         {
+            int companyId = Convert.ToInt32(HttpContext.Session.GetString("CompanyId"));
+            ViewBag.CompanyId = companyId;
             var rec = this.repo.GetById(id);
             return View(rec);
         }
@@ -81,6 +68,12 @@ namespace Web.Areas.AdminArea.Controllers
         {
             this.repo.Delete(id);
             return RedirectToAction("Index");
+        }
+
+        public JsonResult InsertProjectStages([FromBody] List<ProjectStagesVM> ProjectStages)
+        {
+            this.repo.AddRecord(ProjectStages);
+            return Json(ProjectStages);
         }
     }
 }

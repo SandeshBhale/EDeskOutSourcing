@@ -10,5 +10,6 @@ namespace Repo
 {
     public interface IProjectStagesRepo : IGenRepo<ProjectStages>
     {
+        void AddRecord(List<ProjectStagesVM> rec);
     }
 }

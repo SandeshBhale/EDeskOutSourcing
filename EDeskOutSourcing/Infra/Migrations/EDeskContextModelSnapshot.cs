@@ -520,8 +520,8 @@ namespace Infra.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ProjectStageId"));
 
-                    b.Property<decimal>("DurationInHours")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<double>("DurationInHours")
+                        .HasColumnType("float");
 
                     b.Property<long>("ProjectId")
                         .HasColumnType("bigint");

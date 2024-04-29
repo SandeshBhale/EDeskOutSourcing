@@ -16,7 +16,7 @@ namespace Core
         public string ProjectStageName { get; set; }
         public Int64 ProjectId { get; set; }
         public virtual Project Project { get; set; }
-        public decimal DurationInHours { get; set; }
+        public double DurationInHours { get; set; }
         public string StageDescription { get; set; }
     }
 }

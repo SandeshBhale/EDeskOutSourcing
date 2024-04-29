@@ -48,6 +48,10 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Update="Areas\CompanyArea\Views\ProjectStagesHome\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -57,10 +61,20 @@
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Areas\AdminArea\Views\CompanyFAQHome\Create.cshtml" />
     <_ContentIncludedByDefault Remove="Areas\AdminArea\Views\CompanyFAQHome\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\CompanyArea\Views\ProjectStagesHome\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\CompanyArea\Views\ProjectStagesHome\Edit.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
     <UpToDateCheckInput Remove="Areas\AdminArea\Views\CompanyFAQHome\Edit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Areas\CompanyArea\Views\ProjectStagesHome\Create.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Areas\CompanyArea\Views\ProjectStagesHome\Edit.cshtml" />
   </ItemGroup>
 
 </Project>
