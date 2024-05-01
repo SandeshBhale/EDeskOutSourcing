@@ -22,5 +22,6 @@ namespace Core
         public string ProjectTermsAndConditions { get; set; }
         public decimal Budget { get; set; }
         public decimal ExpectedCompletionDurationInDays { get; set; }
+
     }
 }

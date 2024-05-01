@@ -31,7 +31,8 @@ builder.Services.AddScoped<ISkillCategoryRepo, SkillCategoryRepo>();
 builder.Services.AddScoped<IEducationRepo,EducationRepo>();
 builder.Services.AddScoped<ILocationRepo,LocationRepo>();
 builder.Services.AddScoped<IProjectRepo, ProjectRepo>();
-builder.Services.AddScoped<IProjectStagesRepo, ProjectStagesRepo>();
+builder.Services.AddScoped<IProjectStageRepo, ProjectStageRepo>();
+builder.Services.AddScoped<IProjectDocumentRepo, ProjectDocumentRepo>();
 
 var app = builder.Build();
 app.UseStaticFiles();

@@ -512,7 +512,7 @@ namespace Infra.Migrations
                     b.ToTable("ProjectDocumentTable");
                 });
 
-            modelBuilder.Entity("Core.ProjectStages", b =>
+            modelBuilder.Entity("Core.ProjectStage", b =>
                 {
                     b.Property<long>("ProjectStageId")
                         .ValueGeneratedOnAdd()
@@ -520,10 +520,13 @@ namespace Infra.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ProjectStageId"));
 
-                    b.Property<double>("DurationInHours")
-                        .HasColumnType("float");
+                    b.Property<int>("DurationInHours")
+                        .HasColumnType("int");
 
                     b.Property<long>("ProjectId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long?>("ProjectStageId1")
                         .HasColumnType("bigint");
 
                     b.Property<string>("ProjectStageName")
@@ -535,6 +538,8 @@ namespace Infra.Migrations
                     b.HasKey("ProjectStageId");
 
                     b.HasIndex("ProjectId");
+
+                    b.HasIndex("ProjectStageId1");
 
                     b.ToTable("ProjectStagesTable");
                 });
@@ -1134,13 +1139,18 @@ namespace Infra.Migrations
                     b.Navigation("Project");
                 });
 
-            modelBuilder.Entity("Core.ProjectStages", b =>
+            modelBuilder.Entity("Core.ProjectStage", b =>
                 {
                     b.HasOne("Core.Project", "Project")
                         .WithMany()
                         .HasForeignKey("ProjectId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.HasOne("Core.ProjectStage", null)
+                        .WithMany("ProjectStages")
+                        .HasForeignKey("ProjectStageId1")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Project");
                 });
@@ -1323,6 +1333,11 @@ namespace Infra.Migrations
                         .IsRequired();
 
                     b.Navigation("Project");
+                });
+
+            modelBuilder.Entity("Core.ProjectStage", b =>
+                {
+                    b.Navigation("ProjectStages");
                 });
 #pragma warning restore 612, 618
         }

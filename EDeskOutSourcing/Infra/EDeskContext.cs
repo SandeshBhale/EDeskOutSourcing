@@ -38,7 +38,7 @@ namespace Infra
         public DbSet<ProjectApplications> ProjectApplications { get; set; }
         public DbSet<ProjectAssigned> ProjectAssigneds { get; set; }
         public DbSet<ProjectDocument> ProjectDocuments { get; set; }
-        public DbSet<ProjectStages> ProjectStages { get; set; }
+        public DbSet<ProjectStage> ProjectStages { get; set; }
         public DbSet<ProjectTask> ProjectTasks { get; set; }
         public DbSet<ProjectTaskAssignment> ProjectTaskAssignments { get; set; }
         public DbSet<ProjectTaskDocument> ProjectTaskDocuments { get; set; }

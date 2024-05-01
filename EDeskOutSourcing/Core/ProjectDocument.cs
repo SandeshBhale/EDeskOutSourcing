@@ -17,5 +17,7 @@ namespace Core
         public Int64 ProjectId { get; set; }
         public virtual Project Project { get; set; }
         public string DocumentFilePath { get; set; }
+        [NotMapped]
+        public IFormFile ActualFile { get; set; }
     }
 }

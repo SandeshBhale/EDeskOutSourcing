@@ -25,6 +25,7 @@
     <Folder Include="Areas\AdminArea\Models\" />
     <Folder Include="Areas\CompanyArea\Data\" />
     <Folder Include="Areas\CompanyArea\Models\" />
+    <Folder Include="Views\Shared\Components\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,7 +49,11 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Update="Areas\CompanyArea\Views\ProjectStagesHome\Index.cshtml">
+    <Content Update="Areas\CompanyArea\Views\ProjectDocumentHome\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Areas\CompanyArea\Views\ProjectStageHome\Index.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
@@ -61,8 +66,10 @@
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Areas\AdminArea\Views\CompanyFAQHome\Create.cshtml" />
     <_ContentIncludedByDefault Remove="Areas\AdminArea\Views\CompanyFAQHome\Edit.cshtml" />
-    <_ContentIncludedByDefault Remove="Areas\CompanyArea\Views\ProjectStagesHome\Create.cshtml" />
-    <_ContentIncludedByDefault Remove="Areas\CompanyArea\Views\ProjectStagesHome\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\CompanyArea\Views\ProjectDocumentHome\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\CompanyArea\Views\ProjectDocumentHome\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\CompanyArea\Views\ProjectStageHome\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\CompanyArea\Views\ProjectStageHome\Edit.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -70,11 +77,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="Areas\CompanyArea\Views\ProjectStagesHome\Create.cshtml" />
+    <UpToDateCheckInput Remove="Areas\CompanyArea\Views\ProjectStageHome\Create.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="Areas\CompanyArea\Views\ProjectStagesHome\Edit.cshtml" />
+    <UpToDateCheckInput Remove="Areas\CompanyArea\Views\ProjectStageHome\Edit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Areas\CompanyArea\Views\ProjectDocumentHome\Create.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Areas\CompanyArea\Views\ProjectDocumentHome\Edit.cshtml" />
   </ItemGroup>
 
 </Project>

@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace Repo
 {
-    public interface IProjectStagesRepo : IGenRepo<ProjectStages>
+    public interface IProjectDocumentRepo : IGenRepo<ProjectDocument>
     {
-        void AddRecord(List<ProjectStagesVM> rec);
+        List<ProjectDocument> GetAllProjectDocument();
     }
 }

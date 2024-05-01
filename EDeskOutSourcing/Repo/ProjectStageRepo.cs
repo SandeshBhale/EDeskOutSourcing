@@ -10,19 +10,20 @@ using System.Threading.Tasks;
 
 namespace Repo
 {
-    public class ProjectStagesRepo : GenRepo<ProjectStages>, IProjectStagesRepo
+    public class ProjectStageRepo : GenRepo<ProjectStage>, IProjectStageRepo
     {
         EDeskContext ec;
-        public ProjectStagesRepo(EDeskContext ec) : base(ec)
+        ProjectStage ps;
+        public ProjectStageRepo(EDeskContext ec) : base(ec)
         {
             this.ec = ec;
         }
 
-        public void AddRecord(List<ProjectStagesVM> rec)
+        public void AddRecord(List<ProjectStage> rec)
         {
-            foreach(var temp in rec)
+            foreach (var temp in rec)
             {
-                ProjectStages ps = new ProjectStages();
+                ProjectStage ps = new ProjectStage();
                 ps.ProjectStageName = temp.ProjectStageName;
                 ps.DurationInHours = temp.DurationInHours;
                 ps.StageDescription = temp.StageDescription;
@@ -30,6 +31,15 @@ namespace Repo
                 this.ec.ProjectStages.Add(ps);
             }
             this.ec.SaveChanges();
+        }
+        public List<ProjectStage> GetStage()
+        {
+            return this.ec.ProjectStages.ToList();
+        }
+
+        public void GetProjectStageId(ProjectStage id)
+        {
+            var v = this.ps.ProjectStageId;
         }
     }
 }

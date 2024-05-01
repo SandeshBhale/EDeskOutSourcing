@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ProjectDocument>
+<!-- Bordered Table -->
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">File Name</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int srno = 1;
+        }
+        @foreach (var temp in Model)
+        {
+            <tr>
+                <th scope="row">@srno</th>
+                <td>@temp.DocName</td>
+                <td>
+                    <a class="btn btn-outline-primary" asp-action="Delete" asp-route-id="@temp.ProjectId">Delete</a>
+                </td>
+            </tr>
+            srno++;
+        }
+    </tbody>
+</table>
+<!-- End Bordered Table -->

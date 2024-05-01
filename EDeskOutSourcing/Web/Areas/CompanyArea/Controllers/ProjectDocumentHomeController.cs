@@ -1,8 +1,6 @@
 ﻿using Core;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Repo;
-using Repo.ViewModels;
 using System.ComponentModel.Design;
 using Web.CustFilter;
 
@@ -10,36 +8,39 @@ namespace Web.Areas.AdminArea.Controllers
 {
     [CompanyAuth]
     [Area("CompanyArea")]
-    public class ProjectStagesHomeController : Controller
+    public class ProjectDocumentHomeController : Controller
     {
-        IProjectStagesRepo repo;
-        IProjectRepo prepo;
-        public ProjectStagesHomeController(IProjectStagesRepo repo,IProjectRepo prepo)
+
+        IProjectDocumentRepo repo;
+
+        public ProjectDocumentHomeController(IProjectDocumentRepo repo)
         {
-            this.prepo = prepo;
             this.repo = repo;
         }
 
         public IActionResult Index()
         {
+            int companyId = Convert.ToInt32(HttpContext.Session.GetString("CompanyId"));
+            ViewBag.CompanyId = companyId;
             return View(this.repo.GetAll());
         }
 
         [HttpGet]
         public IActionResult Create()
         {
-            ViewBag.ProjectId = new SelectList(this.prepo.GetAll(), "ProjectId", "ProjectName");
+            int companyId = Convert.ToInt32(HttpContext.Session.GetString("CompanyId"));
+            ViewBag.CompanyId = companyId;
             return View();
         }
 
         [HttpPost]
-        public IActionResult Create(int ProjectId, ProjectStagesVM rec)
+        public IActionResult Create(ProjectDocument rec)
         {
-            ViewBag.ProjectId = new SelectList(this.prepo.GetAll(), "ProjectId", "ProjectName");
-            //if (ModelState.IsValid)
-            //{
-            //    return RedirectToAction("Index");
-            //}
+            if (ModelState.IsValid)
+            {
+                this.repo.Add(rec);
+                return RedirectToAction("Index");
+            }
             return View(rec);
         }
 
@@ -53,7 +54,7 @@ namespace Web.Areas.AdminArea.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(ProjectStages rec)
+        public IActionResult Edit(ProjectDocument rec)
         {
             if (ModelState.IsValid)
             {
@@ -68,12 +69,6 @@ namespace Web.Areas.AdminArea.Controllers
         {
             this.repo.Delete(id);
             return RedirectToAction("Index");
-        }
-
-        public JsonResult InsertProjectStages([FromBody] List<ProjectStagesVM> ProjectStages)
-        {
-            this.repo.AddRecord(ProjectStages);
-            return Json(ProjectStages);
         }
     }
 }

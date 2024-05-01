@@ -1,0 +1,22 @@
+﻿@model ProjectDocument
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Create Document</h5>
+        <hr />
+        <form>
+            <div class="row">
+                <input type="hidden" id="ProjectId" name="ProjectId" value="@ViewBag.ProjectId" />
+                <div class="col">
+                    <label class="control-label">Document Name : </label>
+                    <input asp-for="DocName" class="form-control" />
+                    <span asp-validation-for="DocName" class="text-danger"></span>
+                </div>
+                <div class="col">
+                    <label class="control-label">Choose File : </label>
+                    <input class="form-control" type="file" id="">
+                </div>
+            </div>
+        </form>
+        @await Component.InvokeAsync("UploadDocumentVC");
+    </div>
+</div>

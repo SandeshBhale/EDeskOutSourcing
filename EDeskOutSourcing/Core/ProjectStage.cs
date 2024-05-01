@@ -9,14 +9,21 @@ using System.Threading.Tasks;
 namespace Core
 {
     [Table("ProjectStagesTable")]
-    public class ProjectStages
+    public class ProjectStage
     {
         [Key]
         public Int64 ProjectStageId { get; set; }
         public string ProjectStageName { get; set; }
+        [ForeignKey("ProjectId")]
         public Int64 ProjectId { get; set; }
         public virtual Project Project { get; set; }
-        public double DurationInHours { get; set; }
+        public int DurationInHours { get; set; }
         public string StageDescription { get; set; }
+
+        public virtual List<ProjectStage> ProjectStages { get; set; }
+        public ProjectStage()
+        {
+            ProjectStages = new List<ProjectStage>();
+        }
     }
 }
