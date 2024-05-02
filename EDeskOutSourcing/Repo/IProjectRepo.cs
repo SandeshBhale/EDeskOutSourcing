@@ -10,6 +10,5 @@ namespace Repo
 {
     public interface IProjectRepo : IGenRepo<Project>
     {
-        
     }
 }

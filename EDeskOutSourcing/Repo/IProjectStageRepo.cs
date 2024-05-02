@@ -11,7 +11,8 @@ namespace Repo
     public interface IProjectStageRepo : IGenRepo<ProjectStage>
     {
         void AddRecord(List<ProjectStage> rec);
-        List<ProjectStage> GetStage();
+        List<ProjectStage> GetProject();
         void GetProjectStageId(ProjectStage id);
+        void RemoveStage(ProjectStageVM rec);
     }
 }

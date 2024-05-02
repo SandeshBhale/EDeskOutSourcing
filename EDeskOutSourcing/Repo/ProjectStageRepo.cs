@@ -32,14 +32,24 @@ namespace Repo
             }
             this.ec.SaveChanges();
         }
-        public List<ProjectStage> GetStage()
+        public List<ProjectStage> GetProject()
         {
             return this.ec.ProjectStages.ToList();
         }
 
+        public void RemoveStage(ProjectStageVM rec)
+        {
+            var oldstage = this.ec.ProjectStages.ToList().Where(p => p.ProjectId == rec.ProjectId);
+            foreach (var temp in oldstage)
+            {
+                this.ec.ProjectStages.Remove(temp);
+            }
+            this.ec.SaveChanges();
+        }
         public void GetProjectStageId(ProjectStage id)
         {
             var v = this.ps.ProjectStageId;
         }
+
     }
 }

@@ -34,6 +34,7 @@ builder.Services.AddScoped<ILocationRepo,LocationRepo>();
 builder.Services.AddScoped<IProjectRepo, ProjectRepo>();
 builder.Services.AddScoped<IProjectStageRepo, ProjectStageRepo>();
 builder.Services.AddScoped<IProjectDocumentRepo, ProjectDocumentRepo>();
+builder.Services.AddScoped<IFreelancerRepo, FreelancerRepo>();
 
 var app = builder.Build();
 app.UseStaticFiles();

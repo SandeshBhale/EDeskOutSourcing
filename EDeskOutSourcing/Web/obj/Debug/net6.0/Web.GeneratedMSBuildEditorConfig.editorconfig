@@ -234,6 +234,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerHome/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlckhvbWVcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerHome/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlckhvbWVcRWRpdFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlckhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/ManageAdmin/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlQWRtaW5cU2lnbkluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -246,10 +266,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlQ29tcGFueVxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/ManageFreelancer/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlRnJlZWxhbmNlclxTaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/ManageFreelancer/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlRnJlZWxhbmNlclxTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/UploadDocumentVC/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXBsb2FkRG9jdW1lbnRWQ1xEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/_FreelancerLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9GcmVlbGFuY2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

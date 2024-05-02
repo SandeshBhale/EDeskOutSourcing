@@ -1,6 +1,8 @@
 ﻿using Core;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Server.IIS.Core;
+using Microsoft.CodeAnalysis;
 using Repo;
 using Repo.ViewModels;
 using System.ComponentModel.Design;
@@ -65,8 +67,9 @@ namespace Web.Areas.AdminArea.Controllers
         [HttpGet]
         public ActionResult Edit(Int64 id)
         {
-            var rec = from t in this.repo.GetStage()
-                      where t.ProjectStageId == id
+            ViewBag.ProjectId = new SelectList(this.prepo.GetAll(), "ProjectId", "ProjectName");
+            var rec = from t in this.repo.GetProject()
+                      where t.ProjectId == id
                       select new ProjectStageVM
                       {
                           ProjectId = t.ProjectId,
@@ -79,44 +82,48 @@ namespace Web.Areas.AdminArea.Controllers
         }
 
 
-        //[HttpPost]
-        //public IActionResult Edit(ProjectStageVM rec)
-        //{
-        //    ViewBag.ProjectId = new SelectList(this.prepo.GetAll(), "ProjectId", "ProjectName");
-        //    if (ModelState.IsValid)
-        //    {
-        //        // first delete from child table 
-        //        var oldskill = this.repo.GetStage();
-        //        foreach (var temp in oldskill)
-        //        {
-        //            this.repo.EmployeeSkills.Remove(temp);
-        //        }
-        //        this.cntx.SaveChanges();
+        [HttpPost]
+        public IActionResult Edit(ProjectStageVM rec)
+        {
+            ViewBag.ProjectId = new SelectList(this.prepo.GetAll(), "ProjectId", "ProjectName");
+            if (ModelState.IsValid)
+            {
+                // first delete from child table 
+                //var oldskill = this.cntx.EmployeeSkills.Where(p => p.EmployeeID == rec.EmployeeID);
+                //foreach (var temp in oldskill)
+                //{
+                //    this.cntx.EmployeeSkills.Remove(temp);
+                //}
+                //this.cntx.SaveChanges();
+                this.repo.RemoveStage(rec);
 
-        //        //find parent table record and modify it
-        //        Employee erec = this.cntx.Employees.Find(rec.EmployeeID);
-        //        erec.EmpName = rec.Name;
-        //        erec.Address = rec.Address;
-        //        erec.EmailID = rec.EmailID;
-        //        erec.MobileNo = rec.MobileNo;
+                //ProjectStageVM prec = this.repo.GetProject().Find(rec.ProjectId);
+                
+
+                ////find parent table record and modify it
+                //Employee erec = this.cntx.Employees.Find(rec.EmployeeID);
+                //erec.EmpName = rec.Name;
+                //erec.Address = rec.Address;
+                //erec.EmailID = rec.EmailID;
+                //erec.MobileNo = rec.MobileNo;
 
 
-        //        //create and add child records
-        //        for (int i = 0; i < rec.SkillID.Count(); i++)
-        //        {
-        //            EmployeeSkill eskrec = new EmployeeSkill();
-        //            eskrec.SkillID = rec.SkillID[i];
-        //            eskrec.Reamrk = rec.Remark[i];
-        //            eskrec.ExperienceInMonths = rec.Experience[i];
-        //            erec.EmployeeSkills.Add(eskrec);
-        //        }
+                ////create and add child records
+                //for (int i = 0; i < rec.SkillID.Count(); i++)
+                //{
+                //    EmployeeSkill eskrec = new EmployeeSkill();
+                //    eskrec.SkillID = rec.SkillID[i];
+                //    eskrec.Reamrk = rec.Remark[i];
+                //    eskrec.ExperienceInMonths = rec.Experience[i];
+                //    erec.EmployeeSkills.Add(eskrec);
+                //}
 
-        //        this.cntx.SaveChanges();
-        //        return RedirectToAction("Index");
-        //    }
+                //this.cntx.SaveChanges();
+                //return RedirectToAction("Index");
+            }
 
-        //    return View(rec);
-        //}
+            return View(rec);
+        }
 
 
 
