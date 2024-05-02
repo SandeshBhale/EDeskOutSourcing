@@ -3,20 +3,23 @@
     <div class="card-body">
         <h5 class="card-title">Create Document</h5>
         <hr />
-        <form>
+        <form enctype="multipart/form-data" asp-action="Create" method="post" asp-route-id="@ViewBag.ProjectId">
             <div class="row">
-                <input type="hidden" id="ProjectId" name="ProjectId" value="@ViewBag.ProjectId" />
-                <div class="col">
-                    <label class="control-label">Document Name : </label>
-                    <input asp-for="DocName" class="form-control" />
+                <input type="hidden" asp-for="ProjectId" value="@ViewBag.ProjectId"/>
+                <div class="col-md-5">
+                    <input asp-for="DocName" class="form-control" placeholder="Document Name"/>
                     <span asp-validation-for="DocName" class="text-danger"></span>
                 </div>
-                <div class="col">
-                    <label class="control-label">Choose File : </label>
-                    <input class="form-control" type="file" id="">
+                <div class="col-md-5">
+                    <input asp-for="ActualFile" class="form-control" type="file">
+                    <span asp-validation-for="ActualFile" class="text-danger"></span>
+                </div>
+                <div class="col-md-2">
+                    <input class="form-control btn btn-primary" type="submit">
                 </div>
             </div>
         </form>
-        @await Component.InvokeAsync("UploadDocumentVC");
+        <hr />
+      @await Component.InvokeAsync("UploadDocumentVC")
     </div>
 </div>

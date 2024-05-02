@@ -33,3 +33,4 @@ C:\Users\SANDESH\Desktop\EDeskProject\EDeskOutSourcing\Core\obj\Debug\net6.0\Cor
 C:\Users\SANDESH\Desktop\EDeskProject\EDeskOutSourcing\Core\obj\Debug\net6.0\refint\Core.dll
 C:\Users\SANDESH\Desktop\EDeskProject\EDeskOutSourcing\Core\obj\Debug\net6.0\Core.pdb
 C:\Users\SANDESH\Desktop\EDeskProject\EDeskOutSourcing\Core\obj\Debug\net6.0\ref\Core.dll
+C:\Users\SANDESH\Desktop\EDeskProject\EDeskOutSourcing\Core\obj\Debug\net6.0\Core.csproj.AssemblyReference.cache

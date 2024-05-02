@@ -25,7 +25,7 @@
     <Folder Include="Areas\AdminArea\Models\" />
     <Folder Include="Areas\CompanyArea\Data\" />
     <Folder Include="Areas\CompanyArea\Models\" />
-    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="wwwroot\ProjectDocument\" />
   </ItemGroup>
 
   <ItemGroup>
