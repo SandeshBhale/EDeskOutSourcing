@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Technologies>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Technologies List</h5>
+
+        <a class="btn btn-success" asp-action="Create" asp-controller="TechnologiesHome"> Create </a>
+        <hr />
+        <!-- Bordered Table -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Technology Name</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int srno = 1;
+                }
+                @foreach (var temp in Model)
+                {
+                    <tr>
+                        <th scope="row">@srno</th>
+                        <td>@temp.TechnologyName</td>
+                        <td>
+                            <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@temp.TechnologiesId">Edit</a>
+                            |
+                            <a class="btn btn-outline-primary" asp-action="Delete" asp-route-id="@temp.TechnologiesId">Delete</a>
+                        </td>
+                    </tr>
+                    srno++;
+                }
+            </tbody>
+        </table>
+        <!-- End Bordered Table -->
+
+
+
+    </div>
+</div>

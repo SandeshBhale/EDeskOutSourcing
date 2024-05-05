@@ -4,16 +4,16 @@ using Repo;
 using System.ComponentModel.Design;
 using Web.CustFilter;
 
-namespace Web.Areas.AdminArea.Controllers
+namespace Web.Areas.CompanyArea.Controllers
 {
     [CompanyAuth]
     [Area("CompanyArea")]
-    public class FreelancerExperienceHomeController : Controller
+    public class ProjectHomeController : Controller
     {
 
         IProjectRepo repo;
 
-        public FreelancerExperienceHomeController(IProjectRepo repo)
+        public ProjectHomeController(IProjectRepo repo)
         {
             this.repo = repo;
         }

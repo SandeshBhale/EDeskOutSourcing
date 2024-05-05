@@ -35,7 +35,7 @@
             <br />
             <div class="col-12">
                 <label class="form-label">Project Status : </label>
-                <select class="form-select" name="ProjectStatus" asp-items="@Html.GetEnumSelectList<ProjectStatus>()">
+                <select class="form-select" asp-for="ProjectStatus" asp-items="@Html.GetEnumSelectList<ProjectStatus>()">
                     <option value="0"> Select Project Status </option>
                 </select>
                 <span asp-validation-for="ProjectStatus" class="text-danger"></span>
@@ -43,7 +43,7 @@
             <br />
             <div class="col-12">
                 <label class="form-label">Project Payment Terms : </label>
-                <select class="form-select" name="ProjectPaymentTerms" asp-items="@Html.GetEnumSelectList<ProjectPaymentTerms>()">
+                <select class="form-select" asp-for="ProjectPaymentTerms" asp-items="@Html.GetEnumSelectList<ProjectPaymentTerms>()">
                     <option value="0"> Select Project Payment Terms </option>
                 </select>
                 <span asp-validation-for="ProjectPaymentTerms" class="text-danger"></span>

@@ -232,6 +232,18 @@
                                 </a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link " asp-action="Index" asp-controller="TechnologiesHome">
+                                    <i class="icon">
+                                        <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                    <span class="item-name">Technologies</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link " asp-action="Index" asp-controller="SkillCategoryHome">
                                     <i class="icon">
                                         <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
@@ -241,6 +253,18 @@
                                         </svg>
                                     </i>
                                     <span class="item-name">Skill Category</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-action="Index" asp-controller="SkillHome">
+                                    <i class="icon">
+                                        <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                    <span class="item-name">Skill</span>
                                 </a>
                             </li>
                         </ul>
@@ -295,8 +319,8 @@
             </div>         
 
         <section class="section dashboard">
-            <div class="container">
-                <div class="row w-75 d-flex mx-auto mt-3">
+            <div class="container-fluid">
+                <div class="row d-flex mx-auto mt-3">
 
                     <div class="col-12">
                         @RenderBody()

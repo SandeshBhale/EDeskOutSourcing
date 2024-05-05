@@ -1,0 +1,38 @@
+﻿@model Skill
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div class="header-title">
+            <h4 class="card-title">State List</h4>
+        </div>
+    </div>
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">@ViewBag.Message</div>
+        }
+
+    </div>
+    <div class="card-body" mx-auto w-75>
+        <form class="form-horizontal" asp-action="Edit" method="post">
+            <input type="hidden" asp-for="SkillId" />
+            <div class="form-group row">
+                <label class="control-label col-sm-3 align-self-center mb-0">Skill Name : </label>
+                <div class="col-sm-9">
+                    <input asp-for="SkillName" class="form-control" />
+                    <span asp-validation-for="SkillName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-12">
+                <label class="form-label">Select Skill Category</label>
+                <select class="form-select" asp-for="SkillCategoryId" asp-items="@ViewBag.SkillCategoryId">
+                    <option> Select Stream</option>
+                </select>
+                <span asp-validation-for="SkillCategoryId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Update</button>
+            </div>
+        </form>
+    </div>
+</div>

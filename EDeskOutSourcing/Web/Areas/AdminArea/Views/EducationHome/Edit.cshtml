@@ -25,7 +25,7 @@
 
             <div class="col-12">
                 <label class="form-label">Education Type</label>
-                <select class="form-select" name="EducationType" asp-items="@Html.GetEnumSelectList<EducationType>()">
+                <select class="form-select" asp-for="EducationType" asp-items="@Html.GetEnumSelectList<EducationType>()">
                     <option value="0"> Select States</option>
                 </select>
                 <span asp-validation-for="EducationType" class="text-danger"></span>

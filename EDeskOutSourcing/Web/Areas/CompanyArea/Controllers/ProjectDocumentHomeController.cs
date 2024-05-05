@@ -5,7 +5,7 @@ using Repo;
 using System.ComponentModel.Design;
 using Web.CustFilter;
 
-namespace Web.Areas.AdminArea.Controllers
+namespace Web.Areas.CompanyArea.Controllers
 {
     [CompanyAuth]
     [Area("CompanyArea")]

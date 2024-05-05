@@ -4,16 +4,16 @@ using Repo;
 using Repo.ViewModels;
 using Web.CustFilter;
 
-namespace Web.Areas.AdminHome.Controllers
+namespace Web.Areas.CompanyHome.Controllers
 {
     [CompanyAuth]
     [Area("CompanyArea")]
-    public class FreelancerExperienceHomeController : Controller
+    public class CompanyHomeController : Controller
     {
         ICompany repo;
         ICityRepo crepo;
 
-        public FreelancerExperienceHomeController(ICompany repo, ICityRepo crepo)
+        public CompanyHomeController(ICompany repo, ICityRepo crepo)
         {
             this.repo = repo;
             this.crepo = crepo;

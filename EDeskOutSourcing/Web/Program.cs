@@ -1,4 +1,5 @@
 using Infra;
+using Microsoft.Build.Framework;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Repo;
@@ -39,6 +40,9 @@ builder.Services.AddScoped<IFreelancerExperienceRepo, FreelancerExperienceRepo>(
 builder.Services.AddScoped<IFreelancerEducationRepo, FreelancerEducationRepo>();
 builder.Services.AddScoped<IFreelancerPriviousProjectsRepo,FreelancerPriviousProjectsRepo>();
 builder.Services.AddScoped<IFreelancerCertificationsRepo, FreelancerCertificationsRepo>();
+builder.Services.AddScoped<ISkillRepo, SkillRepo>();
+builder.Services.AddScoped<ITechnologiesRepo, TechnologiesRepo>();
+builder.Services.AddScoped<IProjectTechnologyRepo, ProjectTechnologyRepo>();
 
 var app = builder.Build();
 app.UseStaticFiles();
