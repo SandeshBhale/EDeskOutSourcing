@@ -29,7 +29,8 @@ namespace Web.Controllers
                 {
                     HttpContext.Session.SetString("FreelancerId", res.LoggedInId.ToString());
                     HttpContext.Session.SetString("FullName", res.LoggedInName);
-                    return RedirectToAction("Index", "FreelancerHome", new { area = "FreelancerArea" });
+                    //return RedirectToAction("Index", "FreelancerHome", new { area = "FreelancerArea" });
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
@@ -61,7 +62,7 @@ namespace Web.Controllers
         public IActionResult SignOut()
         {
             HttpContext.Session.Clear();
-            return RedirectToAction("SignIn");
+            return RedirectToAction("Index","Home");
         }
 
     }

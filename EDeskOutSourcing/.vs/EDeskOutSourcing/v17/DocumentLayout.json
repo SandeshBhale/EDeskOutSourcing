@@ -3,52 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\views\\managecompany\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\views\\managecompany\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\areas\\freelancerarea\\views\\freelancercertificationshome\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\areas\\freelancerarea\\views\\freelancercertificationshome\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\views\\managefreelancer\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\views\\managefreelancer\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\areas\\freelancerarea\\controllers\\freelancercertificationshomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\areas\\freelancerarea\\controllers\\freelancercertificationshomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\areas\\freelancerarea\\views\\freelancercertificationshome\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\areas\\freelancerarea\\views\\freelancercertificationshome\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\controllers\\managefreelancercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\controllers\\managefreelancercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\views\\managefreelancer\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\views\\managefreelancer\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\areas\\adminarea\\controllers\\companyfaqhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\areas\\adminarea\\controllers\\companyfaqhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\repo\\freelancerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|solutionrelative:repo\\freelancerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\repo\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|solutionrelative:repo\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\repo\\ifreelancerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|solutionrelative:repo\\ifreelancerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\repo\\genrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|solutionrelative:repo\\genrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\views\\shared\\_freelancerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\views\\shared\\_freelancerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\areas\\freelancerarea\\views\\freelancercertificationshome\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\areas\\freelancerarea\\views\\freelancercertificationshome\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -61,20 +29,6 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SignUp.cshtml",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\ManageFreelancer\\SignUp.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\ManageFreelancer\\SignUp.cshtml",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\ManageFreelancer\\SignUp.cshtml",
-              "RelativeToolTip": "Web\\Views\\ManageFreelancer\\SignUp.cshtml",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGYAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T12:09:57.969Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
@@ -84,145 +38,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SignIn.cshtml",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\ManageCompany\\SignIn.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\ManageCompany\\SignIn.cshtml",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\ManageCompany\\SignIn.cshtml",
-              "RelativeToolTip": "Web\\Views\\ManageCompany\\SignIn.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T14:18:36.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SignIn.cshtml",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\ManageFreelancer\\SignIn.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\ManageFreelancer\\SignIn.cshtml",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\ManageFreelancer\\SignIn.cshtml",
-              "RelativeToolTip": "Web\\Views\\ManageFreelancer\\SignIn.cshtml",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAAAFMAAAB8AAAA",
+              "Title": "FreelancerCertificationsHomeController.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\FreelancerArea\\Controllers\\FreelancerCertificationsHomeController.cs",
+              "RelativeDocumentMoniker": "Web\\Areas\\FreelancerArea\\Controllers\\FreelancerCertificationsHomeController.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\FreelancerArea\\Controllers\\FreelancerCertificationsHomeController.cs",
+              "RelativeToolTip": "Web\\Areas\\FreelancerArea\\Controllers\\FreelancerCertificationsHomeController.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAowFUAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T10:38:02.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\FreelancerArea\\Views\\FreelancerCertificationsHome\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Web\\Areas\\FreelancerArea\\Views\\FreelancerCertificationsHome\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\FreelancerArea\\Views\\FreelancerCertificationsHome\\Edit.cshtml",
+              "RelativeToolTip": "Web\\Areas\\FreelancerArea\\Views\\FreelancerCertificationsHome\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T14:00:43.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginVM.cs",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\ViewModels\\LoginVM.cs",
-              "RelativeDocumentMoniker": "Repo\\ViewModels\\LoginVM.cs",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\ViewModels\\LoginVM.cs",
-              "RelativeToolTip": "Repo\\ViewModels\\LoginVM.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T12:35:36.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FreelancerRepo.cs",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\FreelancerRepo.cs",
-              "RelativeDocumentMoniker": "Repo\\FreelancerRepo.cs",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\FreelancerRepo.cs",
-              "RelativeToolTip": "Repo\\FreelancerRepo.cs",
-              "ViewState": "AQIAAGsAAAAAAAAAAAAewHwAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T12:30:20.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IFreelancerRepo.cs",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\IFreelancerRepo.cs",
-              "RelativeDocumentMoniker": "Repo\\IFreelancerRepo.cs",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\IFreelancerRepo.cs",
-              "RelativeToolTip": "Repo\\IFreelancerRepo.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T12:27:57.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GenRepo.cs",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\GenRepo.cs",
-              "RelativeDocumentMoniker": "Repo\\GenRepo.cs",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\GenRepo.cs",
-              "RelativeToolTip": "Repo\\GenRepo.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T12:27:38.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CompanyFAQHomeController.cs",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\AdminArea\\Controllers\\CompanyFAQHomeController.cs",
-              "RelativeDocumentMoniker": "Web\\Areas\\AdminArea\\Controllers\\CompanyFAQHomeController.cs",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\AdminArea\\Controllers\\CompanyFAQHomeController.cs",
-              "RelativeToolTip": "Web\\Areas\\AdminArea\\Controllers\\CompanyFAQHomeController.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T12:26:11.103Z",
+              "WhenOpened": "2024-05-05T10:33:23.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ManageFreelancerController.cs",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Controllers\\ManageFreelancerController.cs",
-              "RelativeDocumentMoniker": "Web\\Controllers\\ManageFreelancerController.cs",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Controllers\\ManageFreelancerController.cs",
-              "RelativeToolTip": "Web\\Controllers\\ManageFreelancerController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAjwC0AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T12:25:08.038Z",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\FreelancerArea\\Views\\FreelancerCertificationsHome\\Create.cshtml",
+              "RelativeDocumentMoniker": "Web\\Areas\\FreelancerArea\\Views\\FreelancerCertificationsHome\\Create.cshtml",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\FreelancerArea\\Views\\FreelancerCertificationsHome\\Create.cshtml",
+              "RelativeToolTip": "Web\\Areas\\FreelancerArea\\Views\\FreelancerCertificationsHome\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-05T10:26:33.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Web\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAYAAAA",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\FreelancerArea\\Views\\FreelancerCertificationsHome\\Index.cshtml",
+              "RelativeDocumentMoniker": "Web\\Areas\\FreelancerArea\\Views\\FreelancerCertificationsHome\\Index.cshtml",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\FreelancerArea\\Views\\FreelancerCertificationsHome\\Index.cshtml",
+              "RelativeToolTip": "Web\\Areas\\FreelancerArea\\Views\\FreelancerCertificationsHome\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAACCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T12:07:10.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Web\\Views\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T12:05:27.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_FreelancerLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\Shared\\_FreelancerLayout.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Shared\\_FreelancerLayout.cshtml",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\Shared\\_FreelancerLayout.cshtml",
-              "RelativeToolTip": "Web\\Views\\Shared\\_FreelancerLayout.cshtml",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAAAJYAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-02T11:58:47.273Z",
+              "WhenOpened": "2024-05-05T10:24:02.906Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,62 @@
+﻿@model FreelancerExperience
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div class="header-title">
+            <h4 class="card-title">Edit Experience Details</h4>
+        </div>
+    </div>
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">@ViewBag.Message</div>
+        }
+
+    </div>
+    <div class="card-body">
+        <form class="form-horizontal" asp-action="Edit" asp-controller="FreelancerExperienceHome" method="post">
+            <input type="hidden" id="FreelancerExperienceId" asp-for="FreelancerExperienceId" value="@ViewBag.FreelancerExperienceId" />
+            <input type="hidden" id="FreelancerId" asp-for="FreelancerId" value="@ViewBag.FreelancerId" />
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group">
+                        <label class="control-label" for="email1">Company Name : </label>
+                        <input asp-for="CompanyName" class="form-control" />
+                        <span asp-validation-for="CompanyName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label class="control-label" for="email1">Experience :</label>
+                        <input type="number" placeholder="In Months" asp-for="ExperienceInMonths" class="form-control" />
+                        <span asp-validation-for="ExperienceInMonths" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label class="control-label" for="email1">From Date : </label>
+                        <input type="date" asp-for="FromDate" class="form-control">
+                        <span asp-validation-for="FromDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label class="control-label" for="email1">To Date : </label>
+                        <input type="date" asp-for="ToDate" class="form-control">
+                        <span asp-validation-for="ToDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label class="control-label" for="email1">Role </label>
+                        <input asp-for="RoleName" class="form-control" />
+                        <span asp-validation-for="RoleName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Update</button>
+            </div>
+        </form>
+    </div>
+</div>

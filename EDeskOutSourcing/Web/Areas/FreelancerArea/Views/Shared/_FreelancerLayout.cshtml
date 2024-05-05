@@ -1,0 +1,344 @@
+﻿<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Layout File</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/adminbackend/images/favicon.ico">
+
+    <!-- Library / Plugin Css Build -->
+    <link rel="stylesheet" href="~/adminbackend/css/core/libs.min.css">
+
+    <!-- Aos Animation Css -->
+    <link rel="stylesheet" href="~/adminbackend/vendor/aos/dist/aos.css">
+
+    <!-- Hope Ui Design System Css -->
+    <link rel="stylesheet" href="~/adminbackend/css/hope-ui.min.css?v=4.0.0">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="~/adminbackend/css/custom.min.css?v=4.0.0">
+
+    <!-- Dark Css -->
+    <link rel="stylesheet" href="~/adminbackend/css/dark.min.css">
+
+    <!-- Customizer Css -->
+    <link rel="stylesheet" href="~/adminbackend/css/customizer.min.css">
+
+    <!-- RTL Css -->
+    <link rel="stylesheet" href="~/adminbackend/css/rtl.min.css">
+
+
+</head>
+<body class="  ">
+
+    <aside class="sidebar sidebar-default sidebar-white sidebar-base navs-rounded-all ">
+
+        <div class="sidebar-body pt-0 data-scrollbar">
+            <div class="sidebar-list">
+                <!-- Sidebar Menu Start -->
+                <ul class="navbar-nav iq-main-menu" id="sidebar-menu">
+                    <li class="nav-item static-item">
+                        <a class="nav-link static-item disabled" href="#" tabindex="-1">
+                            <span class="default-icon mt-2" style="color:red">E-Desk Outsourcing</span>
+                            <span class="mini-icon">-</span>
+                        </a>
+                    </li>
+                    <li><hr class="hr-horizontal"></li>
+                    <li class="nav-item static-item">
+                        <a class="nav-link static-item disabled" href="#" tabindex="-1">
+                            <span class="default-icon">Freelancer Rights</span>
+                            <span class="mini-icon">-</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-special" role="button" aria-expanded="false" aria-controls="sidebar-special">
+
+                            <span class="item-name">Manage Profile</span>
+                            <i class="right-icon">
+                                <svg class="icon-18" xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </i>
+                        </a>
+                        <ul class="sub-nav collapse" id="sidebar-special" data-bs-parent="#sidebar-menu">
+                            <li class="nav-item">
+                                <a class="nav-link " asp-action="Index" asp-controller="FreelancerExperienceHome">
+                                    <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
+                                        <g>
+                                            <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                        </g>
+                                    </svg>
+                                    <span class="item-name">Experience</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-action="Index" asp-controller="FreelancerEducationHome">
+                                    <i class="icon">
+                                        <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                    <span class="item-name">Education</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-action="Index" asp-controller="FreelancerPriviousProjectsHome">
+                                    <i class="icon">
+                                        <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                    <span class="item-name">Privious Projects</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-action="Index" asp-controller="FreelancerCertificationsHome">
+                                    <i class="icon">
+                                        <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                    <span class="item-name">Certifications</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-auth" role="button" aria-expanded="false" aria-controls="sidebar-user">
+                            <span class="item-name">FAQ</span>
+                            <i class="right-icon">
+                                <svg class="icon-18" xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </i>
+                        </a>
+                        <ul class="sub-nav collapse" id="sidebar-auth" data-bs-parent="#sidebar-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-action="Index" asp-controller="CompanyFAQHome">
+                                    <i class="icon">
+                                        <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                    <i class="sidenav-mini-icon"> L </i>
+                                    <span class="item-name">Company</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-action="Index" asp-controller="FreelancerFAQHome">
+                                    <i class="icon">
+                                        <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                    <i class="sidenav-mini-icon"> R </i>
+                                    <span class="item-name">Freelancer</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-user" role="button" aria-expanded="false" aria-controls="sidebar-user">
+                            <span class="item-name">Terms & Conditions</span>
+                            <i class="right-icon">
+                                <svg class="icon-18" xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </i>
+                        </a>
+                        <ul class="sub-nav collapse" id="sidebar-user" data-bs-parent="#sidebar-menu">
+                            <li class="nav-item">
+                                <a class="nav-link " asp-action="Index" asp-controller="TNCCompanyHome">
+                                    <i class="icon">
+                                        <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                    <i class="sidenav-mini-icon"> U </i>
+                                    <span class="item-name">Company</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-action="Index" asp-controller="TNCFreelancerHome">
+                                    <i class="icon">
+                                        <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                    <i class="sidenav-mini-icon"> A </i>
+                                    <span class="item-name">Freelancer</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#utilities-error" role="button" aria-expanded="false" aria-controls="utilities-error">
+                            <span class="item-name">Config</span>
+                            <i class="right-icon">
+                                <svg class="icon-18" xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </i>
+                        </a>
+                        <ul class="sub-nav collapse" id="utilities-error" data-bs-parent="#sidebar-menu">
+                            <li class="nav-item">
+                                <a class="nav-link " asp-action="Index" asp-controller="PaymentHome">
+                                    <i class="icon">
+                                        <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                    <span class="item-name">Payment Mode</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-action="Index" asp-controller="EducationHome">
+                                    <i class="icon">
+                                        <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                    <span class="item-name">Education</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " asp-action="Index" asp-controller="SkillCategoryHome">
+                                    <i class="icon">
+                                        <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
+                                            <g>
+                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                    <span class="item-name">Skill Category</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Sidebar Menu End -->
+            </div>
+        </div>
+        <div class="sidebar-footer"></div>
+    </aside>
+    <main class="main-content">
+        <div class="position-relative iq-banner">
+            <!--Nav Start-->
+            <nav class="mt-2 nav navbar navbar-expand-lg navbar-light iq-navbar">
+                <div class="container-fluid navbar-inner">
+                    <a href="../dashboard/index.html" class="navbar-brand">
+
+
+
+
+                        <h4 class="logo-title">Hope UI</h4>
+                    </a>
+                    <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
+                        <i class="icon">
+                            <svg width="20px" class="icon-20" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="mb-2 navbar-nav ms-auto align-items-center navbar-list mb-lg-0">
+
+                            <li class="nav-item dropdown">
+                                <a class="py-0 nav-link d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="caption ms-3 d-none d-md-block ">
+                                        @Context.Session.GetString("FullName")
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" asp-action="EditProfile" asp-controller="FreelancerHome" area="FreelancerArea">Edit Profile</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" asp-action="ChangePassword" asp-controller="FreelancerHome" asp-area="FreelancerArea">Change Password</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" asp-action="SignOut" asp-controller="ManageFreelancer" asp-area="">Logout</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" asp-action="Index" asp-controller="Home" asp-area="">Back To Home</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <section class="section dashboard">
+            <div class="container-fluid">
+                <div class="row d-flex mx-auto mt-4">
+
+                    <div class="col-12">
+                        @RenderBody()
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section Start -->
+        <footer class="footer fixed-bottom">
+            <div class="footer-body">
+                <div class="right-panel">
+                    ©<script>document.write(new Date().getFullYear())</script> RI-Tech Pune
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+
+
+
+    </main>
+
+    <!-- Wrapper End-->
+    <!-- Library Bundle Script -->
+    <script src="~/adminbackend/js/core/libs.min.js"></script>
+
+    <!-- External Library Bundle Script -->
+    <script src="~/adminbackend/js/core/external.min.js"></script>
+
+    <!-- Widgetchart Script -->
+    <script src="~/adminbackend/js/charts/widgetcharts.js"></script>
+
+    <!-- mapchart Script -->
+    <script src="~/adminbackend/js/charts/vectore-chart.js"></script>
+    <script src="~/adminbackend/js/charts/dashboard.js"></script>
+
+    <!-- fslightbox Script -->
+    <script src="~/adminbackend/js/plugins/fslightbox.js"></script>
+
+    <!-- Settings Script -->
+    <script src="~/adminbackend/js/plugins/setting.js"></script>
+
+    <!-- Slider-tab Script -->
+    <script src="~/adminbackend/js/plugins/slider-tabs.js"></script>
+
+    <!-- Form Wizard Script -->
+    <script src="~/adminbackend/js/plugins/form-wizard.js"></script>
+
+    <!-- AOS Animation Plugin-->
+    <script src="~/adminbackend/vendor/aos/dist/aos.js"></script>
+
+</body>
+</html>

@@ -27,7 +27,6 @@
     <Folder Include="Areas\CompanyArea\Models\" />
     <Folder Include="Areas\FreelancerArea\Data\" />
     <Folder Include="Areas\FreelancerArea\Models\" />
-    <Folder Include="Areas\FreelancerArea\Views\Shared\" />
     <Folder Include="wwwroot\ProjectDocument\" />
   </ItemGroup>
 
@@ -60,6 +59,10 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Update="Areas\FreelancerArea\Views\FreelancerExperienceHome\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -73,6 +76,8 @@
     <_ContentIncludedByDefault Remove="Areas\CompanyArea\Views\ProjectDocumentHome\Edit.cshtml" />
     <_ContentIncludedByDefault Remove="Areas\CompanyArea\Views\ProjectStageHome\Create.cshtml" />
     <_ContentIncludedByDefault Remove="Areas\CompanyArea\Views\ProjectStageHome\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\FreelancerArea\Views\FreelancerExperienceHome\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\FreelancerArea\Views\FreelancerExperienceHome\Edit.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -188,6 +193,14 @@
     <None Include="wwwroot\FreelancerFrontend\scss\bootstrap\scss\_type.scss" />
     <None Include="wwwroot\FreelancerFrontend\scss\bootstrap\scss\_utilities.scss" />
     <None Include="wwwroot\FreelancerFrontend\scss\bootstrap\scss\_variables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Areas\FreelancerArea\Views\FreelancerExperienceHome\Create.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Areas\FreelancerArea\Views\FreelancerExperienceHome\Edit.cshtml" />
   </ItemGroup>
 
 </Project>

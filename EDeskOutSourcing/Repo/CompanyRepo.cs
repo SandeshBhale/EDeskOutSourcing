@@ -1,4 +1,5 @@
-﻿using Infra;
+﻿using Core;
+using Infra;
 using Repo.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -101,6 +102,29 @@ namespace Repo
         public void LogOut()
         {
             throw new NotImplementedException();
+        }
+
+        public RepoResultVM AddCompanyRec(CompanySignUpVM rec)
+        {
+            RepoResultVM res = new RepoResultVM();
+            try
+            {
+                Company Company = new Company();
+                Company.CompanyName = rec.CompanyName;
+                Company.ContactPersonName = rec.ContactPersonName;
+                Company.EmailId = rec.EmailId;
+                Company.Password = rec.Password;
+                this.ec.Companies.Add(Company);
+                this.ec.SaveChanges();
+                res.IsSucess = true;
+                res.Message = "Sign Up SucessFull!";
+            }
+            catch (Exception ex)
+            {
+                res.IsSucess = false;
+                res.Message = ex.Message.ToString();
+            }
+            return res;
         }
     }
 }

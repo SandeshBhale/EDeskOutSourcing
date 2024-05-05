@@ -1,0 +1,141 @@
+﻿@model FreelancerEducationVM
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div class="header-title">
+            <h4 class="card-title">Add Education Details</h4>
+        </div>
+    </div>
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">@ViewBag.Message</div>
+        }
+
+    </div>
+    <div class="card-body">
+        <form class="form-horizontal" asp-action="Create" asp-controller="FreelancerEducationHome" method="post">
+            <input type="hidden" id="FreelancerId" name="FreelancerId" value="@ViewBag.FreelancerId" />
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label class="control-label">Select Education : </label>
+                        <select class="form-select" name="FreelancerEducations.EducationId" asp-items="@ViewBag.EducationId">
+                            <option value="0"> Select Education</option>
+                        </select>
+                        <span asp-validation-for="EducationId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label class="control-label" for="email1">Passing Year : </label>
+                        <input name="FreelancerEducations.PassingYear" class="form-control" />
+                        <span asp-validation-for="PassingYear" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label class="control-label" for="email1">Univercity Name </label>
+                        <input name="FreelancerEducations.UnivercityInstituteName" class="form-control" />
+                        <span asp-validation-for="UnivercityInstituteName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <select class="form-select" name="FreelancerEducations.EducationId" asp-items="@ViewBag.EducationId">
+                            <option value="0"> Select Education</option>
+                        </select>
+                        <span asp-validation-for="EducationId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <input name="FreelancerEducations.PassingYear" class="form-control" />
+                        <span asp-validation-for="PassingYear" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <input name="FreelancerEducations.UnivercityInstituteName" class="form-control" />
+                        <span asp-validation-for="UnivercityInstituteName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <select class="form-select" name="FreelancerEducations.EducationId" asp-items="@ViewBag.EducationId">
+                            <option value="0"> Select Education</option>
+                        </select>
+                        <span asp-validation-for="EducationId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <input name="FreelancerEducations.PassingYear" class="form-control" />
+                        <span asp-validation-for="PassingYear" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <input name="FreelancerEducations.UnivercityInstituteName" class="form-control" />
+                        <span asp-validation-for="UnivercityInstituteName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <select class="form-select" name="FreelancerEducations.EducationId" asp-items="@ViewBag.EducationId">
+                            <option value="0"> Select Education</option>
+                        </select>
+                        <span asp-validation-for="EducationId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <input name="FreelancerEducations.PassingYear" class="form-control" />
+                        <span asp-validation-for="PassingYear" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <input name="FreelancerEducations.UnivercityInstituteName" class="form-control" />
+                        <span asp-validation-for="UnivercityInstituteName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <select class="form-select" name="FreelancerEducations.EducationId" asp-items="@ViewBag.EducationId">
+                            <option value="0"> Select Education</option>
+                        </select>
+                        <span asp-validation-for="EducationId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <input name="FreelancerEducations.PassingYear" class="form-control" />
+                        <span asp-validation-for="PassingYear" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <input name="FreelancerEducations.UnivercityInstituteName" class="form-control" />
+                        <span asp-validation-for="UnivercityInstituteName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Create</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+﻿@model FreelancerCertifications
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div class="header-title">
+            <h4 class="card-title">Edit Certification Details</h4>
+        </div>
+    </div>
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">@ViewBag.Message</div>
+        }
+
+    </div>
+    <div class="card-body">
+        <form class="form-horizontal" asp-action="Edit" asp-controller="FreelancerCertificationsHome" method="post">
+            <input type="hidden" id="FreelancerCertificaionId" asp-for="FreelancerCertificationId" value="@ViewBag.FreelancerCertificationId" />
+            <input type="hidden" id="FreelancerId" asp-for="FreelancerId" value="@ViewBag.FreelancerId" />
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label class="control-label" for="email1">Certificate Title : </label>
+                        <input asp-for="CertificateTitle" class="form-control" />
+                        <span asp-validation-for="CertificateTitle" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label class="control-label" for="email1">Passing Year </label>
+                        <input asp-for="PassingYear" class="form-control" />
+                        <span asp-validation-for="PassingYear" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label class="control-label" for="email1">Institute Name </label>
+                        <input asp-for="UnivercityInstituteName" class="form-control" />
+                        <span asp-validation-for="UnivercityInstituteName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Update</button>
+            </div>
+        </form>
+    </div>
+</div>

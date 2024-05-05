@@ -1,0 +1,43 @@
+﻿@model FreelancerPriviousProjects
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div class="header-title">
+            <h4 class="card-title">Edit Privious Project Details</h4>
+        </div>
+    </div>
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">@ViewBag.Message</div>
+        }
+
+    </div>
+    <div class="card-body">
+        <form class="form-horizontal" asp-action="Edit" asp-controller="FreelancerPriviousProjectsHome" method="post">
+            <input type="hidden" id="FreelancerPriviousProjectsId" asp-for="FreelancerPriviousProjectsId" value="@ViewBag.FreelancerPriviousProjectsId" />
+            <input type="hidden" id="FreelancerId" asp-for="FreelancerId" value="@ViewBag.FreelancerId" />
+            <div class="row">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="form-group">
+                            <label class="control-label" for="email1">Project Title : </label>
+                            <input asp-for="ProjectTitle" class="form-control" />
+                            <span asp-validation-for="ProjectTitle" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="form-group">
+                            <label class="control-label" for="email1">Project Description </label>
+                            <input asp-for="ProjectDescription" class="form-control" />
+                            <span asp-validation-for="ProjectDescription" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Update</button>
+            </div>
+        </form>
+    </div>
+</div>

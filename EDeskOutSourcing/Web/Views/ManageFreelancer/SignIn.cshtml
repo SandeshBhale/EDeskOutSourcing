@@ -53,7 +53,7 @@
                                 <div class="card-body">
                                     <h2 class="mb-2 text-center">Freelancer LogIn</h2>
                                     <p class="text-center">Login to stay connected.</p>
-                                    <form asp-action="SignIn" method="Post">
+                                    <form asp-action="SignIn" asp-controller="ManageFreelancer" method="Post">
                                         <div class="col-12">
                                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                                         </div>
@@ -73,15 +73,11 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 d-flex justify-content-between">
-                                                <div class="form-check mb-3">
-                                                    <input type="checkbox" class="form-check-input" id="customCheck1">
-                                                    <label class="form-check-label" for="customCheck1">Remember Me</label>
-                                                </div>
                                                 <a asp-action="SignUp" asp-controller="ManageFreelancer" asp-area="">SIGN UP</a>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center">
-                                            <button type="submit" class="btn btn-primary" asp-controller="Home" asp-action="">Sign In</button>
+                                            <button type="submit" class="btn btn-primary" asp-controller="ManageFreelancer" asp-action="SignIn">Sign In</button>
                                         </div>
 
                                     </form>

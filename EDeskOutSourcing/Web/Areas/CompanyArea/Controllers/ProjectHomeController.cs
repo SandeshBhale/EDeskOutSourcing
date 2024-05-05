@@ -8,12 +8,12 @@ namespace Web.Areas.AdminArea.Controllers
 {
     [CompanyAuth]
     [Area("CompanyArea")]
-    public class ProjectHomeController : Controller
+    public class FreelancerExperienceHomeController : Controller
     {
 
         IProjectRepo repo;
 
-        public ProjectHomeController(IProjectRepo repo)
+        public FreelancerExperienceHomeController(IProjectRepo repo)
         {
             this.repo = repo;
         }

@@ -1,0 +1,193 @@
+﻿@model FreelancerExperienceVM
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div class="header-title">
+            <h4 class="card-title">Add Experience Details</h4>
+        </div>
+    </div>
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">@ViewBag.Message</div>
+        }
+
+    </div>
+    <div class="card-body">
+        <form class="form-horizontal" asp-action="Create" asp-controller="FreelancerExperienceHome" method="post">
+            <input type="hidden" id="FreelancerId" name="FreelancerId" value="@ViewBag.FreelancerId" />
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group">
+                        <label class="control-label" for="email1">Company Name : </label>
+                        <input name="FreelancerExperiences.CompanyName" class="form-control" />
+                        <span asp-validation-for="CompanyName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label class="control-label" for="email1">Experience :</label>
+                        <input type="number" placeholder="In Months" name="FreelancerExperiences.ExperienceInMonths" class="form-control" />
+                        <span asp-validation-for="ExperienceInMonths" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label class="control-label" for="email1">From Date : </label>
+                        <input type="date" name="FreelancerExperiences.FromDate" class="form-control">
+                        <span asp-validation-for="FromDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <label class="control-label" for="email1">To Date : </label>
+                        <input type="date" name="FreelancerExperiences.ToDate" class="form-control">
+                        <span asp-validation-for="ToDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label class="control-label" for="email1">Role </label>
+                        <input name="FreelancerExperiences.RoleName" class="form-control" />
+                        <span asp-validation-for="RoleName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group">
+                        <input name="FreelancerExperiences.CompanyName" class="form-control" />
+                        <span asp-validation-for="CompanyName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">                       
+                        <input type="number" placeholder="In Months" name="FreelancerExperiences.ExperienceInMonths" class="form-control" />
+                        <span asp-validation-for="ExperienceInMonths" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">                       
+                        <input type="date" name="FreelancerExperiences.FromDate" class="form-control">
+                        <span asp-validation-for="FromDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">                      
+                        <input type="date" name="FreelancerExperiences.ToDate" class="form-control">
+                        <span asp-validation-for="ToDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">                       
+                        <input name="FreelancerExperiences.RoleName" class="form-control" />
+                        <span asp-validation-for="RoleName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group">
+                        <input name="FreelancerExperiences.CompanyName" class="form-control" />
+                        <span asp-validation-for="CompanyName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <input type="number" placeholder="In Months" name="FreelancerExperiences.ExperienceInMonths" class="form-control" />
+                        <span asp-validation-for="ExperienceInMonths" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <input type="date" name="FreelancerExperiences.FromDate" class="form-control">
+                        <span asp-validation-for="FromDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <input type="date" name="FreelancerExperiences.ToDate" class="form-control">
+                        <span asp-validation-for="ToDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <input name="FreelancerExperiences.RoleName" class="form-control" />
+                        <span asp-validation-for="RoleName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group">
+                        <input name="FreelancerExperiences.CompanyName" class="form-control" />
+                        <span asp-validation-for="CompanyName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <input type="number" placeholder="In Months" name="FreelancerExperiences.ExperienceInMonths" class="form-control" />
+                        <span asp-validation-for="ExperienceInMonths" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <input type="date" name="FreelancerExperiences.FromDate" class="form-control">
+                        <span asp-validation-for="FromDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <input type="date" name="FreelancerExperiences.ToDate" class="form-control">
+                        <span asp-validation-for="ToDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <input name="FreelancerExperiences.RoleName" class="form-control" />
+                        <span asp-validation-for="RoleName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group">
+                        <input name="FreelancerExperiences.CompanyName" class="form-control" />
+                        <span asp-validation-for="CompanyName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <input type="number" placeholder="In Months" name="FreelancerExperiences.ExperienceInMonths" class="form-control" />
+                        <span asp-validation-for="ExperienceInMonths" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <input type="date" name="FreelancerExperiences.FromDate" class="form-control">
+                        <span asp-validation-for="FromDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <input type="date" name="FreelancerExperiences.ToDate" class="form-control">
+                        <span asp-validation-for="ToDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <input name="FreelancerExperiences.RoleName" class="form-control" />
+                        <span asp-validation-for="RoleName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Create</button>
+            </div>
+        </form>
+    </div>
+</div>

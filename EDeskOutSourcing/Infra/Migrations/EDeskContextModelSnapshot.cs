@@ -289,14 +289,23 @@ namespace Infra.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("FreelancerExperienceId"));
 
+                    b.Property<string>("CompanyName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("ExperienceInMonths")
                         .HasColumnType("int");
 
                     b.Property<long>("FreelancerId")
                         .HasColumnType("bigint");
 
+                    b.Property<DateTime>("FromDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("RoleName")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ToDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("FreelancerExperienceId");
 

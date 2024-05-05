@@ -13,5 +13,6 @@ namespace Repo
         RepoResultVM ChangePassword(ChangePasswordVM rec, Int64 id);
         RepoResultVM EditProfile(CompanyProfileVM rec, Int64 id);
         CompanyProfileVM GetById(Int64 id);
+        RepoResultVM AddCompanyRec(CompanySignUpVM rec);
     }
 }

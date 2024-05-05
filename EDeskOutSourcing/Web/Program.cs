@@ -35,6 +35,10 @@ builder.Services.AddScoped<IProjectRepo, ProjectRepo>();
 builder.Services.AddScoped<IProjectStageRepo, ProjectStageRepo>();
 builder.Services.AddScoped<IProjectDocumentRepo, ProjectDocumentRepo>();
 builder.Services.AddScoped<IFreelancerRepo, FreelancerRepo>();
+builder.Services.AddScoped<IFreelancerExperienceRepo, FreelancerExperienceRepo>();
+builder.Services.AddScoped<IFreelancerEducationRepo, FreelancerEducationRepo>();
+builder.Services.AddScoped<IFreelancerPriviousProjectsRepo,FreelancerPriviousProjectsRepo>();
+builder.Services.AddScoped<IFreelancerCertificationsRepo, FreelancerCertificationsRepo>();
 
 var app = builder.Build();
 app.UseStaticFiles();

@@ -47,12 +47,12 @@ namespace Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult SignUp(SignUpVM rec)
+        public IActionResult SignUp(CompanySignUpVM rec)
         {
             if (ModelState.IsValid)
             {
-                
-                return RedirectToAction("Index");
+                this.repo.AddCompanyRec(rec);
+                return RedirectToAction("SignIn");
             }
             return View(rec);
         }

@@ -37,7 +37,7 @@
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
             <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
-                <h1 class="m-0 text-primary">JobEntry</h1>
+                <h1 class="m-0 text-primary">EDesk OutSourcing</h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -63,8 +63,31 @@
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a asp-action="SignIn" asp-area="" asp-controller="ManageFreelancer" class="btn btn-primary py-4  mx-2">Freelancer LogIn</a>
-                <a asp-action="SignIn"asp-area="" asp-controller="ManageCompany" class="btn btn-primary py-4 ">Company LogIn</a>
+
+                    @if (Context.Session    .GetString("FreelancerId") != null)
+                    {
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hi! @Context.Session.GetString("FullName")</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a asp-action="Index" asp-area="FreelancerArea" asp-controller="FreelancerHome" class="dropdown-item">Go To DashBoard</a>
+                            <a asp-action="SignOut" asp-controller="ManageFreelancer" class="dropdown-item">LogOut</a>
+                        </div>
+                    </div>
+                    @* <li>
+                        <a href="#" class="text-Info">Hi! @Context.Session.GetString("FullName")</a>
+                        <ul class="submenu">
+                            <li><a asp-action="EditProfile" asp-controller="FreelanerHome" asp-area="FreelancerArea">Edit Profile</a></li>
+                            <li><a asp-action="SignOut" asp-controller="ManageUsers" asp-area="">SignOut</a></li>
+                        </ul>
+                    </li> *@
+                    }
+
+                    @if (Context.Session.GetString("FreelancerId") == null)
+                    {
+                        <a asp-action="SignIn" asp-area="" asp-controller="ManageFreelancer" class="btn btn-primary py-4  mx-2">Freelancer LogIn</a>
+                        <a asp-action="SignIn" asp-area="" asp-controller="ManageCompany" class="btn btn-primary py-4 ">Company LogIn</a>
+                    }
+                             
             </div>
         </nav>
         <!-- Navbar End -->
