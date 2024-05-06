@@ -1,0 +1,26 @@
+﻿@model ProjectSkill
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div class="header-title">
+            <h4 class="card-title">Add Project Skills</h4>
+        </div>
+    </div>
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">@ViewBag.Message</div>
+        }
+
+    </div>
+    <div class="card-body">
+        <form class="form-horizontal" asp-action="Create" method="post">
+            <input type="hidden" id="ProjectId" name="ProjectId" value="@ViewBag.ProjectId" />
+
+           @await Component.InvokeAsync("SkillCheckBoxVC")
+           <br />
+            <div class="form-group">
+                <input type="submit" value="Add Skills" class="btn btn-primary btn-sm" />
+            </div>
+        </form>
+    </div>
+</div>

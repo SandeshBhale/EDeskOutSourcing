@@ -521,6 +521,29 @@ namespace Infra.Migrations
                     b.ToTable("ProjectDocumentTable");
                 });
 
+            modelBuilder.Entity("Core.ProjectSkill", b =>
+                {
+                    b.Property<long>("ProjectSkillId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ProjectSkillId"));
+
+                    b.Property<long>("ProjectId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("SkillId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("ProjectSkillId");
+
+                    b.HasIndex("ProjectId");
+
+                    b.HasIndex("SkillId");
+
+                    b.ToTable("ProjectSkillTable");
+                });
+
             modelBuilder.Entity("Core.ProjectStage", b =>
                 {
                     b.Property<long>("ProjectStageId")
@@ -825,6 +848,29 @@ namespace Infra.Migrations
                     b.HasIndex("ProjectTaskReportReleasePaymentConflictId");
 
                     b.ToTable("ProjectTaskReportReleasePaymentConflictSolutionTable");
+                });
+
+            modelBuilder.Entity("Core.ProjectTechnology", b =>
+                {
+                    b.Property<long>("ProjectTechnologyId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ProjectTechnologyId"));
+
+                    b.Property<long>("ProjectId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("TechnologiesId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("ProjectTechnologyId");
+
+                    b.HasIndex("ProjectId");
+
+                    b.HasIndex("TechnologiesId");
+
+                    b.ToTable("ProjectTechnology");
                 });
 
             modelBuilder.Entity("Core.SelectedApplications", b =>
@@ -1148,6 +1194,25 @@ namespace Infra.Migrations
                     b.Navigation("Project");
                 });
 
+            modelBuilder.Entity("Core.ProjectSkill", b =>
+                {
+                    b.HasOne("Core.Project", "Project")
+                        .WithMany()
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Core.Skill", "Skill")
+                        .WithMany()
+                        .HasForeignKey("SkillId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Project");
+
+                    b.Navigation("Skill");
+                });
+
             modelBuilder.Entity("Core.ProjectStage", b =>
                 {
                     b.HasOne("Core.Project", "Project")
@@ -1299,6 +1364,25 @@ namespace Infra.Migrations
                         .IsRequired();
 
                     b.Navigation("GetProjectTaskReportReleasePaymentConflict");
+                });
+
+            modelBuilder.Entity("Core.ProjectTechnology", b =>
+                {
+                    b.HasOne("Core.Project", "Project")
+                        .WithMany()
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Core.Technologies", "Technologies")
+                        .WithMany()
+                        .HasForeignKey("TechnologiesId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Project");
+
+                    b.Navigation("Technologies");
                 });
 
             modelBuilder.Entity("Core.SelectedApplications", b =>

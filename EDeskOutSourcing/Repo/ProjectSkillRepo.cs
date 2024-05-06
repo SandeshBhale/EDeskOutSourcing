@@ -17,5 +17,40 @@ namespace Repo
         {
             this.ec = ec;
         }
+
+        public void AddRec(ProjectVM rec)
+        {
+            ProjectSkill p = new ProjectSkill();
+            p.ProjectId = rec.ProjectId;
+
+            foreach (var temp in rec.ProjSkills)
+            {
+                
+                p.SkillId = temp;
+                this.ec.ProjectSkill.Add(p);
+                this.ec.Add(p);
+            }
+            this.ec.SaveChanges();
+        }
+
+        public void AddRecTech(ProjectVM rec)
+        {
+            ProjectTechnology p = new ProjectTechnology();
+            p.ProjectId = rec.ProjectId;
+
+            foreach (var temp in rec.ProjTechnologies)
+            {
+
+                p.TechnologiesId = temp;
+                this.ec.ProjectTechnology.Add(p);
+                this.ec.Add(p);
+            }
+            this.ec.SaveChanges();
+        }
+
+        public List<ProjectSkill> GetProjectSkills()
+        {
+            return this.ec.ProjectSkill.ToList();
+        }
     }
 }

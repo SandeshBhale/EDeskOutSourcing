@@ -17,5 +17,10 @@ namespace Repo
         {
             this.ec = ec;
         }
+
+        public List<ProjectTechnology> GetProjectTechnology()
+        {
+            return this.ec.ProjectTechnology.ToList();
+        }
     }
 }

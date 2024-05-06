@@ -68,5 +68,12 @@ namespace Web.Areas.CompanyArea.Controllers
             this.repo.Delete(id);
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public IActionResult Details(Int64 id)
+        {
+            var rec =this.repo.GetById(id);
+            return View(rec);
+        }
     }
 }

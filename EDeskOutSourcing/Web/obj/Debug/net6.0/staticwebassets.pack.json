@@ -3413,6 +3413,10 @@
       "PackagePath": "staticwebassets\\ProjectDocument\\.Net resume.pdf"
     },
     {
+      "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectDocument\\Coditas.pdf",
+      "PackagePath": "staticwebassets\\ProjectDocument\\Coditas.pdf"
+    },
+    {
       "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\jquery-validate\\additional-methods.js",
       "PackagePath": "staticwebassets\\jquery-validate\\additional-methods.js"
     },

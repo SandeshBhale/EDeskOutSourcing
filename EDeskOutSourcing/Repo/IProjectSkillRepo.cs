@@ -10,5 +10,10 @@ namespace Repo
 {
     public interface IProjectSkillRepo : IGenRepo<ProjectSkill>
     {
+        void AddRec(ProjectVM rec);
+
+        void AddRecTech(ProjectVM rec);
+
+        List<ProjectSkill> GetProjectSkills();
     }
 }

@@ -226,12 +226,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdEhvbWVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectHome/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdEhvbWVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectHome/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdEhvbWVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectHome/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdEhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectSkill/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFNraWxsXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectStageHome/Create.cshtml]
@@ -244,6 +252,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectStageHome/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFN0YWdlSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectTechnology/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFRlY2hub2xvZ3lcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/Shared/_CompanyLayout.cshtml]
@@ -352,6 +364,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/ManageFreelancer/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlRnJlZWxhbmNlclxTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/ProjectSkillsVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvamVjdFNraWxsc1ZDXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/ProjectStagesVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvamVjdFN0YWdlc1ZDXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/ProjectTechnologiesVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvamVjdFRlY2hub2xvZ2llc1ZDXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/SkillCheckBoxVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2tpbGxDaGVja0JveFZDXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/TechnologyCheckBoxVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGVjaG5vbG9neUNoZWNrQm94VkNcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/UploadDocumentVC/Default.cshtml]

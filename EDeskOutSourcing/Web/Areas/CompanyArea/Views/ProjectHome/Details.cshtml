@@ -1,0 +1,50 @@
+﻿@model Project
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Projects List</h5>
+        <div class="card-body">
+            <h5 class="card-title">Projects Details</h5>
+            <hr />
+            <div class="row">
+                <div class="col-3"><label class="control-label">Project Name </label></div>
+                <div class="col-3">: @Model.ProjectName</div>
+            </div>
+            <div class="row">
+                <div class="col-3"><label class="control-label">Project Description  </label></div>
+                <div class="col-3">: @Model.ProjectDescription</div>
+            </div>
+            <div class="row">
+                <div class="col-3"><label class="control-label">Company Name </label></div>
+                <div class="col-3">: @Model.Company.CompanyName</div>
+            </div>
+            <div class="row">
+                <div class="col-3"><label class="control-label">Project Status </label></div>
+                <div class="col-3">: @Enum.GetName(typeof(ProjectStatus), Model.ProjectStatus)</div>
+            </div>
+            <div class="row">
+                <div class="col-3"><label class="control-label">Project Payment Terms : </label></div>
+                <div class="col-3">: @Enum.GetName(typeof(ProjectPaymentTerms), Model.ProjectPaymentTerms)</div>
+            </div>
+            <div class="row">
+                <div class="col-3"><label class="control-label">Project Terms and Conditions </label></div>
+                <div class="col-3">: @Model.ProjectTermsAndConditions</div>
+            </div>
+            <div class="row">
+                <div class="col-3"><label class="control-label">Budjet</label></div>
+                <div class="col-3">: @Model.Budget</div>
+            </div>
+            <div class="row">
+                <div class="col-3"><label class="control-label">Expected Completion </label></div>
+                <div class="col-3">: @Model.ExpectedCompletionDurationInDays</div>
+            </div>
+        </div>
+        
+        @await Component.InvokeAsync("ProjectStagesVC")
+
+        @await Component.InvokeAsync("ProjectSkillsVC")
+
+        @await Component.InvokeAsync("ProjectTechnologiesVC")
+
+    </div>
+</div>

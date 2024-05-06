@@ -57,6 +57,8 @@ namespace Infra
         public DbSet<TerminatedProject> TerminatedProjects { get; set;}
         public DbSet<TNCCompany> TNCCompany { get; set; }
         public DbSet<TNCFreelancer> TNCFreelancers { get; set; }
+        public DbSet<ProjectSkill> ProjectSkill { get; set; }
+        public DbSet<ProjectTechnology> ProjectTechnology { get; set; }
     
     }
 }

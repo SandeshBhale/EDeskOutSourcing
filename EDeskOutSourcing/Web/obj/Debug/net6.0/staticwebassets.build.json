@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cUAxkQRMVvXa5DizqUrFY2LPHvz8Tsoi0iBgP+/lHQ0=",
+  "Hash": "iUjdpUi/Nb553VnOD3y8CFLrW4IZhS9JQd2F/ODXA6o=",
   "Source": "Web",
   "BasePath": "_content/Web",
   "Mode": "Default",
@@ -18825,6 +18825,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProjectDocument\\.Net resume.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectDocument\\Coditas.pdf",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "ProjectDocument/Coditas.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectDocument\\Coditas.pdf"
     }
   ]
 }

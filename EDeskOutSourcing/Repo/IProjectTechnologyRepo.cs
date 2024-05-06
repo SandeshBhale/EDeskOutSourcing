@@ -10,5 +10,6 @@ namespace Repo
 {
     public interface IProjectTechnologyRepo : IGenRepo<ProjectTechnology>
     {
+        List<ProjectTechnology> GetProjectTechnology();
     }
 }

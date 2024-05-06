@@ -29,8 +29,8 @@
                         <tr>
                             <th scope="row">@srno</th>
                             <td>@temp.ProjectName</td>
-                            <td><a class="btn btn-info btn-sm" asp-action="Index" asp-controller="ProjectSkillHome" asp-route-id="@temp.ProjectId">Add Skills</a></td>
-                            <td><a class="btn btn-info btn-sm" asp-action="Index" asp-controller="ProjectTechnologyHome" asp-route-id="@temp.ProjectId">Add Technology</a></td>
+                            <td><a class="btn btn-info btn-sm" asp-action="Create" asp-controller="ProjectSkill" asp-route-id="@temp.ProjectId">Add Skills</a></td>
+                            <td><a class="btn btn-info btn-sm" asp-action="Create" asp-controller="ProjectTechnology" asp-route-id="@temp.ProjectId">Add Technology</a></td>
                             <td><a class="btn btn-info btn-sm" asp-action="Index" asp-controller="ProjectDocumentHome" asp-route-id="@temp.ProjectId">Document</a></td>
                             <td>
                                 <a class="btn btn-outline-primary btn-sm" asp-action="Edit" asp-route-id="@temp.ProjectId">Edit</a>

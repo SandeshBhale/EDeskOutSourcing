@@ -43,6 +43,7 @@ builder.Services.AddScoped<IFreelancerCertificationsRepo, FreelancerCertificatio
 builder.Services.AddScoped<ISkillRepo, SkillRepo>();
 builder.Services.AddScoped<ITechnologiesRepo, TechnologiesRepo>();
 builder.Services.AddScoped<IProjectTechnologyRepo, ProjectTechnologyRepo>();
+builder.Services.AddScoped<IProjectSkillRepo, ProjectSkillRepo>();
 
 var app = builder.Build();
 app.UseStaticFiles();
