@@ -3417,6 +3417,14 @@
       "PackagePath": "staticwebassets\\ProjectDocument\\Coditas.pdf"
     },
     {
+      "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectDocument\\UI-add-project-stages.jpg",
+      "PackagePath": "staticwebassets\\ProjectDocument\\UI-add-project-stages.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectDocument\\Untitled.jpg",
+      "PackagePath": "staticwebassets\\ProjectDocument\\Untitled.jpg"
+    },
+    {
       "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\jquery-validate\\additional-methods.js",
       "PackagePath": "staticwebassets\\jquery-validate\\additional-methods.js"
     },

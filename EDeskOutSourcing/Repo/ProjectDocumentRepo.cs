@@ -22,5 +22,10 @@ namespace Repo
         {
             return this.ec.ProjectDocuments.ToList();
         }
+
+        public List<ProjectDocument> GetProjectDocumentById(Int64 id)
+        {
+            return ec.ProjectDocuments.Where(p => p.ProjectId == id).ToList();
+        }
     }
 }

@@ -11,5 +11,7 @@ namespace Repo
     public interface IProjectDocumentRepo : IGenRepo<ProjectDocument>
     {
         List<ProjectDocument> GetAllProjectDocument();
+
+        List<ProjectDocument> GetProjectDocumentById(Int64 id);
     }
 }

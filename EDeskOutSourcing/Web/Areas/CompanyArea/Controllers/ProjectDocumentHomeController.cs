@@ -26,6 +26,8 @@ namespace Web.Areas.CompanyArea.Controllers
         public IActionResult Index(Int64 id)
         {
             ViewBag.ProjectId = id;
+            var pDoc = this.repo.GetProjectDocumentById(id);
+            ViewBag.ProjectDocument = pDoc;
             return View();
         }
 

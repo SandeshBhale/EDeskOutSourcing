@@ -20,6 +20,6 @@
             </div>
         </form>
         <hr />
-      @await Component.InvokeAsync("UploadDocumentVC")
+      @await Component.InvokeAsync("UploadDocumentVC",new {id=ViewBag.ProjectDocument})
     </div>
 </div>

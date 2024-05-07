@@ -22,7 +22,7 @@ namespace Web.Areas.CompanyArea.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            return View(this.repo.GetAll());
         }
 
         [HttpGet]

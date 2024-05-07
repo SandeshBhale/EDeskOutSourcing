@@ -63,14 +63,14 @@ namespace Web.Areas.AdminArea.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(City rec)
+        public IActionResult Edit(LocationVM rec)
         {
             ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
             ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName");
             ViewBag.City = new SelectList(this.cityrepo.GetAll(), "CityId", "CityName");
             if (ModelState.IsValid)
             {
-                this.cityrepo.Edit(rec);
+                this.cityrepo.Edit(rec.City);
                 return RedirectToAction("Index");
             }
             return View(rec);

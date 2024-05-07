@@ -1,0 +1,19 @@
+﻿@model IEnumerable<ProjectSkill>
+
+<div class="card">
+    <div class="card-body">
+            <a class="btn btn-success" asp-action="Create" asp-controller="ProjectSkill"> Add </a>
+            |
+            <a class="btn btn-success" asp-action="Edit" asp-controller="ProjectSkill"> Edit </a>
+
+        <hr />
+        <h5 class="card-title">Project Skills</h5>
+        <hr />
+        @foreach (var temp in Model)
+        {
+            <div class="row">
+                <div class="col-3"><label class="control-label">@temp.Skill.SkillName</label></div>
+            </div>
+        }
+    </div>
+</div>
