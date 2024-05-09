@@ -17,5 +17,7 @@ namespace Core
         public virtual Project Project { get; set; }
         public Int64 TechnologiesId { get; set; }
         public virtual Technologies Technologies { get; set;}
+        [NotMapped]
+        public string ProjectTechnologyName { get; set; }
     }
 }

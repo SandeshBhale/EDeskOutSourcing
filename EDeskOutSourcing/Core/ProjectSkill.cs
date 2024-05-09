@@ -18,6 +18,9 @@ namespace Core
         public virtual Project Project { get; set; }
         public Int64 SkillId { get; set; }
         public virtual Skill Skill { get; set; }
+        [NotMapped]
+        public string ProjectSkillName { get; set; }
+       
     }
 
 }

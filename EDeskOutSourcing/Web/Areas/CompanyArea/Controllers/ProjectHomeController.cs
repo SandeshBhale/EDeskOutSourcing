@@ -72,6 +72,15 @@ namespace Web.Areas.CompanyArea.Controllers
         [HttpGet]
         public IActionResult Details(Int64 id)
         {
+            var pStage = this.repo.GetProjectStageById(id);
+            ViewBag.ProjectStage = pStage;
+
+            var pSkill = this.repo.GetProjectSkillById(id);
+            ViewBag.ProjectSkill = pSkill;
+
+            var pTech = this.repo.GetProjectTechnologyById(id);
+            ViewBag.ProjectTechnology = pTech;
+
             var rec =this.repo.GetById(id);
             return View(rec);
         }

@@ -411,8 +411,8 @@ namespace Infra.Migrations
                     b.Property<long>("CompanyId")
                         .HasColumnType("bigint");
 
-                    b.Property<decimal>("ExpectedCompletionDurationInDays")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("ExpectedCompletionDurationInDays")
+                        .HasColumnType("int");
 
                     b.Property<string>("ProjectDescription")
                         .HasColumnType("nvarchar(max)");
@@ -443,6 +443,9 @@ namespace Infra.Migrations
                         .HasColumnType("bigint");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ProjectApplicationId"));
+
+                    b.Property<string>("ApplicationBody")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("ApplicationId")
                         .HasColumnType("datetime2");

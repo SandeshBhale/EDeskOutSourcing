@@ -20,30 +20,32 @@ namespace Repo
 
         public void AddRec(ProjectVM rec)
         {
-            ProjectSkill p = new ProjectSkill();
-            p.ProjectId = rec.ProjectId;
-
             foreach (var temp in rec.ProjSkills)
             {
-                
+                // Create a new instance of ProjectSkill for each record
+                ProjectSkill p = new ProjectSkill();
+
+                // Assign values
+                p.ProjectId = rec.ProjectId;
                 p.SkillId = temp;
+
+                // Add to context and then to DbSet
                 this.ec.ProjectSkill.Add(p);
-                this.ec.Add(p);
             }
+
+            // Save changes after adding all records
             this.ec.SaveChanges();
         }
 
         public void AddRecTech(ProjectVM rec)
         {
-            ProjectTechnology p = new ProjectTechnology();
-            p.ProjectId = rec.ProjectId;
 
             foreach (var temp in rec.ProjTechnologies)
             {
-
+                ProjectTechnology p = new ProjectTechnology();
+                p.ProjectId = rec.ProjectId;
                 p.TechnologiesId = temp;
                 this.ec.ProjectTechnology.Add(p);
-                this.ec.Add(p);
             }
             this.ec.SaveChanges();
         }

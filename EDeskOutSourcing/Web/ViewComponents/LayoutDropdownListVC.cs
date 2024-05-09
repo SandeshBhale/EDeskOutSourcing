@@ -1,4 +1,5 @@
-﻿using Infra;
+﻿using Core;
+using Infra;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Repo;
@@ -7,20 +8,17 @@ namespace Web.ViewComponents
 {
     public class LayoutDropdownListVC : ViewComponent
     {
-        ISkillRepo srepo;
-        ITechnologiesRepo trepo;
+        IProjectRepo prepo;
         
-        public LayoutDropdownListVC(ISkillRepo srepo,ITechnologiesRepo trepo)
+        public LayoutDropdownListVC(IProjectRepo prepo)
         {
-            this.srepo = srepo;
-            this.trepo = trepo;
+            this.prepo = prepo;
         }
 
-        public IViewComponentResult Invoke(Int64 id)
+        public IViewComponentResult Invoke()
         {
-            ViewBag.SkillId = new SelectList(this.srepo.GetAll(), "SkillId", "SkillName");
-            ViewBag.TechnologiesId = new SelectList(this.trepo.GetAll(), "TechnologiesId", "TechnologyName");
-            return View();
+            var rec = this.prepo.GetAllProject();
+            return View(rec);
         }
     }
 }

@@ -19,5 +19,6 @@ namespace Core
         public virtual Project Project { get; set; }
         public DateTime ApplicationId { get; set; }
         public string ApplicationTitle { get; set; }
+        public string ApplicationBody { get; set; }
     }
 }

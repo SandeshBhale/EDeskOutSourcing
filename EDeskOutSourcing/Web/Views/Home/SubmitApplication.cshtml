@@ -1,0 +1,36 @@
+﻿@model ProjectApplications
+<div class="card">
+
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">@ViewBag.Message</div>
+        }
+
+    </div>
+    <div class="card-body">
+        <form class="form-horizontal" asp-action="Create" method="post">
+            <div class="form-group row">
+                <label class="control-label">Application Title : </label>
+                <div class="col-md-12">
+                    <input asp-for="ApplicationTitle" class="form-control" />
+                    <span asp-validation-for="ApplicationTitle" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+
+            <div class="form-group row">
+                <label class="control-label" for="email1">Application Details : </label>
+                <div class="col-md-12">
+                    <textarea asp-for="ApplicationBody" class="form-control"></textarea>
+                    <span asp-validation-for="ApplicationBody" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+ 
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Create</button>
+            </div>
+        </form>
+    </div>
+</div>

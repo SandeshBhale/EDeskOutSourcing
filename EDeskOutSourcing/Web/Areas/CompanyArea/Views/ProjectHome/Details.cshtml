@@ -40,11 +40,11 @@
             </div>
         </div>
         
-        @await Component.InvokeAsync("ProjectStagesVC")
+        @await Component.InvokeAsync("ProjectStagesVC", new { id = ViewBag.ProjectStage })
 
-        @await Component.InvokeAsync("ProjectSkillsVC")
+        @await Component.InvokeAsync("ProjectSkillsVC", new {id= ViewBag.ProjectSkill})
 
-        @await Component.InvokeAsync("ProjectTechnologiesVC")
+        @await Component.InvokeAsync("ProjectTechnologiesVC",new{id=ViewBag.ProjectTechnology})
 
     </div>
 </div>
