@@ -40,6 +40,7 @@ namespace Web.ViewComponents
 
 
             ViewBag.ProjectSkillId = new SelectList(ProjectSkills, "SkillId", "SkillName");
+             
             ViewBag.ProjectTechnologyId = new SelectList(ProjectTechnologies, "TechnologiesId", "TechnologyName");
             return View();
         }

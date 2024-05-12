@@ -17,7 +17,7 @@
         <form class="form-horizontal" asp-action="Create" asp-controller="ProjectStageHome" method="post">
             <div class="form-group">
                 <label class="control-label">Select Project : </label>
-                <select class="form-select" name="ProjectId" asp-items="@ViewBag.ProjectId">
+                <select class="form-select" asp-for="ProjectId" asp-items="@ViewBag.ProjectId">
                     <option value="0"> Select Project</option>
                 </select>
                 <span asp-validation-for="ProjectId" class="text-danger"></span>

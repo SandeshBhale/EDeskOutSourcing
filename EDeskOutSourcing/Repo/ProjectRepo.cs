@@ -40,9 +40,11 @@ namespace Repo
 
         public List<Project> SearchByProperty(long skill = 0, long tech = 0, long term = 0)
         {
+            
             if (skill != 0 && tech != 0 && term != 0)
             {
-                return this.ec.Projects.Where(p => p.ProjectId == skill && p.ProjectId == tech && p.ProjectId == term).ToList();
+              
+                return this.ec.Projects.Where(p => p.ProjectId == skill  && p.ProjectId == tech && p.ProjectId == term).ToList();
             }
             else if (skill != 0 && tech != 0)
             {
@@ -75,6 +77,10 @@ namespace Repo
             }
         }
 
-
+        public List<Int64> SearchByProperty1(long skill = 0, long tech = 0, long term = 0)
+        {
+            var v =this.ec.ProjectSkill.Select(p => p.ProjectId).ToList();
+            return v.ToList();
+        }
     }
 }

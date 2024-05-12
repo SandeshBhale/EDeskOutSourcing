@@ -17,7 +17,7 @@ namespace Core
         public virtual Freelancer Freelancer { get; set; }
         public Int64 ProjectId { get; set; }
         public virtual Project Project { get; set; }
-        public DateTime ApplicationId { get; set; }
+        public DateTime ApplicationDate { get; set; } = DateTime.Now;
         public string ApplicationTitle { get; set; }
         public string ApplicationBody { get; set; }
     }

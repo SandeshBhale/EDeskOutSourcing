@@ -447,7 +447,7 @@ namespace Infra.Migrations
                     b.Property<string>("ApplicationBody")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ApplicationId")
+                    b.Property<DateTime>("ApplicationDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ApplicationTitle")

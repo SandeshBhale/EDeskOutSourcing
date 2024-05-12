@@ -1,0 +1,45 @@
+﻿@model FreelancerProfileVM
+<form asp-action="SelectedApplication" asp-controller="ProjectApplications" method="get">
+    <div class="card">
+
+        <div class="card-body">
+            <h5 class="card-title">Freelancer Profile</h5>
+            <div class="card-body">
+                <h5 class="card-title">Contact Details</h5>
+                <hr />
+                <div class="row">
+                    <div class="col-3"><label class="control-label">Freelancer Name </label></div>
+                    <div class="col-9">: @Model.FullName</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3"><label class="control-label">Email Id </label></div>
+                    <div class="col-9">: @Model.EmailId</div>
+                </div>  
+                <div class="row">
+                    <div class="col-3"><label class="control-label">Mobile No. </label></div>
+                    <div class="col-9">: @Model.MobileNo</div>
+                </div>
+                <div class="row">
+                    <div class="col-3"><label class="control-label">Address </label></div>
+                    <div class="col-9">: @Model.Address</div>
+                </div>
+            </div>
+
+            @await Component.InvokeAsync("FreelancerExperienceVC", new { id = ViewBag.FreelancerExperience })
+
+            @await Component.InvokeAsync("FreelancerEducationVC", new { id = ViewBag.FreelancerEducation })
+
+            @await Component.InvokeAsync("FreelancerPriviousProjectsVC", new { id = ViewBag.FreelancerPriviousProjects })
+
+            @await Component.InvokeAsync("FreelancerCertificationsVC", new { id = ViewBag.FreelancerCertifications })
+
+            <hr />
+
+            <a class="btn btn-info" asp-action="ViewAndAssign" asp-controller="ProjectApplications"> Back </a>
+            |
+            <a class="btn btn-success" asp-action="SelectedApplication" asp-controller="ProjectApplications" asp-route-id="@ViewBag.ProjectApplicationId"> Select Appication </a>
+        </div>
+
+    </div>
+</form>

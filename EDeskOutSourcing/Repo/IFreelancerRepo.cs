@@ -1,4 +1,5 @@
-﻿using Repo.ViewModels;
+﻿using Core;
+using Repo.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Repo
 {
-    public interface IFreelancerRepo
+    public interface IFreelancerRepo : IGenRepo<Freelancer>
     {
         LoginResultVM Login(LoginVM rec);
         RepoResultVM ChangePassword(ChangePasswordVM rec, Int64 id);

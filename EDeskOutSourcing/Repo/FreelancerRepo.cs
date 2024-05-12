@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace Repo
 {
-    public class FreelancerRepo : IFreelancerRepo
+    public class FreelancerRepo : GenRepo<Freelancer>, IFreelancerRepo
     {
         EDeskContext ec;
 
-        public FreelancerRepo(EDeskContext ec)
+        public FreelancerRepo(EDeskContext ec) : base(ec)
         {
             this.ec = ec;
         }

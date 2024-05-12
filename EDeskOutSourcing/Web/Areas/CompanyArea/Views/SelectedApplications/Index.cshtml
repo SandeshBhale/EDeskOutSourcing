@@ -1,0 +1,40 @@
+﻿@model IEnumerable<SelectedApplications>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Selected Applications List</h5>
+        <hr />
+
+        <!-- Bordered Table -->
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Application Id</th>
+                        <th scope="col">Selection Date</th>
+                        <th scope="col">Need Start Date</th>
+                        <th scope="col">Any Remark</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int srno = 1;
+                    }
+                    @foreach (var temp in Model)
+                    {
+                        <tr>
+                            <th scope="row">@srno</th>
+                            <td>@temp.ProjectApplicationId</td>
+                            <td>@temp.SelectionDate</td>
+                            <td>@temp.NeedStartDate.ToString("dd-MM-yyyy")</td>
+                            <td>@temp.AnyRemark</td>
+                        </tr>
+                        srno++;
+                    }
+                </tbody>
+            </table>
+        </div>
+        <!-- End Bordered Table -->
+    </div>
+</div>

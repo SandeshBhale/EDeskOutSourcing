@@ -45,6 +45,10 @@ builder.Services.AddScoped<ITechnologiesRepo, TechnologiesRepo>();
 builder.Services.AddScoped<IProjectTechnologyRepo, ProjectTechnologyRepo>();
 builder.Services.AddScoped<IProjectSkillRepo, ProjectSkillRepo>();
 builder.Services.AddScoped<IProjectApplicationRepo, ProjectApplicationRepo>();
+builder.Services.AddScoped<ISelectedApplicationRepo, SelectedApplicationRepo>();
+builder.Services.AddScoped<IProjectTaskRepo, ProjectTaskRepo>();
+builder.Services.AddScoped<IProjectTaskDocumentRepo, ProjectTaskDocumentRepo>();
+builder.Services.AddScoped<IProjectTaskAssignmentRepo, ProjectTaskAssignmentRepo>();
 
 var app = builder.Build();
 app.UseStaticFiles();

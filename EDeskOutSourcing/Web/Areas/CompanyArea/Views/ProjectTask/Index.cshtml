@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ProjectTask>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Project Tasks List</h5>
+        <hr />
+        <a class="btn btn-success" asp-action="Create" asp-controller="ProjectTask"> Create </a>
+        <hr />
+        <!-- Bordered Table -->
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Task Title</th>
+                        <th scope="col">Project Name</th>
+                        <th scope="col">Task Description</th>
+                        <th scope="col">Task Amount</th>
+                        <th scope="col">Task Status</th>
+                        <th scope="col">Document</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int srno = 1;
+                    }
+                    @foreach (var temp in Model)
+                    {
+                        <tr>
+                            <th scope="row">@srno</th>
+                            <td>@temp.TaskTitle</td>
+                            <td>@temp.Project.ProjectName</td>
+                            <td>@temp.TaskDescription</td>
+                            <td>@temp.TaskAmount</td>
+                            <td>@Enum.GetName(typeof(Repo.Enums.TaskStatus),temp.TaskStatus)</td>
+                            <td><a class="btn btn-info btn-sm" asp-action="Index" asp-controller="ProjectTaskDocument" asp-route-id="@temp.ProjectTaskId">Document</a></td>
+                            <td>
+                                <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@temp.ProjectTaskId">Edit</a>
+                                |
+                                <a class="btn btn-outline-primary" asp-action="Delete" asp-route-id="@temp.ProjectTaskId">Delete</a>
+                            </td>
+                        </tr>
+                        srno++;
+                    }
+                </tbody>
+            </table>
+        </div>
+        <!-- End Bordered Table -->
+    </div>
+</div>

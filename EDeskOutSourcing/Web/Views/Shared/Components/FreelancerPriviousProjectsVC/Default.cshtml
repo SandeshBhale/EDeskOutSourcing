@@ -1,0 +1,34 @@
+﻿@model IEnumerable<FreelancerPriviousProjects>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Privious Project Details</h5>
+
+        <!-- Bordered Table -->
+        <table class="table table-bordered table-responsive">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Project Title</th>
+                    <th scope="col">Project Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int srno = 1;
+                }
+                @foreach (var temp in Model)
+                {
+                    <tr>
+                        <th scope="row">@srno</th>
+                        <td>@temp.ProjectTitle</td>
+                        <td>@temp.ProjectDescription</td>
+                    </tr>
+                    srno++;
+                }
+            </tbody>
+        </table>
+        <!-- End Bordered Table -->
+
+    </div>
+</div>

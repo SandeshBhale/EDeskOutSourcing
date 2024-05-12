@@ -1,0 +1,43 @@
+﻿@model SelectedApplications
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div class="header-title">
+            <h4 class="card-title">Application Selection Form</h4>
+        </div>
+    </div>
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">@ViewBag.Message</div>
+        }
+
+    </div>
+    <div class="col-6">
+        <div class="card-body">
+            <form class="form-horizontal" asp-action="SelectedApplication" method="post">
+                <input type="hidden" id="ProjectApplicationId" name="ProjectApplicationId" value="@ViewBag.ProjectApplicationId" />
+
+                <div class="form-group row">
+                    <label class="control-label" for="email1">From Date : </label>
+                    <div>
+                        <input type="date" asp-for="NeedStartDate" class="form-control">
+                        <span asp-validation-for="NeedStartDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group row">
+                    <label class="control-label">Any Remark : </label>
+                    <div class="col-md-12">
+                        <textarea asp-for="AnyRemark" class="form-control"></textarea>
+                        <span asp-validation-for="AnyRemark" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <br />
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Accept Application</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

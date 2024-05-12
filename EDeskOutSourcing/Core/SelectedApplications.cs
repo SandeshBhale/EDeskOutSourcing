@@ -15,7 +15,7 @@ namespace Core
         public Int64 SelectedApplicationId { get; set; }
         public Int64 ProjectApplicationId { get; set; }
         public virtual ProjectApplications ProjectApplications { get; set; }
-        public DateTime SelectionDate { get; set; }
+        public DateTime SelectionDate { get; set; } = DateTime.Now;
         public DateTime NeedStartDate { get; set; }
         public string AnyRemark { get; set; }
     }

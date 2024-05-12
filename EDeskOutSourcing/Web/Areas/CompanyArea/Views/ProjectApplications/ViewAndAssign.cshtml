@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ProjectApplications>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Applicants</h5>
+
+        <hr />
+
+        <!-- Bordered Table -->
+        <table class="table table-bordered table-responsive">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Freelancer Name</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int srno = 1;
+                }
+                @foreach (var temp in Model)
+                {
+                    <tr>
+                        <th scope="row">@srno</th>
+                        <td>@temp.Freelancer.FullName</td>
+                        <td>
+                            <a class="btn btn-outline-primary" asp-action="ViewProfile" asp-route-id="@temp.ProjectApplicationId">View Profile</a>
+                        </td>
+                    </tr>
+                    srno++;
+                }
+            </tbody>
+        </table>
+        <!-- End Bordered Table -->
+
+    </div>
+</div>

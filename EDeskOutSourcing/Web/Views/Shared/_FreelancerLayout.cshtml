@@ -64,7 +64,7 @@
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
 
-                    @if (Context.Session    .GetString("FreelancerId") != null)
+                    @if (Context.Session.GetString("FreelancerId") != null)
                     {
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hi! @Context.Session.GetString("FullName")</a>

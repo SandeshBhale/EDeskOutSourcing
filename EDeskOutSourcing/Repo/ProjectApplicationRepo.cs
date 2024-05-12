@@ -17,5 +17,25 @@ namespace Repo
         {
             this.ec = ec;
         }
+
+        public List<FreelancerCertifications> GetFreelancerCertificationsById(long id)
+        {
+            return ec.FreelancerCertifications.Where(p => p.FreelancerId == id).ToList();
+        }
+
+        public List<FreelancerEducation> GetFreelancerEducationById(long id)
+        {
+            return ec.FreelancerEducations.Where(p => p.FreelancerId == id).ToList();
+        }
+
+        public List<FreelancerExperience> GetFreelancerExperienceById(long id)
+        {
+            return ec.FreelancerExperiences.Where(p => p.FreelancerId == id).ToList();
+        }
+
+        public List<FreelancerPriviousProjects> GetFreelancerPriviousProjectsById(long id)
+        {
+            return ec.FreelancerPriviousProjects.Where(p => p.FreelancerId == id).ToList();
+        }
     }
 }

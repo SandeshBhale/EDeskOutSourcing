@@ -21,6 +21,15 @@ namespace Repo.ViewModels
         public string MobileNo { get; set; }
         [Required(ErrorMessage ="Address Is Required")]        
         public string Address { get; set; }
+
+        [NotMapped]
+        public string FullName
+        {
+            get
+            {
+                return FirstName+" "+LastName;
+            }
+        }
     }
 }
     

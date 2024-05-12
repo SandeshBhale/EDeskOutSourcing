@@ -1,0 +1,36 @@
+﻿@model IEnumerable<FreelancerEducation>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Education Details</h5>
+
+        <!-- Bordered Table -->
+        <table class="table table-bordered table-responsive">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Education Name</th>
+                    <th scope="col">Passing Year</th>
+                    <th scope="col">Univercity Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int srno = 1;
+                }
+                @foreach (var temp in Model)
+                {
+                    <tr>
+                        <th scope="row">@srno</th>
+                        <td>@temp.Education.EducationName</td>
+                        <td>@temp.PassingYear</td>
+                        <td>@temp.UnivercityInstituteName</td>
+                    </tr>
+                    srno++;
+                }
+            </tbody>
+        </table>
+        <!-- End Bordered Table -->
+
+    </div>
+</div>

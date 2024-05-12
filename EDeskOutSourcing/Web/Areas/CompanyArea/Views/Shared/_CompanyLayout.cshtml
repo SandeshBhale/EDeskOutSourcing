@@ -85,36 +85,11 @@
                                     <span class="item-name">Stages</span>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link " asp-action="Index" asp-controller="CityHome">
-                                    <i class="icon">
-                                        <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
-                                            <g>
-                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
-                                            </g>
-                                        </svg>
-                                    </i>
-                                    <span class="item-name">City</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " asp-action="Index" asp-controller="LocationHome">
-                                    <i class="icon">
-                                        <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
-                                            <g>
-                                                <circle cx="12" cy="12" r="8" fill="currentColor"></circle>
-                                            </g>
-                                        </svg>
-                                    </i>
-                                    <i class="sidenav-mini-icon"> P </i>
-                                    <span class="item-name">Locations</span>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-auth" role="button" aria-expanded="false" aria-controls="sidebar-user">
-                            <span class="item-name">FAQ</span>
+                            <span class="item-name">Applications</span>
                             <i class="right-icon">
                                 <svg class="icon-18" xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -123,7 +98,7 @@
                         </a>
                         <ul class="sub-nav collapse" id="sidebar-auth" data-bs-parent="#sidebar-menu">
                             <li class="nav-item">
-                                <a class="nav-link" asp-action="Index" asp-controller="CompanyFAQHome">
+                                <a class="nav-link" asp-action="Index" asp-controller="ProjectApplications">
                                     <i class="icon">
                                         <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -132,11 +107,11 @@
                                         </svg>
                                     </i>
                                     <i class="sidenav-mini-icon"> L </i>
-                                    <span class="item-name">Company</span>
+                                    <span class="item-name">Project Applications</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-action="Index" asp-controller="FreelancerFAQHome">
+                                <a class="nav-link" asp-action="Index" asp-controller="SelectedApplications">
                                     <i class="icon">
                                         <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -145,14 +120,14 @@
                                         </svg>
                                     </i>
                                     <i class="sidenav-mini-icon"> R </i>
-                                    <span class="item-name">Freelancer</span>
+                                    <span class="item-name">Selected Applications</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-user" role="button" aria-expanded="false" aria-controls="sidebar-user">
-                            <span class="item-name">Terms & Conditions</span>
+                            <span class="item-name">Tasks</span>
                             <i class="right-icon">
                                 <svg class="icon-18" xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -161,7 +136,7 @@
                         </a>
                         <ul class="sub-nav collapse" id="sidebar-user" data-bs-parent="#sidebar-menu">
                             <li class="nav-item">
-                                <a class="nav-link " asp-action="Index" asp-controller="TNCCompanyHome">
+                                <a class="nav-link " asp-action="Index" asp-controller="ProjectTask">
                                     <i class="icon">
                                         <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -170,11 +145,11 @@
                                         </svg>
                                     </i>
                                     <i class="sidenav-mini-icon"> U </i>
-                                    <span class="item-name">Company</span>
+                                    <span class="item-name">Project Tasks</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " asp-action="Index" asp-controller="TNCFreelancerHome">
+                                <a class="nav-link " asp-action="Index" asp-controller="ProjectAssignment">
                                     <i class="icon">
                                         <svg class="icon-10" xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -183,7 +158,7 @@
                                         </svg>
                                     </i>
                                     <i class="sidenav-mini-icon"> A </i>
-                                    <span class="item-name">Freelancer</span>
+                                    <span class="item-name">Task Assignment</span>
                                 </a>
                             </li>
                         </ul>

@@ -72,8 +72,6 @@
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Areas\AdminArea\Views\CompanyFAQHome\Create.cshtml" />
     <_ContentIncludedByDefault Remove="Areas\AdminArea\Views\CompanyFAQHome\Edit.cshtml" />
-    <_ContentIncludedByDefault Remove="Areas\CompanyArea\Views\ProjectDocumentHome\Create.cshtml" />
-    <_ContentIncludedByDefault Remove="Areas\CompanyArea\Views\ProjectDocumentHome\Edit.cshtml" />
     <_ContentIncludedByDefault Remove="Areas\CompanyArea\Views\ProjectStageHome\Create.cshtml" />
     <_ContentIncludedByDefault Remove="Areas\CompanyArea\Views\ProjectStageHome\Edit.cshtml" />
     <_ContentIncludedByDefault Remove="Areas\FreelancerArea\Views\FreelancerExperienceHome\Create.cshtml" />
@@ -90,14 +88,6 @@
 
   <ItemGroup>
     <UpToDateCheckInput Remove="Areas\CompanyArea\Views\ProjectStageHome\Edit.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Areas\CompanyArea\Views\ProjectDocumentHome\Create.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Areas\CompanyArea\Views\ProjectDocumentHome\Edit.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

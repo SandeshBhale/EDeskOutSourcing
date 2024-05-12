@@ -9,7 +9,9 @@
 
     </div>
     <div class="card-body">
-        <form class="form-horizontal" asp-action="Create" method="post">
+        <form class="form-horizontal" asp-action="SubmitApplication" method="post">
+            <input type="hidden" id="FreelancerId" name="FreelancerId" value="@ViewBag.FreelancerId" />
+            <input type="hidden" id="ProjectId" name="ProjectId" value="@ViewBag.ProjectId" />
             <div class="form-group row">
                 <label class="control-label">Application Title : </label>
                 <div class="col-md-12">
@@ -29,7 +31,7 @@
             <br />
  
             <div class="form-group">
-                <button type="submit" class="btn btn-success">Create</button>
+                <button type="submit" class="btn btn-success">Submit Application</button>
             </div>
         </form>
     </div>
