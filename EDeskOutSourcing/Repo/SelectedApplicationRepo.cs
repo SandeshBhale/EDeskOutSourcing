@@ -18,5 +18,14 @@ namespace Repo
             this.ec = ec;
         }
 
+
+        public List<SelectedApplications> GetAllNotAssignedProjects()
+        {
+            var V = from t in this.ec.SelectedApplications
+                    where !(from t1 in this.ec.ProjectAssigneds
+                          select t1.SelectedApplicationId).Contains(t.SelectedApplicationId)
+                          select t;
+            return V.ToList();
+        }
     }
 }

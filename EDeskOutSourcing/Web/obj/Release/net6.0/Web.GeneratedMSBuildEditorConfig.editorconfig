@@ -1,0 +1,511 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Web
+build_property.RootNamespace = Web
+build_property.ProjectDir = C:\Users\SANDESH\Desktop\EDeskProject\EDeskOutSourcing\Web\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\SANDESH\Desktop\EDeskProject\EDeskOutSourcing\Web
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/AdminHome/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXEFkbWluSG9tZVxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/AdminHome/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXEFkbWluSG9tZVxFZGl0UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/AdminHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXEFkbWluSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/CityHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXENpdHlIb21lXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/CityHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXENpdHlIb21lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/CityHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXENpdHlIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/CompanyFAQHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXENvbXBhbnlGQVFIb21lXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/CompanyFAQHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXENvbXBhbnlGQVFIb21lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/CompanyFAQHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXENvbXBhbnlGQVFIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/CountryHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXENvdW50cnlIb21lXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/CountryHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXENvdW50cnlIb21lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/CountryHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXENvdW50cnlIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/EducationHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXEVkdWNhdGlvbkhvbWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/EducationHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXEVkdWNhdGlvbkhvbWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/EducationHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXEVkdWNhdGlvbkhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/FreelancerFAQHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXEZyZWVsYW5jZXJGQVFIb21lXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/FreelancerFAQHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXEZyZWVsYW5jZXJGQVFIb21lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/FreelancerFAQHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXEZyZWVsYW5jZXJGQVFIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/LocationHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXExvY2F0aW9uSG9tZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/LocationHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXExvY2F0aW9uSG9tZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/LocationHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXExvY2F0aW9uSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/PaymentHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFBheW1lbnRIb21lXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/PaymentHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFBheW1lbnRIb21lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/PaymentHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFBheW1lbnRIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFNoYXJlZFxfQWRtaW5MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/SkillCategoryHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFNraWxsQ2F0ZWdvcnlIb21lXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/SkillCategoryHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFNraWxsQ2F0ZWdvcnlIb21lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/SkillCategoryHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFNraWxsQ2F0ZWdvcnlIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/SkillHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFNraWxsSG9tZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/SkillHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFNraWxsSG9tZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/SkillHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFNraWxsSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/StateHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFN0YXRlSG9tZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/StateHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFN0YXRlSG9tZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/StateHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFN0YXRlSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/TechnologiesHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFRlY2hub2xvZ2llc0hvbWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/TechnologiesHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFRlY2hub2xvZ2llc0hvbWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/TechnologiesHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFRlY2hub2xvZ2llc0hvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/TNCCompanyHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFROQ0NvbXBhbnlIb21lXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/TNCCompanyHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFROQ0NvbXBhbnlIb21lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/TNCCompanyHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFROQ0NvbXBhbnlIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/TNCFreelancerHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFROQ0ZyZWVsYW5jZXJIb21lXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/TNCFreelancerHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFROQ0ZyZWVsYW5jZXJIb21lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/TNCFreelancerHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXFROQ0ZyZWVsYW5jZXJIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/AdminArea/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/CompanyHome/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcQ29tcGFueUhvbWVcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/CompanyHome/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcQ29tcGFueUhvbWVcRWRpdFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/CompanyHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcQ29tcGFueUhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectApplications/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdEFwcGxpY2F0aW9uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectApplications/SelectedApplication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdEFwcGxpY2F0aW9uc1xTZWxlY3RlZEFwcGxpY2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectApplications/ViewAndAssign.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdEFwcGxpY2F0aW9uc1xWaWV3QW5kQXNzaWduLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectApplications/ViewProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdEFwcGxpY2F0aW9uc1xWaWV3UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectAssigned/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdEFzc2lnbmVkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectAssigned/ProjectAssignment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdEFzc2lnbmVkXFByb2plY3RBc3NpZ25tZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectDocumentHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdERvY3VtZW50SG9tZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectDocumentHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdERvY3VtZW50SG9tZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectDocumentHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdERvY3VtZW50SG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdEhvbWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectHome/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdEhvbWVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdEhvbWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdEhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectSkill/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFNraWxsXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectSkill/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFNraWxsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectStageHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFN0YWdlSG9tZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectStageHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFN0YWdlSG9tZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectStageHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFN0YWdlSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectTaskAssignment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFRhc2tBc3NpZ25tZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectTaskDocument/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFRhc2tEb2N1bWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectTaskDocument/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFRhc2tEb2N1bWVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectTaskDocument/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFRhc2tEb2N1bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectTask/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFRhc2tcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectTask/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFRhc2tcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectTask/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFRhc2tcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/ProjectTechnology/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcUHJvamVjdFRlY2hub2xvZ3lcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/SelectedApplications/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcU2VsZWN0ZWRBcHBsaWNhdGlvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/Shared/_CompanyLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcU2hhcmVkXF9Db21wYW55TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/CompanyArea/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29tcGFueUFyZWFcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerCertificationsHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlckNlcnRpZmljYXRpb25zSG9tZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerCertificationsHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlckNlcnRpZmljYXRpb25zSG9tZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerCertificationsHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlckNlcnRpZmljYXRpb25zSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerEducationHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlckVkdWNhdGlvbkhvbWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerEducationHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlckVkdWNhdGlvbkhvbWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerEducationHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlckVkdWNhdGlvbkhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerExperienceHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlckV4cGVyaWVuY2VIb21lXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerExperienceHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlckV4cGVyaWVuY2VIb21lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerExperienceHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlckV4cGVyaWVuY2VIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerHome/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlckhvbWVcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerHome/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlckhvbWVcRWRpdFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlckhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerPriviousProjectsHome/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlclByaXZpb3VzUHJvamVjdHNIb21lXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerPriviousProjectsHome/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlclByaXZpb3VzUHJvamVjdHNIb21lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/FreelancerPriviousProjectsHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcRnJlZWxhbmNlclByaXZpb3VzUHJvamVjdHNIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/Shared/_FreelancerLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcU2hhcmVkXF9GcmVlbGFuY2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Areas/FreelancerArea/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRnJlZWxhbmNlckFyZWFcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Home/SubmitApplication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWJtaXRBcHBsaWNhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/ManageAdmin/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlQWRtaW5cU2lnbkluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/ManageCompany/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlQ29tcGFueVxTaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/ManageCompany/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlQ29tcGFueVxTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/ManageFreelancer/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlRnJlZWxhbmNlclxTaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/ManageFreelancer/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlRnJlZWxhbmNlclxTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/AssignedProjectTaskVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQXNzaWduZWRQcm9qZWN0VGFza1ZDXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/AssignedProjectVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQXNzaWduZWRQcm9qZWN0VkNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/FreelancerCertificationsVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRnJlZWxhbmNlckNlcnRpZmljYXRpb25zVkNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/FreelancerEducationVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRnJlZWxhbmNlckVkdWNhdGlvblZDXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/FreelancerExperienceVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRnJlZWxhbmNlckV4cGVyaWVuY2VWQ1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/FreelancerPriviousProjectsVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRnJlZWxhbmNlclByaXZpb3VzUHJvamVjdHNWQ1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/LayoutDropdownListVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGF5b3V0RHJvcGRvd25MaXN0VkNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/LayoutDropdownVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGF5b3V0RHJvcGRvd25WQ1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/NotAssignedProjectTaskVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTm90QXNzaWduZWRQcm9qZWN0VGFza1ZDXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/NotAssignedProjectVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTm90QXNzaWduZWRQcm9qZWN0VkNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/ProjectSkillsVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvamVjdFNraWxsc1ZDXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/ProjectStagesVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvamVjdFN0YWdlc1ZDXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/ProjectTechnologiesVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvamVjdFRlY2hub2xvZ2llc1ZDXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/SkillCheckBoxVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2tpbGxDaGVja0JveFZDXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/TechnologyCheckBoxVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGVjaG5vbG9neUNoZWNrQm94VkNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/UploadDocumentVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXBsb2FkRG9jdW1lbnRWQ1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/Components/UploadTaskDocumentVC/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVXBsb2FkVGFza0RvY3VtZW50VkNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/Shared/_FreelancerLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9GcmVlbGFuY2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SANDESH/Desktop/EDeskProject/EDeskOutSourcing/Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

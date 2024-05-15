@@ -1,0 +1,80 @@
+﻿@model Project
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div class="header-title">
+            <h4 class="card-title">Add Project Details</h4>
+        </div>
+    </div>
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">@ViewBag.Message</div>
+        }
+
+    </div>
+    <div class="card-body">
+        <form class="form-horizontal" asp-action="Create" method="post">
+            <input type="hidden" id="CompanyId" name="CompanyId" value="@ViewBag.CompanyId" />
+
+            <div class="form-group row">
+                <label class="control-label" for="email1">Project Name : </label>
+                <div class="col-md-12">
+                    <input asp-for="ProjectName" class="form-control" />
+                    <span asp-validation-for="ProjectName" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+            <div class="form-group row">
+                <label class="control-label" for="email1">Project Description : </label>
+                <div class="col-md-12">
+                    <textarea asp-for="ProjectDescription" class="form-control" ></textarea>
+                    <span asp-validation-for="ProjectDescription" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+            <div class="col-12">
+                <label class="form-label">Project Status : </label>
+                <select class="form-select" name="ProjectStatus" asp-items="@Html.GetEnumSelectList<ProjectStatus>()">
+                    <option value="0"> Select Project Status </option>
+                </select>
+                <span asp-validation-for="ProjectStatus" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="col-12">
+                <label class="form-label">Project Payment Terms : </label>
+                <select class="form-select" name="ProjectPaymentTerms" asp-items="@Html.GetEnumSelectList<ProjectPaymentTerms>()">
+                    <option value="0"> Select Project Payment Terms </option>
+                </select>
+                <span asp-validation-for="ProjectPaymentTerms" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group row">
+                <label class="control-label" for="email1">Project Terms And Conditions : </label>
+                <div class="col-md-12">
+                    <textarea asp-for="ProjectTermsAndConditions" class="form-control"></textarea>
+                    <span asp-validation-for="ProjectTermsAndConditions" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+            <div class="form-group row">
+                <label class="control-label" for="email1">Budjet : </label>
+                <div class="col-md-12">
+                    <input asp-for="Budget" class="form-control" />
+                    <span asp-validation-for="Budget" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+            <div class="form-group row">
+                <label class="control-label" for="email1">Expected Completion Duration In Days : </label>
+                <div class="col-md-12">
+                    <input asp-for="ExpectedCompletionDurationInDays" class="form-control" />
+                    <span asp-validation-for="ExpectedCompletionDurationInDays" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Create</button>
+            </div>
+        </form>
+    </div>
+</div>

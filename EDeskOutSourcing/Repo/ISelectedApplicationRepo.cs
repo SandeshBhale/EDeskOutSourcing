@@ -10,6 +10,7 @@ namespace Repo
 {
     public interface ISelectedApplicationRepo : IGenRepo<SelectedApplications>
     {
-      
+        List<SelectedApplications> GetAllNotAssignedProjects();
+       
     }
 }

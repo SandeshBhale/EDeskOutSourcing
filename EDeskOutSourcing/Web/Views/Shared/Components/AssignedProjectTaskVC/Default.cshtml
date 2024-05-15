@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ProjectAssigned>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Assigned Projects List</h5>
+        <hr />
+
+        <!-- Bordered Table -->
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Project Id</th>
+                        <th scope="col">Application Date</th>
+                        <th scope="col">Application Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int srno = 1;
+                    }
+                    @foreach (var temp in Model)
+                    {
+                        <tr>
+                            <th scope="row">@srno</th>
+                            <td>@temp.ProjectId</td>
+                            <td>@temp.ApplicationDate.ToString("dd-MM-yyyy")</td>
+                            <td>@temp.ApplicationTitle</td>
+                        </tr>
+                        srno++;
+                    }
+                </tbody>
+            </table>
+        </div>
+        <!-- End Bordered Table -->
+    </div>
+</div>

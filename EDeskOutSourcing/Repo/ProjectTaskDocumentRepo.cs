@@ -25,7 +25,7 @@ namespace Repo
 
         public List<ProjectTaskDocument> GetProjectTaskDocumentById(Int64 id)
         {
-            return ec.ProjectTaskDocuments.Where(p => p.ProjectTaskDocumentId == id).ToList();
+            return ec.ProjectTaskDocuments.Where(p => p.ProjectTaskId == id).ToList();
         }
     }
 }

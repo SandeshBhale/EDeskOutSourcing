@@ -1,0 +1,41 @@
+﻿@model ProjectAssigned
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div class="header-title">
+            <h4 class="card-title">Project Assignment Form</h4>
+        </div>
+    </div>
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">@ViewBag.Message</div>
+        }
+
+    </div>
+    <div class="card-body">
+        <form class="form-horizontal" asp-action="ProjectAssignment" method="post">
+            <input type="hidden" id="SelectedApplicationId" name="SelectedApplicationId" value="@ViewBag.SelectedApplicationId" />
+            <input type="hidden" id="ProjectId" asp-for="ProjectId" value="@ViewBag.ProjectId" />
+            <div class="form-group row">
+                <label class="control-label" for="email1">Application Date : </label>
+                <div class="col-md-12">
+                    <input type="date" asp-for="ApplicationDate" class="form-control" />
+                    <span asp-validation-for="ApplicationDate" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+            <div class="form-group row">
+                <label class="control-label" for="email1">Application Title : </label>
+                <div class="col-md-12">
+                    <input asp-for="ApplicationTitle" class="form-control" />
+                    <span asp-validation-for="ApplicationTitle" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Assign Project</button>
+            </div>
+        </form>
+    </div>
+</div>

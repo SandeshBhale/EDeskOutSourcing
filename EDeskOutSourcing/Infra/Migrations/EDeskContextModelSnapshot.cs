@@ -50,7 +50,7 @@ namespace Infra.Migrations
 
                     b.HasKey("AdminId");
 
-                    b.ToTable("AdminTable");
+                    b.ToTable("AdminTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.City", b =>
@@ -71,7 +71,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("StateId");
 
-                    b.ToTable("CityTable");
+                    b.ToTable("CityTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.Company", b =>
@@ -110,7 +110,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("CityId");
 
-                    b.ToTable("CompanyTable");
+                    b.ToTable("CompanyTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.CompanyFAQ", b =>
@@ -132,7 +132,7 @@ namespace Infra.Migrations
 
                     b.HasKey("CompanyFAQId");
 
-                    b.ToTable("CompanyFAQTable");
+                    b.ToTable("CompanyFAQTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.Country", b =>
@@ -148,7 +148,7 @@ namespace Infra.Migrations
 
                     b.HasKey("CountryId");
 
-                    b.ToTable("CountryTable");
+                    b.ToTable("CountryTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.Education", b =>
@@ -167,7 +167,7 @@ namespace Infra.Migrations
 
                     b.HasKey("EducationId");
 
-                    b.ToTable("EducationTable");
+                    b.ToTable("EducationTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.FinishedProject", b =>
@@ -191,7 +191,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectId");
 
-                    b.ToTable("FinishedProjectTable");
+                    b.ToTable("FinishedProjectTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.Freelancer", b =>
@@ -222,7 +222,7 @@ namespace Infra.Migrations
 
                     b.HasKey("FreelancerId");
 
-                    b.ToTable("FreelancerTable");
+                    b.ToTable("FreelancerTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.FreelancerCertifications", b =>
@@ -249,7 +249,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("FreelancerId");
 
-                    b.ToTable("FreelancerCertificationTable");
+                    b.ToTable("FreelancerCertificationTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.FreelancerEducation", b =>
@@ -278,7 +278,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("FreelancerId");
 
-                    b.ToTable("FreelancerEducationTable");
+                    b.ToTable("FreelancerEducationTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.FreelancerExperience", b =>
@@ -311,7 +311,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("FreelancerId");
 
-                    b.ToTable("FreelancerExperienceTable");
+                    b.ToTable("FreelancerExperienceTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.FreelancerFAQ", b =>
@@ -333,7 +333,7 @@ namespace Infra.Migrations
 
                     b.HasKey("FreelancerFAQId");
 
-                    b.ToTable("FreelancerFAQTable");
+                    b.ToTable("FreelancerFAQTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.FreelancerPriviousProjects", b =>
@@ -357,7 +357,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("FreelancerId");
 
-                    b.ToTable("FreelancerPriviousProjectsTable");
+                    b.ToTable("FreelancerPriviousProjectsTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.Location", b =>
@@ -378,7 +378,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("CityId");
 
-                    b.ToTable("LocationTable");
+                    b.ToTable("LocationTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.PaymentMode", b =>
@@ -394,7 +394,7 @@ namespace Infra.Migrations
 
                     b.HasKey("PaymentModeId");
 
-                    b.ToTable("PaymentModeTable");
+                    b.ToTable("PaymentModeTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.Project", b =>
@@ -433,7 +433,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("CompanyId");
 
-                    b.ToTable("ProjectTable");
+                    b.ToTable("ProjectTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectApplications", b =>
@@ -465,7 +465,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectId");
 
-                    b.ToTable("ProjectApplicationsTable");
+                    b.ToTable("ProjectApplicationsTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectAssigned", b =>
@@ -497,7 +497,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("SelectedApplicationsSelectedApplicationId");
 
-                    b.ToTable("ProjectAssignedTable");
+                    b.ToTable("ProjectAssignedTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectDocument", b =>
@@ -521,7 +521,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectId");
 
-                    b.ToTable("ProjectDocumentTable");
+                    b.ToTable("ProjectDocumentTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectSkill", b =>
@@ -544,7 +544,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("SkillId");
 
-                    b.ToTable("ProjectSkillTable");
+                    b.ToTable("ProjectSkillTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectStage", b =>
@@ -576,7 +576,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectStageId1");
 
-                    b.ToTable("ProjectStagesTable");
+                    b.ToTable("ProjectStagesTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectTask", b =>
@@ -606,7 +606,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectId");
 
-                    b.ToTable("ProjectTaskTable");
+                    b.ToTable("ProjectTaskTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectTaskAssignment", b =>
@@ -635,7 +635,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectTaskId");
 
-                    b.ToTable("ProjectTaskAssignmentTable");
+                    b.ToTable("ProjectTaskAssignmentTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectTaskDocument", b =>
@@ -645,6 +645,9 @@ namespace Infra.Migrations
                         .HasColumnType("bigint");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ProjectTaskDocumentId"));
+
+                    b.Property<string>("DocName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProjectDocumentFilePath")
                         .HasColumnType("nvarchar(max)");
@@ -656,7 +659,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectTaskId");
 
-                    b.ToTable("ProjectTaskDocumentTable");
+                    b.ToTable("ProjectTaskDocumentTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectTaskQuery", b =>
@@ -683,7 +686,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectTaskId");
 
-                    b.ToTable("ProjectTaskQueryTable");
+                    b.ToTable("ProjectTaskQueryTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectTaskQuerySolution", b =>
@@ -707,7 +710,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectTaskQueryId");
 
-                    b.ToTable("ProjectTaskQuerySolutionTable");
+                    b.ToTable("ProjectTaskQuerySolutionTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectTaskReport", b =>
@@ -736,7 +739,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectTaskId");
 
-                    b.ToTable("ProjectTaskReportTable");
+                    b.ToTable("ProjectTaskReportTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectTaskReportConflict", b =>
@@ -760,7 +763,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectTaskReportId");
 
-                    b.ToTable("ProjectTaskReportConflictTable");
+                    b.ToTable("ProjectTaskReportConflictTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectTaskReportConflictSolution", b =>
@@ -784,7 +787,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectTaskReportConflictId");
 
-                    b.ToTable("ProjectTaskReportConflictSolutionTable");
+                    b.ToTable("ProjectTaskReportConflictSolutionTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectTaskReportReleasePayment", b =>
@@ -805,7 +808,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectTaskReportId");
 
-                    b.ToTable("ProjectTaskReportReleasePaymentTable");
+                    b.ToTable("ProjectTaskReportReleasePaymentTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectTaskReportReleasePaymentConflict", b =>
@@ -826,7 +829,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectTaskReportId");
 
-                    b.ToTable("ProjectTaskReportReleasePaymentConflictTable");
+                    b.ToTable("ProjectTaskReportReleasePaymentConflictTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectTaskReportReleasePaymentConflictSolution", b =>
@@ -850,7 +853,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectTaskReportReleasePaymentConflictId");
 
-                    b.ToTable("ProjectTaskReportReleasePaymentConflictSolutionTable");
+                    b.ToTable("ProjectTaskReportReleasePaymentConflictSolutionTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.ProjectTechnology", b =>
@@ -873,7 +876,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("TechnologiesId");
 
-                    b.ToTable("ProjectTechnology");
+                    b.ToTable("ProjectTechnology", (string)null);
                 });
 
             modelBuilder.Entity("Core.SelectedApplications", b =>
@@ -903,7 +906,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectApplicationsProjectApplicationId");
 
-                    b.ToTable("SelectedApplicationTable");
+                    b.ToTable("SelectedApplicationTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.Skill", b =>
@@ -924,7 +927,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("SkillCategoryId");
 
-                    b.ToTable("SkillTable");
+                    b.ToTable("SkillTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.SkillCategory", b =>
@@ -940,7 +943,7 @@ namespace Infra.Migrations
 
                     b.HasKey("SkillCategoryId");
 
-                    b.ToTable("SkillCategoryTable");
+                    b.ToTable("SkillCategoryTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.State", b =>
@@ -961,7 +964,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("CountryId");
 
-                    b.ToTable("StateTable");
+                    b.ToTable("StateTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.TNCCompany", b =>
@@ -980,7 +983,7 @@ namespace Infra.Migrations
 
                     b.HasKey("TNCCompanyId");
 
-                    b.ToTable("TermsAndConditionsForCompany");
+                    b.ToTable("TermsAndConditionsForCompany", (string)null);
                 });
 
             modelBuilder.Entity("Core.TNCFreelancer", b =>
@@ -999,7 +1002,7 @@ namespace Infra.Migrations
 
                     b.HasKey("TNCFreelancerId");
 
-                    b.ToTable("TermsAndConditionsForFreelancer");
+                    b.ToTable("TermsAndConditionsForFreelancer", (string)null);
                 });
 
             modelBuilder.Entity("Core.Technologies", b =>
@@ -1015,7 +1018,7 @@ namespace Infra.Migrations
 
                     b.HasKey("TechnologiesId");
 
-                    b.ToTable("TechnologiesTable");
+                    b.ToTable("TechnologiesTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.TerminatedProject", b =>
@@ -1039,7 +1042,7 @@ namespace Infra.Migrations
 
                     b.HasIndex("ProjectId");
 
-                    b.ToTable("TerminatedProjectTable");
+                    b.ToTable("TerminatedProjectTable", (string)null);
                 });
 
             modelBuilder.Entity("Core.City", b =>

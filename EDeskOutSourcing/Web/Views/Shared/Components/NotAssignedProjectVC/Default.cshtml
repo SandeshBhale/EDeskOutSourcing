@@ -1,0 +1,40 @@
+﻿@model IEnumerable<SelectedApplications>
+
+<div class="card">
+    <div class="card-body">
+ 
+        <!-- Bordered Table -->
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Application Id</th>
+                        <th scope="col">Selection Date</th>
+                        <th scope="col">Need Start Date</th>
+                        <th scope="col">Any Remark</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int srno = 1;
+                    }
+                    @foreach (var temp in Model)
+                    {
+                        <tr>
+                            <th scope="row">@srno</th>
+                            <td>@temp.ProjectApplicationId</td>
+                            <td>@temp.SelectionDate</td>
+                            <td>@temp.NeedStartDate.ToString("dd-MM-yyyy")</td>
+                            <td>@temp.AnyRemark</td>
+                            <td><a class="btn btn-info btn-sm" asp-action="ProjectAssignment" asp-controller="ProjectAssigned" asp-route-id="@temp.SelectedApplicationId">ASSIGN</a></td>
+                        </tr>
+                        srno++;
+                    }
+                </tbody>
+            </table>
+        </div>
+        <!-- End Bordered Table -->
+    </div>
+</div>

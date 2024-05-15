@@ -12,11 +12,11 @@ namespace Web.Areas.CompanyArea.Controllers
     public class ProjectTaskDocumentController : Controller
     {
 
-        IProjectDocumentRepo repo;
+        IProjectTaskDocumentRepo repo;
         IProjectRepo prepo;
         IWebHostEnvironment env;
 
-        public ProjectTaskDocumentController(IProjectDocumentRepo repo,IProjectRepo prepo, IWebHostEnvironment env)
+        public ProjectTaskDocumentController(IProjectTaskDocumentRepo repo,IProjectRepo prepo, IWebHostEnvironment env)
         {
             this.repo = repo;
             this.prepo = prepo;
@@ -25,9 +25,9 @@ namespace Web.Areas.CompanyArea.Controllers
 
         public IActionResult Index(Int64 id)
         {
-            ViewBag.ProjectId = id;
-            var pDoc = this.repo.GetProjectDocumentById(id);
-            ViewBag.ProjectDocument = pDoc;
+            ViewBag.ProjectTaskId = id;
+            var pDoc = this.repo.GetProjectTaskDocumentById(id);
+            ViewBag.ProjectTaskDocument = pDoc;
             return View();
         }
 
@@ -39,7 +39,7 @@ namespace Web.Areas.CompanyArea.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(ProjectDocument rec)
+        public IActionResult Create(ProjectTaskDocument rec)
         {
             //ViewBag.ProjectId = new SelectList(this.prepo.GetAll(), "ProjectId", "ProjectName");
             if (ModelState.IsValid)
@@ -49,12 +49,12 @@ namespace Web.Areas.CompanyArea.Controllers
                     if (rec.ActualFile.Length > 0)
                     {
                         string filename = rec.ActualFile.FileName;
-                        string folderpath = Path.Combine(this.env.WebRootPath, "ProjectDocument");
+                        string folderpath = Path.Combine(this.env.WebRootPath, "ProjectTaskDocument");
                         string uploadpath = Path.Combine(folderpath, filename);
                         FileStream fs = new FileStream(uploadpath, FileMode.Create);
                         rec.ActualFile.CopyTo(fs);
-                        string logicalpath = Path.Combine("\\ProjectDocument", filename);
-                        rec.DocumentFilePath = logicalpath;
+                        string logicalpath = Path.Combine("\\ProjectTaskDocument", filename);
+                        rec.ProjectDocumentFilePath = logicalpath;
                     }
                 }
                 this.repo.Add(rec);

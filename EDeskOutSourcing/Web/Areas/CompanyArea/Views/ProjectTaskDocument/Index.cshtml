@@ -1,11 +1,11 @@
-﻿@model ProjectDocument
+﻿@model ProjectTaskDocument
 <div class="card">
     <div class="card-body">
         <h5 class="card-title">Create Document</h5>
         <hr />
-        <form enctype="multipart/form-data" asp-action="Create" method="post" asp-route-id="@ViewBag.ProjectId">
+        <form enctype="multipart/form-data" asp-action="Create" method="post" asp-route-id="@ViewBag.ProjectTaskId">
             <div class="row">
-                <input type="hidden" asp-for="ProjectId" value="@ViewBag.ProjectId"/>
+                <input type="hidden" asp-for="ProjectTaskId" value="@ViewBag.ProjectTaskId"/>
                 <div class="col-md-5">
                     <input asp-for="DocName" class="form-control" placeholder="Document Name"/>
                     <span asp-validation-for="DocName" class="text-danger"></span>
@@ -20,6 +20,6 @@
             </div>
         </form>
         <hr />
-      @await Component.InvokeAsync("UploadDocumentVC",new {id=ViewBag.ProjectDocument})
+      @await Component.InvokeAsync("UploadTaskDocumentVC",new {id=ViewBag.ProjectTaskDocument})
     </div>
 </div>

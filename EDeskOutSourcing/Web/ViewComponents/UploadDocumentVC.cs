@@ -15,7 +15,7 @@ namespace Web.ViewComponents
         public IViewComponentResult Invoke(List<ProjectDocument> id)
         {
             //var document = repo.GetAll();
-           //var rec = repo.GetAllProjectDocument();
+            //var rec = repo.GetAllProjectDocument();
             return View(id);
         }
     }

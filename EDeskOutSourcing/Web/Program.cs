@@ -49,6 +49,7 @@ builder.Services.AddScoped<ISelectedApplicationRepo, SelectedApplicationRepo>();
 builder.Services.AddScoped<IProjectTaskRepo, ProjectTaskRepo>();
 builder.Services.AddScoped<IProjectTaskDocumentRepo, ProjectTaskDocumentRepo>();
 builder.Services.AddScoped<IProjectTaskAssignmentRepo, ProjectTaskAssignmentRepo>();
+builder.Services.AddScoped<IProjectAssignedRepo, ProjectAssignedRepo>();
 
 var app = builder.Build();
 app.UseStaticFiles();
