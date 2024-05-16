@@ -6,16 +6,16 @@ namespace Web.ViewComponents
 {
     public class AssignedProjectTaskVC:ViewComponent
     {
-        IProjectTaskRepo repo;
+        IProjectTaskAssignmentRepo repo;
 
-        public AssignedProjectTaskVC(IProjectTaskRepo repo)
+        public AssignedProjectTaskVC(IProjectTaskAssignmentRepo repo)
         {
             this.repo = repo;
         }
 
         public IViewComponentResult Invoke()
         {
-            var v = this.repo.GetAllNotAssignedProjectTasks();
+            var v = this.repo.GetAllAssignedProjectTasks();
             return View(v.ToList());
         }
     }

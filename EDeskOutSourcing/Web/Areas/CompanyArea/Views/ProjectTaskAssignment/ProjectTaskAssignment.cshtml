@@ -1,4 +1,5 @@
 ﻿@model ProjectTaskAssignment
+
 <div class="card">
     <div class="card-header d-flex justify-content-between">
         <div class="header-title">
@@ -13,20 +14,29 @@
 
     </div>
     <div class="card-body">
-        <form class="form-horizontal" asp-action="ProjectAssignment" method="post">
-            <input type="hidden" id="SelectedApplicationId" name="SelectedApplicationId" value="@ViewBag.SelectedApplicationId" />
-            
+        <form class="form-horizontal" asp-action="ProjectTaskAssignment" asp-controller="ProjectTaskAssignment" method="post">
+            <input asp-for="ProjectTaskId" id="ProjectTaskId" type="hidden" value="@ViewBag.ProjectTaskId"/>
+            <div class="form-group row">
+                <div class="col-md-12">
+                    <label class="control-label">Select Freelancer : </label>
+                    <select class="form-select" asp-for="FreelancerId" asp-items="@ViewBag.FreelancerId">
+                        <option value="0"> Select Freeelancer</option>
+                    </select>
+                    <span asp-validation-for="FreelancerId" class="text-danger"></span>
+                </div>
+            </div>
+
             <div class="form-group row">
                 <label class="control-label" for="email1">Assigned Date : </label>
-                <div class="col-md-4">
+                <div class="col-md-12">
                     <input type="date" asp-for="AssignedDate" class="form-control" />
                     <span asp-validation-for="AssignedDate" class="text-danger"></span>
                 </div>
             </div>
-            <br />
+
             <div class="form-group row">
                 <label class="control-label" for="email1">Expected Completion Date : </label>
-                <div class="col-md-4">
+                <div class="col-md-12">
                     <input type="date" asp-for="ExpectedCompletionDate" class="form-control" />
                     <span asp-validation-for="ExpectedCompletionDate" class="text-danger"></span>
                 </div>
@@ -39,3 +49,4 @@
         </form>
     </div>
 </div>
+

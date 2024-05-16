@@ -10,8 +10,6 @@
                         <th scope="col">#</th>
                         <th scope="col">Task Title</th>
                         <th scope="col">Project Name</th>
-                        <th scope="col">Task Description</th>
-                        <th scope="col">Task Amount</th>
                         <th scope="col">Task Status</th>
                         <th scope="col">Actions</th>
                     </tr>
@@ -26,8 +24,6 @@
                             <th scope="row">@srno</th>
                             <td>@temp.TaskTitle</td>
                             <td>@temp.Project.ProjectName</td>
-                            <td>@temp.TaskDescription</td>
-                            <td>@temp.TaskAmount</td>
                             <td>@Enum.GetName(typeof(Repo.Enums.TaskStatus), temp.TaskStatus)</td>
                             <td>
                                 <a class="btn btn-info btn-sm" asp-action="ProjectTaskAssignment" asp-route-id="@temp.ProjectTaskId">ASSIGN</a>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7gRGrFAQ962bcOEbPojROyV4C9FUBonuMqUKm7AMsfY=",
+  "Hash": "Dt+L6PbpQl5bT6w/lMFPVWai13UR7tAUA7EzPAJZeRQ=",
   "Source": "Web",
   "BasePath": "_content/Web",
   "Mode": "Default",
@@ -18806,6 +18806,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectDocument\\ATM.png",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "ProjectDocument/ATM.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectDocument\\ATM.png"
     }
   ]
 }

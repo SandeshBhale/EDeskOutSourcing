@@ -1,19 +1,17 @@
-﻿@model IEnumerable<ProjectAssigned>
+﻿@model IEnumerable<ProjectTaskAssignment>
 
 <div class="card">
     <div class="card-body">
-        <h5 class="card-title">Assigned Projects List</h5>
-        <hr />
-
         <!-- Bordered Table -->
         <div class="table-responsive">
             <table class="table table-bordered">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Project Id</th>
-                        <th scope="col">Application Date</th>
-                        <th scope="col">Application Title</th>
+                        <th scope="col">Project Task Titile </th>
+                        <th scope="col">Freelancer Name</th>
+                        <th scope="col">Assigned Date</th>
+                        <th scope="col">Completion Date</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -24,9 +22,10 @@
                     {
                         <tr>
                             <th scope="row">@srno</th>
-                            <td>@temp.ProjectId</td>
-                            <td>@temp.ApplicationDate.ToString("dd-MM-yyyy")</td>
-                            <td>@temp.ApplicationTitle</td>
+                            <td>@temp.ProjectTask.TaskTitle</td>
+                            <td>@temp.Freelaner.FullName</td>
+                            <td>@temp.AssignedDate.ToString("dd-MM-yyyy")</td>
+                            <td>@temp.ExpectedCompletionDate.ToString("dd-MM-yyyy")</td>
                         </tr>
                         srno++;
                     }

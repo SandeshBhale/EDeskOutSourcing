@@ -17,5 +17,15 @@ namespace Repo
         {
             this.ec = ec;
         }
+
+
+        public List<ProjectTaskAssignment> GetAllAssignedProjectTasks()
+        {
+            var v = from t in this.ec.ProjectTaskAssignments
+                    join t1 in this.ec.ProjectTasks
+                    on t.ProjectTaskId equals t1.ProjectTaskId
+                    select t;
+            return v.ToList();
+        }
     }
 }
