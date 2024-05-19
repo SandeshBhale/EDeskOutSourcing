@@ -33,7 +33,7 @@ namespace Web.Areas.CompanyArea.Controllers
 
         public IActionResult ViewAndAssign(Int64 id)
         {
-            return View(this.repo.GetAll());
+            return View(this.repo.GetAllByFreelancerId(id));
         }
 
         public IActionResult ViewProfile(Int64 id)

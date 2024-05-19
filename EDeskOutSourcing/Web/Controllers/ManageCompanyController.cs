@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Repo;
 using Repo.ViewModels;
 
@@ -7,10 +8,16 @@ namespace Web.Controllers
     public class ManageCompanyController : Controller
     {
         ICompany repo;
+        ICountryRepo countryrepo;
+        IStateRepo staterepo;
+        ICityRepo cityrepo;
 
-        public ManageCompanyController(ICompany repo)
+        public ManageCompanyController(ICompany repo, ICountryRepo countryrepo, IStateRepo staterepo, ICityRepo cityrepo)
         {
             this.repo = repo;
+            this.countryrepo = countryrepo;
+            this.staterepo = staterepo;
+            this.cityrepo = cityrepo;
         }
 
         [HttpGet]
@@ -43,6 +50,9 @@ namespace Web.Controllers
         [HttpGet]
         public IActionResult SignUp()
         {
+            ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName");
+            ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
+            ViewBag.City = new SelectList(this.cityrepo.GetAll(), "CityId", "CityName");
             return View();
         }
 
@@ -51,8 +61,8 @@ namespace Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                this.repo.AddCompanyRec(rec);
-                return RedirectToAction("SignIn");
+               this.repo.AddCompanyRec(rec);
+               return RedirectToAction("SignIn");
             }
             return View(rec);
         }
@@ -61,8 +71,19 @@ namespace Web.Controllers
         public IActionResult SignOut()
         {
             HttpContext.Session.Clear();
-            return RedirectToAction("SignIn");
+            return RedirectToAction("Index","Home");
         }
 
+        public IActionResult GetStatesJson(Int64 id)
+        {
+            var rec = this.staterepo.GetStatesByCountryId(id);
+            return Json(rec.ToList());
+        }
+
+        public IActionResult GetCitiesJson(Int64 id)
+        {
+            var rec = this.cityrepo.GetCitiesByStatesId(id);
+            return Json(rec.ToList());
+        }
     }
 }

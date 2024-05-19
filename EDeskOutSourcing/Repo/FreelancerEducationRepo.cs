@@ -17,5 +17,10 @@ namespace Repo
         {
             this.ec = ec;
         }
+
+        public List<FreelancerEducation> GetAllByFreelancerId(long id)
+        {
+            return this.ec.FreelancerEducations.Where(p=>p.FreelancerId == id).ToList();
+        }
     }
 }

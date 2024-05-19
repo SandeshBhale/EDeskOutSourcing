@@ -14,5 +14,9 @@ namespace Repo
         RepoResultVM EditProfile(CompanyProfileVM rec, Int64 id);
         CompanyProfileVM GetById(Int64 id);
         RepoResultVM AddCompanyRec(CompanySignUpVM rec);
+
+        List<CityVM> GetCitiesByStatesId(Int64 StateId);
+
+        List<StateVM> GetStatesByCountryId(Int64 CountryId);
     }
 }

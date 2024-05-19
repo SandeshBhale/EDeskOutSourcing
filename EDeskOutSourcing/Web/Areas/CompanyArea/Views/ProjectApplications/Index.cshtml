@@ -19,18 +19,23 @@
             <tbody>
                 @{
                     int srno = 1;
+                    string projectName = null;
                 }
                 @foreach (var temp in Model)
                 {
-                    <tr>
-                        <th scope="row">@srno</th>
-                        <td>@temp.Project.ProjectName</td>
-                        <td>@temp.ApplicationDate.ToString().Count()</td>
-                        <td>
-                            <a class="btn btn-outline-primary" asp-action="ViewAndAssign" asp-route-id="@temp.ProjectApplicationId">View And Assign</a>
-                        </td>
-                    </tr>
-                    srno++;
+                    if (temp.Project.ProjectName != projectName)
+                    {
+                        <tr>
+                            <th scope="row">@srno</th>
+                            <td>@temp.Project.ProjectName</td>
+                            <td>@temp.ProjectApplicationId</td>
+                            <td>
+                                <a class="btn btn-outline-primary" asp-action="ViewAndAssign" asp-route-id="@temp.ProjectApplicationId">View And Assign</a>
+                            </td>
+                        </tr>
+                        projectName = temp.Project.ProjectName;
+                        srno++;
+                    }
                 }
             </tbody>
         </table>

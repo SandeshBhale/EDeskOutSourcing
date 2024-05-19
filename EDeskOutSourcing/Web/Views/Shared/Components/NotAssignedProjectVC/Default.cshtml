@@ -25,7 +25,7 @@
                         <tr>
                             <th scope="row">@srno</th>
                             <td>@temp.ProjectApplicationId</td>
-                            <td>@temp.SelectionDate</td>
+                            <td>@temp.SelectionDate.ToString("dd-MM-yyyy")</td>
                             <td>@temp.NeedStartDate.ToString("dd-MM-yyyy")</td>
                             <td>@temp.AnyRemark</td>
                             <td><a class="btn btn-info btn-sm" asp-action="ProjectAssignment" asp-controller="ProjectAssigned" asp-route-id="@temp.SelectedApplicationId">ASSIGN</a></td>

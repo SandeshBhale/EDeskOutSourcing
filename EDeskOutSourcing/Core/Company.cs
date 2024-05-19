@@ -21,7 +21,7 @@ namespace Core
         public string ContactPersonName { get; set; }
         public Int64 CityId { get; set; }
         public virtual City City { get; set; }
-        public DateTime JoinedDate { get; set; }
+        public DateTime JoinedDate { get; set; } = DateTime.Now;
         public string Password { get; set; }
     }
 }

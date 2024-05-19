@@ -23,7 +23,8 @@ namespace Web.Areas.FreelancerArea.Controllers
 
         public IActionResult Index()
         {
-            return View(this.repo.GetAll());
+            int id = Convert.ToInt32(HttpContext.Session.GetString("FreelancerId"));
+            return View(this.repo.GetAllByFreelancerId(id));
         }
 
         [HttpGet]

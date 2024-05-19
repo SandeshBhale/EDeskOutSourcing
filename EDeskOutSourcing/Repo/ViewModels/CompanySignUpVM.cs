@@ -19,6 +19,20 @@ namespace Repo.ViewModels
         [Required(ErrorMessage = "Password Required")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
-        
+        [Required(ErrorMessage = "Mobile Number Required")]
+        [RegularExpression("^[0-9]{10}$", ErrorMessage = "Number should be 10 digit")]
+        public string MobileNo { get; set; }
+        [Required(ErrorMessage ="City Name Required")]
+        public Int64 CityId { get; set; }
+        public virtual City City { get; set; }
+        [Required(ErrorMessage ="Address Required")]
+        public string Address { get; set; }
+
+        public Int64 StateId { get; set; }
+        public virtual State State { get; set; }
+
+        public Int64 CountryId { get; set; }
+        public virtual Country Country { get; set; }
+
     }
 }

@@ -10,5 +10,6 @@ namespace Repo
 {
     public interface IFreelancerPriviousProjectsRepo : IGenRepo<FreelancerPriviousProjects>
     {
+        List<FreelancerPriviousProjects> GetAllByFreelancerId(Int64 id);
     }
 }

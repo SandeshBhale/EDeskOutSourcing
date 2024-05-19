@@ -4,6 +4,55 @@
     Layout = null;
 }
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $("#CountryId").change(function () {
+
+            $.ajax({
+                url: "Home/GetStatesJson/" + $("#CountryId").val(),
+                type: "GET",
+                contentType: "application/json",
+                success: function (result) {
+                    $("#State").empty();
+                    for (var i = 0; i < result.length; i++) {
+                        var str = "<option value='" + result[i].stateId + "'>" + result[i].stateName + "</option>";
+                        $("#State").append(str);
+                    }
+                },
+                error: function (err) {
+                    alert(JSON.stringify(err));
+                }
+            });
+
+        });
+
+        $("#State").change(function () {
+
+            $.ajax({
+                url: "Home/GetCitiesJson/" + $("#State").val(),
+                type: "GET",
+                contentType: "application/json",
+                success: function (result) {
+                    $("#City").empty();
+                    for (var i = 0; i < result.length; i++) {
+                        var str = "<option value='" + result[i].cityId + "'>" + result[i].cityName + "</option>";
+                        $("#City").append(str);
+                    }
+                },
+                error: function (err) {
+                    alert(JSON.stringify(err));
+                }
+            });
+
+        });
+
+    });
+</script>
+
+
+
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
@@ -46,45 +95,88 @@
                 </div>
                 <div class="col-md-6">
                     <div class="row justify-content-center">
-                        <div class="col-md-10">
+                        <div class="col-md-12">
                             <div class="card card-transparent auth-card shadow-none d-flex justify-content-center mb-0">
                                 <div class="card-body">
 
                                     <h2 class="mb-2 text-center">Company Sign Up</h2>
 
-                                    <form asp-action="SignUp" method="post">
+                                    <br />
+
+                                    <form asp-action="SignUp" method="post" asp-controller="ManageCompany">
                                         <div class="row">
-                                            <div class="col-lg-12">
+                                            <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <label for="email" class="form-label">Company Name :</label>
                                                     <input asp-for="CompanyName" class="form-control">
                                                     <span class="invalid-feedback" asp-validation-for="CompanyName"></span>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-12">
+                                            <div class="col-lg-6">
+                                                <label for="email" class="form-label">Email Id :</label>
+                                                <input asp-for="EmailId" class="form-control">
+                                                <span class="invalid-feedback" asp-validation-for="EmailId"></span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="email" class="form-label">Address :</label>
+                                                    <input asp-for="Address" class="form-control">
+                                                    <span class="invalid-feedback" asp-validation-for="Address"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label for="email" class="form-label">Mobile Number :</label>
+                                                <input asp-for="MobileNo" class="form-control">
+                                                <span class="invalid-feedback" asp-validation-for="MobileNo"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <label for="email" class="form-label">Conatact Person Name :</label>
                                                     <input asp-for="ContactPersonName" class="form-control">
                                                     <span class="invalid-feedback" asp-validation-for="ContactPersonName"></span>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-12">
-                                                <label for="email" class="form-label">Email Id :</label>
-                                                <input asp-for="EmailId" class="form-control">
-                                                <span class="invalid-feedback" asp-validation-for="EmailId"></span>
-                                            </div>
-                                            <div class="col-lg-12">
+
+                                            <div class="col-lg-6">
                                                 <label for="email" class="form-label">Password :</label>
                                                 <input asp-for="Password" class="form-control">
                                                 <span class="invalid-feedback" asp-validation-for="Password"></span>
                                             </div>
-                                            <div class="col-lg-12 d-flex justify-content-center">
-                                                <div class="form-check mb-3">
-                                                    <input type="checkbox">
-                                                    <label class="form-check-label" for="customCheck1">I agree with the terms of use</label>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="col-12">
+                                                    <label class="form-label">City Name :</label>
+                                                    <select class="form-select" asp-for="CityId" id="State" name="CountryId" asp-items="@ViewBag.Country">
+                                                        <option value="0"> Select Country</option>
+                                                    </select>
+                                                    <span asp-validation-for="CountryId" class="text-danger"></span>
+                                                </div>
+                                                <div class="col-12">
+                                                    <br />
+                                                    <select class="form-select" asp-for="StateId" id="State" name="StateId" asp-items="@ViewBag.State">
+                                                        <option value="0"> Select State</option>
+                                                    </select>
+                                                    <span asp-validation-for="StateId" class="text-danger"></span>
+                                                </div>
+                                                <div class="col-12">
+                                                    <br />
+                                                    <select class="form-select" asp-for="CityId" id="State" name="CityId" asp-items="@ViewBag.City">
+                                                        <option value="0"> Select City</option>
+                                                    </select>
+                                                    <span asp-validation-for="CityId" class="text-danger"></span>
                                                 </div>
                                             </div>
                                         </div>
+                                        <br />
+
                                         <div class="d-flex justify-content-center">
                                             <button type="submit" class="btn btn-primary">Sign Up</button>
                                         </div>

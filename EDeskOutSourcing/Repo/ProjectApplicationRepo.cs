@@ -1,5 +1,6 @@
 ﻿using Core;
 using Infra;
+using Infra.Migrations;
 using Repo.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,11 @@ namespace Repo
         public ProjectApplicationRepo(EDeskContext ec) : base(ec)
         {
             this.ec = ec;
+        }
+
+        public List<ProjectApplications> GetAllByFreelancerId(long id)
+        {
+            return this.ec.ProjectApplications.Where(p => p.ProjectApplicationId == id).ToList();
         }
 
         public List<FreelancerCertifications> GetFreelancerCertificationsById(long id)

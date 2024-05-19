@@ -68,7 +68,7 @@ namespace Web.Areas.CompanyArea.Controllers
         public ActionResult Edit(Int64 id)
         {
             ViewBag.ProjectId = new SelectList(this.prepo.GetAll(), "ProjectId", "ProjectName");
-            var rec = from t in this.repo.GetProject()
+            var rec = from t in this.repo.GetAll()
                       where t.ProjectId == id
                       select new ProjectStageVM
                       {

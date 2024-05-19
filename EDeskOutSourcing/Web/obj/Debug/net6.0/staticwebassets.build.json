@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Dt+L6PbpQl5bT6w/lMFPVWai13UR7tAUA7EzPAJZeRQ=",
+  "Hash": "eFs9bcCGRjz+ucEQgHcSjMItCg+6My4a5Z+DuyUnW5c=",
   "Source": "Web",
   "BasePath": "_content/Web",
   "Mode": "Default",
@@ -18825,6 +18825,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProjectDocument\\ATM.png"
+    },
+    {
+      "Identity": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectDocument\\Review 4.pdf",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "ProjectDocument/Review 4.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectDocument\\Review 4.pdf"
     }
   ]
 }

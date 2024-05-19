@@ -10,6 +10,7 @@ namespace Repo
 {
     public interface IProjectApplicationRepo : IGenRepo<ProjectApplications>
     {
+        List<ProjectApplications> GetAllByFreelancerId(Int64 id);
         List<FreelancerExperience> GetFreelancerExperienceById(Int64 id);
         List<FreelancerEducation> GetFreelancerEducationById(Int64 id);
         List<FreelancerPriviousProjects> GetFreelancerPriviousProjectsById(Int64 id);
