@@ -3,6 +3,7 @@ using Infra;
 using Infra.Migrations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis;
 using Repo;
 using System.ComponentModel.Design;
 using Web.CustFilter;
@@ -46,6 +47,8 @@ namespace Web.Areas.CompanyArea.Controllers
         {
             ViewBag.ProjectId = rec.ProjectId;
 
+            var v = rec.ProjectId;
+
             if (ModelState.IsValid)
             {
                 if (rec.ActualFile != null)
@@ -63,7 +66,7 @@ namespace Web.Areas.CompanyArea.Controllers
                 }
                 
                 this.repo.Add(rec);
-                return RedirectToAction("Index",rec);
+                return RedirectToAction("Index", new {id=v});
             }
             return RedirectToAction("Index", rec);
         }
@@ -76,7 +79,7 @@ namespace Web.Areas.CompanyArea.Controllers
             ViewBag.ProjectId = pa;
 
             this.repo.Delete(id);
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", new {id=pa});
         }
     }
 }

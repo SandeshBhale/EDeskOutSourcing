@@ -41,6 +41,7 @@ namespace Web.Areas.CompanyArea.Controllers
         [HttpPost]
         public IActionResult Create(ProjectTaskDocument rec)
         {
+            var ptid = rec.ProjectTaskId;
             //ViewBag.ProjectId = new SelectList(this.prepo.GetAll(), "ProjectId", "ProjectName");
             if (ModelState.IsValid)
             {
@@ -58,7 +59,7 @@ namespace Web.Areas.CompanyArea.Controllers
                     }
                 }
                 this.repo.Add(rec);
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", new {id=ptid});
             }
             //return View(rec);
             return RedirectToAction("Index",rec);
@@ -67,8 +68,11 @@ namespace Web.Areas.CompanyArea.Controllers
         [HttpGet]
         public IActionResult Delete(Int64 id)
         {
+            var pa = repo.GetAll().Where(t => t.ProjectTaskDocumentId == id).Select(p => p.ProjectTaskId).FirstOrDefault();
+            ViewBag.ProjectTaskId = id;
+
             this.repo.Delete(id);
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", new {id=pa});
         }
     }
 }

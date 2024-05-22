@@ -23,6 +23,11 @@ namespace Repo
             return this.ec.Projects.ToList();
         }
 
+        public List<Project> GetByCompanyId(long id)
+        {
+            return this.ec.Projects.Where(p=>p.CompanyId == id).ToList();
+        }
+
         public List<ProjectSkill> GetProjectSkillById(long id)
         {
             return ec.ProjectSkill.Where(p => p.ProjectId == id).ToList();

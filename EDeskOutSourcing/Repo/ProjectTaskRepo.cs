@@ -18,13 +18,19 @@ namespace Repo
             this.ec = ec;
         }
 
-        public List<ProjectTask> GetAllNotAssignedProjectTasks()
+        public List<ProjectTask> GetAllNotAssignedProjectTasks(long id)
         {
             var V = from t in this.ec.ProjectTasks
-                    where !(from t1 in this.ec.ProjectTaskAssignments
+                    where t.Project.CompanyId==id && 
+                    !(from t1 in this.ec.ProjectTaskAssignments
                            select t1.ProjectTaskId).Contains(t.ProjectTaskId)
                     select t;
             return V.ToList();
+        }
+
+        public List<ProjectTask> GetByCompanyId(long id)
+        {
+            return this.ec.ProjectTasks.Where(p => p.Project.CompanyId == id).ToList();
         }
     }
 }

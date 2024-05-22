@@ -16,11 +16,11 @@
         <div class="tab-content pt-2" id="myTabContent">
             <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <h5>Not Assigned Project Task List</h5>
-                @await Component.InvokeAsync("NotAssignedProjectTaskVC")
+                @await Component.InvokeAsync("NotAssignedProjectTaskVC", new { id = ViewBag.CompanyId })
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <h5>Assigned Project Task List</h5>
-                @await Component.InvokeAsync("AssignedProjectTaskVC")
+                @await Component.InvokeAsync("AssignedProjectTaskVC", new { id = ViewBag.CompanyId })
             </div>
         </div>
         <!-- End Default Tabs -->

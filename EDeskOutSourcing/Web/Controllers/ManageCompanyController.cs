@@ -76,13 +76,13 @@ namespace Web.Controllers
 
         public IActionResult GetStatesJson(Int64 id)
         {
-            var rec = this.staterepo.GetStatesByCountryId(id);
+            var rec = this.repo.GetStatesByCountryId(id);
             return Json(rec.ToList());
         }
 
         public IActionResult GetCitiesJson(Int64 id)
         {
-            var rec = this.cityrepo.GetCitiesByStatesId(id);
+            var rec = this.repo.GetCitiesByStatesId(id);
             return Json(rec.ToList());
         }
     }

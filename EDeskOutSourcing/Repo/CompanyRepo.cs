@@ -116,6 +116,7 @@ namespace Repo
                 Comp.MobileNo = rec.MobileNo;
                 Comp.EmailId = rec.EmailId;
                 Comp.Password = rec.Password;
+                Comp.CityId = rec.CityId;
                 this.ec.Companies.Add(Comp);
                 this.ec.SaveChanges();
                 res.IsSucess = true;
@@ -129,10 +130,10 @@ namespace Repo
             return res;
         }
 
-        public List<CityVM> GetCitiesByStatesId(long StateId)
+        public List<CityVM> GetCitiesByStatesId(long stateId)
         {
             var v = from t in this.ec.Cities
-                    where t.StateId == StateId
+                    where t.StateId == stateId
                     select new CityVM
                     {
                         CityId = t.CityId,
@@ -141,10 +142,10 @@ namespace Repo
             return v.ToList();
         }
 
-        public List<StateVM> GetStatesByCountryId(long CountryId)
+        public List<StateVM> GetStatesByCountryId(long countryId)
         {
             var v = from t in this.ec.States
-                    where t.CountryId == CountryId
+                    where t.CountryId == countryId
                     select new StateVM
                     {
                         StateId = t.StateId,

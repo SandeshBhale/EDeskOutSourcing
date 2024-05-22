@@ -13,9 +13,9 @@ namespace Web.ViewComponents
             this.repo = repo;
         }
 
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(Int64 id)
         {
-            var v = this.repo.GetAllAssignedProjects();
+            var v = this.repo.GetAllAssignedProjects(id);
             return View(v.ToList());
         }
     }

@@ -50,5 +50,10 @@ namespace Repo
         {
             var v = this.ps.ProjectStageId;
         }
+
+        public List<ProjectStage> GetByCompanyId(long Id)
+        {
+            return this.ec.ProjectStages.Where(p => p.Project.CompanyId == Id).ToList();
+        }
     }
 }

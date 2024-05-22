@@ -10,6 +10,6 @@ namespace Repo
 {
     public interface IProjectAssignedRepo : IGenRepo<ProjectAssigned>
     {
-        List<ProjectAssigned> GetAllAssignedProjects();
+        List<ProjectAssigned> GetAllAssignedProjects(Int64 id);
     }
 }

@@ -8,10 +8,10 @@
 
 <script type="text/javascript">
     $(function () {
-        $("#CountryId").change(function () {
+        $("#Country").change(function () {
 
             $.ajax({
-                url: "Home/GetStatesJson/" + $("#CountryId").val(),
+                url: "/ManageCompany/GetStatesJson/" + $("#Country").val(),
                 type: "GET",
                 contentType: "application/json",
                 success: function (result) {
@@ -25,13 +25,12 @@
                     alert(JSON.stringify(err));
                 }
             });
-
         });
 
         $("#State").change(function () {
 
             $.ajax({
-                url: "Home/GetCitiesJson/" + $("#State").val(),
+                url: "/ManageCompany/GetCitiesJson/" + $("#State").val(),
                 type: "GET",
                 contentType: "application/json",
                 success: function (result) {
@@ -49,6 +48,8 @@
         });
 
     });
+
+
 </script>
 
 
@@ -154,7 +155,7 @@
                                             <div class="col-lg-12">
                                                 <div class="col-12">
                                                     <label class="form-label">City Name :</label>
-                                                    <select class="form-select" asp-for="CityId" id="State" name="CountryId" asp-items="@ViewBag.Country">
+                                                    <select class="form-select" asp-for="CountryId" id="Country" name="CountryId" asp-items="@ViewBag.Country">
                                                         <option value="0"> Select Country</option>
                                                     </select>
                                                     <span asp-validation-for="CountryId" class="text-danger"></span>
@@ -168,7 +169,7 @@
                                                 </div>
                                                 <div class="col-12">
                                                     <br />
-                                                    <select class="form-select" asp-for="CityId" id="State" name="CityId" asp-items="@ViewBag.City">
+                                                    <select class="form-select" asp-for="CityId" id="City" name="CityId" asp-items="@ViewBag.City">
                                                         <option value="0"> Select City</option>
                                                     </select>
                                                     <span asp-validation-for="CityId" class="text-danger"></span>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,5 +11,7 @@ namespace Repo.ViewModels
     {
         public Int64 StateId { get; set; }
         public string StateName { get; set; }
+        public Int64 CountryId { get; set; }
+        public virtual Country Country { get; set; }
     }   
 }

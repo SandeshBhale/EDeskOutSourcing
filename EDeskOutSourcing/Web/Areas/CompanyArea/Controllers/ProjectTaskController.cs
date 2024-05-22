@@ -20,7 +20,8 @@ namespace Web.Areas.CompanyArea.Controllers
         }
         public IActionResult Index()
         {
-            return View(this.repo.GetAll());
+            Int64 id = Convert.ToInt32(HttpContext.Session.GetString("CompanyId"));
+            return View(this.repo.GetByCompanyId(id));
         }
 
         [HttpGet]

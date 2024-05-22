@@ -15,6 +15,7 @@ namespace Repo
         List<FreelancerEducation> GetFreelancerEducationById(Int64 id);
         List<FreelancerPriviousProjects> GetFreelancerPriviousProjectsById(Int64 id);
         List<FreelancerCertifications> GetFreelancerCertificationsById(Int64 id);
+        List<ProjectApplications> GetByCompanyId(Int64 id);
 
     }
 }

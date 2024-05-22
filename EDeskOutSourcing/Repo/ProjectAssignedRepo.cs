@@ -18,13 +18,21 @@ namespace Repo
             this.ec = ec;
         }
 
-        public List<ProjectAssigned> GetAllAssignedProjects()
+        public List<ProjectAssigned> GetAllAssignedProjects(long id)
         {
             var v = from t in this.ec.ProjectAssigneds
                     join t1 in this.ec.SelectedApplications
                     on t.SelectedApplicationId equals t1.SelectedApplicationId
+                    join t2 in this.ec.ProjectApplications
+                    on t1.ProjectApplicationId equals t2.ProjectApplicationId
+                    where t2.Project.CompanyId==id
                     select t;
             return v.ToList();
+        }
+
+        public List<ProjectAssigned> GetByCompanyId(long id)
+        {
+            return this.ec.ProjectAssigneds.Where(p=>p.Project.CompanyId == id).ToList();
         }
     }
 }

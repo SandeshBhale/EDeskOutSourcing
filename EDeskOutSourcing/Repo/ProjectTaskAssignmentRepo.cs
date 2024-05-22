@@ -19,11 +19,12 @@ namespace Repo
         }
 
 
-        public List<ProjectTaskAssignment> GetAllAssignedProjectTasks()
+        public List<ProjectTaskAssignment> GetAllAssignedProjectTasks(long id)
         {
             var v = from t in this.ec.ProjectTaskAssignments
                     join t1 in this.ec.ProjectTasks
                     on t.ProjectTaskId equals t1.ProjectTaskId
+                    where t1.Project.CompanyId == id
                     select t;
             return v.ToList();
         }
