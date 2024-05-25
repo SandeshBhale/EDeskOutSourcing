@@ -38,11 +38,9 @@ namespace Repo
             //return v;
 
             var v = from t in ec.SelectedApplications
-                    join t1 in ec.SelectedApplications
-                    on t.SelectedApplicationId equals t1.SelectedApplicationId
-                    join t2 in ec.ProjectApplications
-                    on t1.ProjectApplicationId equals t2.ProjectApplicationId
-                    where t2.Project.CompanyId == id
+                    join t1 in ec.ProjectApplications
+                    on t.ProjectApplicationId equals t1.ProjectApplicationId
+                    where t1.Project.CompanyId == id
                     select t;
 
             return v.ToList();

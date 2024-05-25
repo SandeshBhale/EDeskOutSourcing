@@ -15,10 +15,17 @@ namespace Web.ViewComponents
             this.prepo = prepo;
         }
 
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(List<Project> id)
         {
-            var rec = this.prepo.GetAllProject();
-            return View(rec);
+            if (id == null)
+            {
+                var rec = this.prepo.GetAllProject();
+                return View(rec);
+            }
+            else
+            {
+                return View(id);
+            }
         }
     }
 }

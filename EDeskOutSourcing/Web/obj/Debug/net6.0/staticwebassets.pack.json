@@ -3409,18 +3409,6 @@
       "PackagePath": "staticwebassets\\FreelancerFrontend\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
-      "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectDocument\\ATM.png",
-      "PackagePath": "staticwebassets\\ProjectDocument\\ATM.png"
-    },
-    {
-      "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectDocument\\CAE 2 QUESTION PAPER.pdf",
-      "PackagePath": "staticwebassets\\ProjectDocument\\CAE 2 QUESTION PAPER.pdf"
-    },
-    {
-      "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectDocument\\Review 4.pdf",
-      "PackagePath": "staticwebassets\\ProjectDocument\\Review 4.pdf"
-    },
-    {
       "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\jquery-validate\\additional-methods.js",
       "PackagePath": "staticwebassets\\jquery-validate\\additional-methods.js"
     },

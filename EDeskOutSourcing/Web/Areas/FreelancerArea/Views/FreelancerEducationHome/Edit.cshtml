@@ -20,7 +20,7 @@
                 <div class="col-4">
                     <div class="form-group">
                         <label class="control-label">Select Education : </label>
-                        <select class="form-select" name="EducationId" asp-items="@ViewBag.EducationId">
+                        <select class="form-select" asp-for="EducationId" asp-items="@Html.GetEnumSelectList<EducationType>()">
                             <option value="0"> Select Education</option>
                         </select>
                         <span asp-validation-for="EducationId" class="text-danger"></span>

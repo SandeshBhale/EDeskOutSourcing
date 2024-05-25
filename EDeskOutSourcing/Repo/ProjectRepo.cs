@@ -82,9 +82,18 @@ namespace Repo
             }
         }
 
-        public List<Int64> SearchByProperty1(long skill = 0, long tech = 0, long term = 0)
+        public List<Project> SearchByProperty1(long skill = 0, long tech = 0, long term = 0)
         {
-            var v =this.ec.ProjectSkill.Select(p => p.ProjectId).ToList();
+            //var v =this.ec.ProjectSkill.Select(p => p.ProjectId).ToList();
+            var v = from t in this.ec.Projects
+                    join t1 in this.ec.ProjectSkill
+                    on t.ProjectId equals t1.ProjectId
+                    join t2 in this.ec.ProjectTechnology
+                    on t.ProjectId equals t2.ProjectId
+                    where t.ProjectId == t2.ProjectId && t.ProjectId == t1.ProjectId
+                    select t;
+
+                    
             return v.ToList();
         }
     }

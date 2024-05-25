@@ -22,33 +22,39 @@ namespace Repo
         {
             foreach (var temp in rec.ProjSkills)
             {
-                // Create a new instance of ProjectSkill for each record
-                ProjectSkill p = new ProjectSkill();
+                bool exists = this.ec.ProjectSkill
+                                  .Any(ps => ps.ProjectId == rec.ProjectId && ps.SkillId == temp);
 
-                // Assign values
-                p.ProjectId = rec.ProjectId;
-                p.SkillId = temp;
-
-                // Add to context and then to DbSet
-                this.ec.ProjectSkill.Add(p);
+                if (!exists)
+                {
+                    ProjectSkill p = new ProjectSkill();
+                    p.ProjectId = rec.ProjectId;
+                    p.SkillId = temp;
+                    this.ec.ProjectSkill.Add(p);
+                }
             }
-
-            // Save changes after adding all records
             this.ec.SaveChanges();
         }
+
 
         public void AddRecTech(ProjectVM rec)
         {
-
             foreach (var temp in rec.ProjTechnologies)
             {
-                ProjectTechnology p = new ProjectTechnology();
-                p.ProjectId = rec.ProjectId;
-                p.TechnologiesId = temp;
-                this.ec.ProjectTechnology.Add(p);
+                bool exists = this.ec.ProjectTechnology
+                                  .Any(pt => pt.ProjectId == rec.ProjectId && pt.TechnologiesId == temp);
+
+                if (!exists)
+                {
+                    ProjectTechnology p = new ProjectTechnology();
+                    p.ProjectId = rec.ProjectId;
+                    p.TechnologiesId = temp;
+                    this.ec.ProjectTechnology.Add(p);
+                }
             }
             this.ec.SaveChanges();
         }
+
 
         public List<ProjectSkill> GetProjectSkills()
         {
