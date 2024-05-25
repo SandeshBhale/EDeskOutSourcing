@@ -16,5 +16,29 @@ namespace Repo
         {
             this.ec = ec;
         }
+
+        public List<CityVM> GetCitiesByStatesId(long stateId)
+        {
+            var v = from t in this.ec.Cities
+                    where t.StateId == stateId
+                    select new CityVM
+                    {
+                        CityId = t.CityId,
+                        CityName = t.CityName,
+                    };
+            return v.ToList();
+        }
+
+        public List<StateVM> GetStatesByCountryId(long countryId)
+        {
+            var v = from t in this.ec.States
+                    where t.CountryId == countryId
+                    select new StateVM
+                    {
+                        StateId = t.StateId,
+                        StateName = t.StateName,
+                    };
+            return v.ToList();
+        }
     }
 }

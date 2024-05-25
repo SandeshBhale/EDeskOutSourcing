@@ -54,27 +54,47 @@ namespace Web.Areas.AdminArea.Controllers
         [HttpGet]
         public IActionResult Edit(Int64 id)
         {
+            var location = this.repo.GetById(id);
+            var locationVM = new LocationVM
+            {
+                LocationName = location.LocationName,
+                CityId = location.CityId,
+                StateId = location.City.StateId,
+                CountryId = location.City.State.CountryId,
+            };
 
-            var rec = this.repo.GetById(id);
-            ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
             ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName");
+            ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
             ViewBag.City = new SelectList(this.cityrepo.GetAll(), "CityId", "CityName");
-            return View(rec);
+
+            return View(locationVM);
         }
+
 
         [HttpPost]
         public IActionResult Edit(LocationVM rec)
         {
-            ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
             ViewBag.Country = new SelectList(this.countryrepo.GetAll(), "CountryId", "CountryName");
+            ViewBag.State = new SelectList(this.staterepo.GetAll(), "StateId", "StateName");
             ViewBag.City = new SelectList(this.cityrepo.GetAll(), "CityId", "CityName");
+
             if (ModelState.IsValid)
             {
-                this.cityrepo.Edit(rec.City);
+                var location = this.repo.GetById(rec.CityId);
+                if (location != null)
+                {
+                    location.LocationName = rec.LocationName;
+                    location.CityId = rec.CityId;
+                    location.City.StateId = rec.StateId;
+                    location.City.State.CountryId = rec.CountryId;
+
+                    this.repo.Edit(location);
+                }
                 return RedirectToAction("Index");
             }
             return View(rec);
         }
+
 
         [HttpGet]
         public IActionResult Delete(Int64 id)
@@ -85,15 +105,15 @@ namespace Web.Areas.AdminArea.Controllers
 
         public IActionResult GetStatesJson(Int64 id)
         {
-            var rec = this.staterepo.GetStatesByCountryId(id);
+            var rec = this.repo.GetStatesByCountryId(id);
             return Json(rec.ToList());
         }
 
         public IActionResult GetCitiesJson(Int64 id)
         {
-            var rec = this.cityrepo.GetCitiesByStatesId(id);
+            var rec = this.repo.GetCitiesByStatesId(id);
             return Json(rec.ToList());
         }
-        
+
     }
 }

@@ -1,5 +1,17 @@
 ﻿@model IEnumerable<ProjectApplications>
 
+@{
+    var groupedApplications = Model
+        .GroupBy(pa => pa.Project.ProjectName)
+        .Select(group => new
+        {
+            ProjectName = group.Key,
+            ApplicationCount = group.Count(),
+            ProjectApplicationId = group.First().ProjectApplicationId // Assuming you want to use the ID of the first application for the actions
+        })
+        .ToList();
+}
+
 <div class="card">
     <div class="card-body">
         <h5 class="card-title">Project Applications List</h5>
@@ -19,23 +31,18 @@
             <tbody>
                 @{
                     int srno = 1;
-                    string projectName = null;
                 }
-                @foreach (var temp in Model)
+                @foreach (var group in groupedApplications)
                 {
-                    if (temp.Project.ProjectName != projectName)
-                    {
-                        <tr>
-                            <th scope="row">@srno</th>
-                            <td>@temp.Project.ProjectName</td>
-                            <td>@temp.ProjectApplicationId</td>
-                            <td>
-                                <a class="btn btn-outline-primary" asp-action="ViewAndAssign" asp-route-id="@temp.ProjectApplicationId">View And Assign</a>
-                            </td>
-                        </tr>
-                        projectName = temp.Project.ProjectName;
-                        srno++;
-                    }
+                    <tr>
+                        <th scope="row">@srno</th>
+                        <td>@group.ProjectName</td>
+                        <td>@group.ApplicationCount</td>
+                        <td>
+                            <a class="btn btn-outline-primary" asp-action="ViewAndAssign" asp-route-id="@group.ProjectApplicationId">View And Assign</a>
+                        </td>
+                    </tr>
+                    srno++;
                 }
             </tbody>
         </table>

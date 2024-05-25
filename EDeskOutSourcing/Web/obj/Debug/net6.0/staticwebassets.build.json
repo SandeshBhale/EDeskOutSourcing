@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7gRGrFAQ962bcOEbPojROyV4C9FUBonuMqUKm7AMsfY=",
+  "Hash": "ni5XdO87YJXfIshKuDuEHF76ttidzU0tjSh/TWUs1Eg=",
   "Source": "Web",
   "BasePath": "_content/Web",
   "Mode": "Default",
@@ -18806,6 +18806,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectDocument\\CAE 2 QUESTION PAPER.pdf",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "ProjectDocument/CAE 2 QUESTION PAPER.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectDocument\\CAE 2 QUESTION PAPER.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectTaskDocument\\BCNF.jpg",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "ProjectTaskDocument/BCNF.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectTaskDocument\\BCNF.jpg"
     }
   ]
 }

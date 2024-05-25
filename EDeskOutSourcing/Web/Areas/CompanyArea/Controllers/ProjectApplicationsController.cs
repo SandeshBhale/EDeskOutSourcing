@@ -37,9 +37,9 @@ namespace Web.Areas.CompanyArea.Controllers
             return View(this.repo.GetAllByFreelancerId(id));
         }
 
-        public IActionResult ViewProfile(Int64 id)
+        public IActionResult ViewProfile(Int64 id1,Int64 id)
         {
-            ViewBag.ProjectApplicationId = id;
+            ViewBag.ProjectApplicationId = id1;
 
             var fExp = this.repo.GetFreelancerExperienceById(id);
             ViewBag.FreelancerExperience = fExp;
