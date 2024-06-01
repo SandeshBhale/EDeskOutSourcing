@@ -21,7 +21,12 @@ namespace Repo
 
         public List<ProjectApplications> GetAllByFreelancerId(long id)
         {
-            return this.ec.ProjectApplications.Where(p => p.ProjectApplicationId == id).ToList();
+            var v = from t in this.ec.ProjectApplications
+                    where t.ProjectId == id
+                    select t;
+
+            return v.ToList();
+            //return this.ec.ProjectApplications.Where(p => p.ProjectApplicationId == id).ToList();
         }
 
         public List<ProjectApplications> GetByCompanyId(long id)

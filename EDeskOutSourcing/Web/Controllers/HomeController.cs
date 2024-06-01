@@ -52,7 +52,8 @@ namespace Web.Controllers
             int freelancerId = Convert.ToInt32(HttpContext.Session.GetString("FreelancerId"));
             ViewBag.FreelancerId = freelancerId;
             ViewBag.ProjectId = id;
-            return View();
+
+                return View();
         }
 
         [HttpPost]

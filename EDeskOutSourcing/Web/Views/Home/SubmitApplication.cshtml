@@ -1,4 +1,5 @@
 ﻿@model ProjectApplications
+
 <div class="card">
 
     <div>
@@ -13,6 +14,7 @@
         <form class="form-horizontal" asp-action="SubmitApplication" method="post">
             <input type="hidden" id="FreelancerId" name="FreelancerId" value="@ViewBag.FreelancerId" />
             <input type="hidden" id="ProjectId" name="ProjectId" value="@ViewBag.ProjectId" />
+
             <div class="form-group row">
                 <label class="control-label">Application Title : </label>
                 <div class="col-md-12">

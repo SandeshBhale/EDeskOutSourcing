@@ -3,20 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\repo\\projectapplicationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|solutionrelative:repo\\projectapplicationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\areas\\companyarea\\controllers\\projecttaskassignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\areas\\companyarea\\controllers\\projecttaskassignmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\areas\\companyarea\\views\\projectapplications\\viewandassign.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\areas\\companyarea\\views\\projectapplications\\viewandassign.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\repo\\projecttaskassignmentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|solutionrelative:repo\\projecttaskassignmentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\repo\\selectedapplicationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|solutionrelative:repo\\selectedapplicationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\areas\\companyarea\\controllers\\selectedapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\areas\\companyarea\\controllers\\selectedapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\areas\\companyarea\\controllers\\projectapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\areas\\companyarea\\controllers\\projectapplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\areas\\companyarea\\views\\projectapplications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\areas\\companyarea\\views\\projectapplications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\areas\\companyarea\\controllers\\projectdocumenthomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\areas\\companyarea\\controllers\\projectdocumenthomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\repo\\projectdocumentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0960003B-4085-42A3-BE76-C99FBC5D9ACE}|Repo\\Repo.csproj|solutionrelative:repo\\projectdocumentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\viewcomponents\\skillcheckboxvc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\viewcomponents\\skillcheckboxvc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\views\\home\\submitapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\views\\home\\submitapplication.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\views\\shared\\_freelancerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\views\\shared\\_freelancerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|c:\\users\\sandesh\\desktop\\edeskproject\\edeskoutsourcing\\web\\views\\shared\\components\\layoutdropdownlistvc\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C04B82E2-DADE-4950-B88B-AD1184BC131F}|Web\\Web.csproj|solutionrelative:web\\views\\shared\\components\\layoutdropdownlistvc\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,55 +74,148 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "ProjectTaskAssignmentController.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\CompanyArea\\Controllers\\ProjectTaskAssignmentController.cs",
+              "RelativeDocumentMoniker": "Web\\Areas\\CompanyArea\\Controllers\\ProjectTaskAssignmentController.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\CompanyArea\\Controllers\\ProjectTaskAssignmentController.cs",
+              "RelativeToolTip": "Web\\Areas\\CompanyArea\\Controllers\\ProjectTaskAssignmentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T13:10:02.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ProjectApplicationsController.cs",
               "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\CompanyArea\\Controllers\\ProjectApplicationsController.cs",
               "RelativeDocumentMoniker": "Web\\Areas\\CompanyArea\\Controllers\\ProjectApplicationsController.cs",
               "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\CompanyArea\\Controllers\\ProjectApplicationsController.cs",
               "RelativeToolTip": "Web\\Areas\\CompanyArea\\Controllers\\ProjectApplicationsController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAvwCMAAAAJAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T13:40:30.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T10:29:07.743Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ViewAndAssign.cshtml",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\CompanyArea\\Views\\ProjectApplications\\ViewAndAssign.cshtml",
-              "RelativeDocumentMoniker": "Web\\Areas\\CompanyArea\\Views\\ProjectApplications\\ViewAndAssign.cshtml",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\CompanyArea\\Views\\ProjectApplications\\ViewAndAssign.cshtml",
-              "RelativeToolTip": "Web\\Areas\\CompanyArea\\Views\\ProjectApplications\\ViewAndAssign.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T13:46:24.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProjectApplicationRepo.cs",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\ProjectApplicationRepo.cs",
-              "RelativeDocumentMoniker": "Repo\\ProjectApplicationRepo.cs",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\ProjectApplicationRepo.cs",
-              "RelativeToolTip": "Repo\\ProjectApplicationRepo.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAAAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "ProjectDocumentHomeController.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\CompanyArea\\Controllers\\ProjectDocumentHomeController.cs",
+              "RelativeDocumentMoniker": "Web\\Areas\\CompanyArea\\Controllers\\ProjectDocumentHomeController.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\CompanyArea\\Controllers\\ProjectDocumentHomeController.cs",
+              "RelativeToolTip": "Web\\Areas\\CompanyArea\\Controllers\\ProjectDocumentHomeController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAuwCIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T13:45:36.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T10:29:07.81Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\CompanyArea\\Views\\ProjectApplications\\Index.cshtml",
-              "RelativeDocumentMoniker": "Web\\Areas\\CompanyArea\\Views\\ProjectApplications\\Index.cshtml",
-              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\CompanyArea\\Views\\ProjectApplications\\Index.cshtml",
-              "RelativeToolTip": "Web\\Areas\\CompanyArea\\Views\\ProjectApplications\\Index.cshtml",
-              "ViewState": "AQIAABoAAAAAAAAAAAAUwDQAAAAAAAAA",
+              "Title": "SelectedApplicationsController.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\CompanyArea\\Controllers\\SelectedApplicationsController.cs",
+              "RelativeDocumentMoniker": "Web\\Areas\\CompanyArea\\Controllers\\SelectedApplicationsController.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Areas\\CompanyArea\\Controllers\\SelectedApplicationsController.cs",
+              "RelativeToolTip": "Web\\Areas\\CompanyArea\\Controllers\\SelectedApplicationsController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T10:29:07.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectTaskAssignmentRepo.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\ProjectTaskAssignmentRepo.cs",
+              "RelativeDocumentMoniker": "Repo\\ProjectTaskAssignmentRepo.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\ProjectTaskAssignmentRepo.cs",
+              "RelativeToolTip": "Repo\\ProjectTaskAssignmentRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T10:29:08.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SelectedApplicationRepo.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\SelectedApplicationRepo.cs",
+              "RelativeDocumentMoniker": "Repo\\SelectedApplicationRepo.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\SelectedApplicationRepo.cs",
+              "RelativeToolTip": "Repo\\SelectedApplicationRepo.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAAC0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T10:29:08.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProjectDocumentRepo.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\ProjectDocumentRepo.cs",
+              "RelativeDocumentMoniker": "Repo\\ProjectDocumentRepo.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Repo\\ProjectDocumentRepo.cs",
+              "RelativeToolTip": "Repo\\ProjectDocumentRepo.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T10:29:07.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SkillCheckBoxVC.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\ViewComponents\\SkillCheckBoxVC.cs",
+              "RelativeDocumentMoniker": "Web\\ViewComponents\\SkillCheckBoxVC.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\ViewComponents\\SkillCheckBoxVC.cs",
+              "RelativeToolTip": "Web\\ViewComponents\\SkillCheckBoxVC.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T10:29:07.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_FreelancerLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\Shared\\_FreelancerLayout.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Shared\\_FreelancerLayout.cshtml",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\Shared\\_FreelancerLayout.cshtml",
+              "RelativeToolTip": "Web\\Views\\Shared\\_FreelancerLayout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T13:40:38.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-27T14:58:55.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SubmitApplication.cshtml",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\Home\\SubmitApplication.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Home\\SubmitApplication.cshtml",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\Home\\SubmitApplication.cshtml",
+              "RelativeToolTip": "Web\\Views\\Home\\SubmitApplication.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T14:28:51.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\Shared\\Components\\LayoutDropdownListVC\\Default.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Shared\\Components\\LayoutDropdownListVC\\Default.cshtml",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Views\\Shared\\Components\\LayoutDropdownListVC\\Default.cshtml",
+              "RelativeToolTip": "Web\\Views\\Shared\\Components\\LayoutDropdownListVC\\Default.cshtml",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAAAE0AAACRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T11:28:02.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Web\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAADcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T10:13:51.569Z"
             }
           ]
         }

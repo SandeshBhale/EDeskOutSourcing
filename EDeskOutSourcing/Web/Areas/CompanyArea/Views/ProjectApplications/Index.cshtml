@@ -7,7 +7,8 @@
         {
             ProjectName = group.Key,
             ApplicationCount = group.Count(),
-            ProjectApplicationId = group.First().ProjectApplicationId // Assuming you want to use the ID of the first application for the actions
+            ProjectApplicationId = group.First().ProjectApplicationId, // Assuming you want to use the ID of the first application for the actions
+            ProjectId =group.First().ProjectId
         })
         .ToList();
 }
@@ -39,7 +40,7 @@
                         <td>@group.ProjectName</td>
                         <td>@group.ApplicationCount</td>
                         <td>
-                            <a class="btn btn-outline-primary" asp-action="ViewAndAssign" asp-route-id="@group.ProjectApplicationId">View And Assign</a>
+                            <a class="btn btn-outline-primary" asp-action="ViewAndAssign" asp-route-id="@group.ProjectId">View And Assign</a>
                         </td>
                     </tr>
                     srno++;
