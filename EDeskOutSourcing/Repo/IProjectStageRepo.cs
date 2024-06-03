@@ -15,5 +15,7 @@ namespace Repo
         void GetProjectStageId(ProjectStage id);
         void RemoveStage(ProjectStageVM rec);
         List<ProjectStage> GetByCompanyId(Int64 Id);
+
+        List<ProjectStage> GetAllById(Int64 id);
     }
 }

@@ -35,49 +35,50 @@
                         <small class="text-truncate"><i class="far fa-solid fa-money-bill text-primary me-2"></i>Payment Terms : @Enum.GetName(typeof(ProjectPaymentTerms), temp.ProjectPaymentTerms)</small>
                     </div>
                     <div id="@collapseId" class="accordion-collapse collapse" aria-labelledby="@headingId" data-bs-parent="#@accordionId">
-                       
                         <div class="accordion-body">
-                          @*  @await Component.InvokeAsync("SubmitApplicationVC") *@
+                            <div class="card-body">
+                                <h5 class="card-title">Project Details</h5>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-3"><label class="control-label">Project Name </label></div>
+                                    <div class="col-1">:</div>
+                                    <div class="col-8">@temp.ProjectName</div>
+                                </div>
 
-                                <div class="card-body">
-                                    <h5 class="card-title">Project Details</h5>
-                                    <hr />
-                                    <div class="row">
-                                        <div class="col-3"><label class="control-label">Project Name </label></div>
+                                <div class="row">
+                                    <div class="col-3"><label class="control-label">Company Name</label></div>
                                     <div class="col-1">:</div>
-                                        <div class="col-8">@temp.ProjectName</div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-3"><label class="control-label">Company Name</label></div>
+                                    <div class="col-8">@temp.Company.CompanyName</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3"><label class="control-label">Project Payment Term</label></div>
                                     <div class="col-1">:</div>
-                                        <div class="col-8">@temp.Company.CompanyName</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-3"><label class="control-label">Project Payment Term</label></div>
+                                    <div class="col-8">@Enum.GetName(typeof(ProjectPaymentTerms), temp.ProjectPaymentTerms)</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3"><label class="control-label">Budget </label></div>
                                     <div class="col-1">:</div>
-                                        <div class="col-8">@Enum.GetName(typeof(ProjectPaymentTerms),temp.ProjectPaymentTerms)</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-3"><label class="control-label">Budjet </label></div>
+                                    <div class="col-8">@temp.Budget</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3"><label class="control-label">Expected Completion (In Days)</label></div>
                                     <div class="col-1">:</div>
-                                        <div class="col-8">@temp.Budget</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-3"><label class="control-label">Expected Completion (In Days)</label></div>
-                                    <div class="col-1">:</div>
-                                        <div class="col-8">@temp.ExpectedCompletionDurationInDays</div>
-                                    </div>
+                                    <div class="col-8">@temp.ExpectedCompletionDurationInDays</div>
+                                </div>
                                 <div class="row">
                                     <div class="col-3"><label class="control-label">Terms And Conditions </label></div>
                                     <div class="col-1">:</div>
                                     <div class="col-8"> @temp.ProjectTermsAndConditions</div>
                                 </div>
 
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <a class="btn btn-success" asp-action="SubmitApplication" asp-controller="Home" asp-route-id="@temp.CompanyId">Apply Now</a>
-                                </div>
-
+                                <form asp-action="SubmitApplication" asp-controller="Home" method="post">
+                                    <input type="hidden" name="ProjectId" value="@temp.ProjectId" />
+                                    <input type="hidden" name="ProjectName" value="@temp.ProjectName" />
+                                    <input type="hidden" name="FreelancerId" value="@ViewBag.FreelancerId" />
+                                    <div class="d-flex justify-content-center align-items-center mt-2">
+                                        <input type="submit" class="btn btn-primary" value="Apply Now" />
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

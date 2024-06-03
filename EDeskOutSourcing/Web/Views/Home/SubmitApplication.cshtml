@@ -14,29 +14,8 @@
         <form class="form-horizontal" asp-action="SubmitApplication" method="post">
             <input type="hidden" id="FreelancerId" name="FreelancerId" value="@ViewBag.FreelancerId" />
             <input type="hidden" id="ProjectId" name="ProjectId" value="@ViewBag.ProjectId" />
-
-            <div class="form-group row">
-                <label class="control-label">Application Title : </label>
-                <div class="col-md-12">
-                    <input asp-for="ApplicationTitle" class="form-control" />
-                    <span asp-validation-for="ApplicationTitle" class="text-danger"></span>
-                </div>
-            </div>
-
-            <br />
-
-            <div class="form-group row">
-                <label class="control-label" for="email1">Application Details : </label>
-                <div class="col-md-12">
-                    <textarea asp-for="ApplicationBody" class="form-control"></textarea>
-                    <span asp-validation-for="ApplicationBody" class="text-danger"></span>
-                </div>
-            </div>
-            <br />
- 
-            <div class="form-group">
-                <button type="submit" class="btn btn-success">Submit Application</button>
-            </div>
+            <input type="hidden" id="ProjectName" name="ProjectName" value="@ViewBag.ProjectName" />
+            <input type="submit" asp-action="SubmitApplication" asp-controller="Home" value="Submit Application" />
         </form>
     </div>
 </div>

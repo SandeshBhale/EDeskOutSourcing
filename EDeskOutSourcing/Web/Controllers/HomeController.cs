@@ -40,9 +40,12 @@ namespace Web.Controllers
             //    term = temp;
             //}
 
+            int freelancerId = Convert.ToInt32(HttpContext.Session.GetString("FreelancerId"));
+            ViewBag.FreelancerId = freelancerId;
+
             var rec = this.prepo.SearchByProperty(skill, tech, term);
            
-                ViewBag.rec = rec;
+            ViewBag.rec = rec;
             return View("Index", new {id=rec});
         }
 
@@ -51,9 +54,14 @@ namespace Web.Controllers
         {
             int freelancerId = Convert.ToInt32(HttpContext.Session.GetString("FreelancerId"));
             ViewBag.FreelancerId = freelancerId;
-            ViewBag.ProjectId = id;
 
-                return View();
+            ViewBag.ProjectId = id;
+            var rec = from t in this.prepo.GetAll()
+                      where t.ProjectId == id
+                      select t.ProjectName;
+            ViewBag.ProjectName = rec;
+
+            return View();
         }
 
         [HttpPost]

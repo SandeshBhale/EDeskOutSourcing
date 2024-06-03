@@ -101,7 +101,7 @@
         @await Component.InvokeAsync("LayoutDropdownVC")
         <!-- Search End -->
         <!-- Jobs Start -->
-        @await Component.InvokeAsync("LayoutDropdownListVC",new{id=@ViewBag.rec})
+        @await Component.InvokeAsync("LayoutDropdownListVC",new{id=@ViewBag.rec,id2=@ViewBag.FreelancerId})
         <!-- Jobs End -->
 
         <section class="section dashboard">

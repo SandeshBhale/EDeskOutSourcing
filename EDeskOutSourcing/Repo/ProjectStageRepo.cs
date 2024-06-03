@@ -55,5 +55,10 @@ namespace Repo
         {
             return this.ec.ProjectStages.Where(p => p.Project.CompanyId == Id).ToList();
         }
+
+        public List<ProjectStage> GetAllById(long id)
+        {
+            return this.ec.ProjectStages.Where(p => p.ProjectId == id).ToList();
+        }
     }
 }

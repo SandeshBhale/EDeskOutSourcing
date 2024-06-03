@@ -19,6 +19,5 @@ namespace Core
         public virtual Project Project { get; set; }
         public DateTime ApplicationDate { get; set; } = DateTime.Now;
         public string ApplicationTitle { get; set; }
-        public string ApplicationBody { get; set; }
     }
 }

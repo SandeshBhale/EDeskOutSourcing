@@ -15,8 +15,10 @@ namespace Web.ViewComponents
             this.prepo = prepo;
         }
 
-        public IViewComponentResult Invoke(List<Project> id)
+        public IViewComponentResult Invoke(List<Project> id,Int32 id2)
         {
+            ViewBag.FreelancerId = id2;
+
             if (id == null)
             {
                 var rec = this.prepo.GetAllProject();

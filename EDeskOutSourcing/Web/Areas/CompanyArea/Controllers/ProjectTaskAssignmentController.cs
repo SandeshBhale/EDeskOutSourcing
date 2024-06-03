@@ -18,14 +18,18 @@ namespace Web.Areas.CompanyArea.Controllers
         IProjectRepo prepo;
         IProjectTaskRepo ptrepo;
         IFreelancerRepo frepo;
-        EDeskContext ec;
-        public ProjectTaskAssignmentController(IProjectTaskAssignmentRepo repo, IProjectRepo prepo,IProjectTaskRepo ptrepo, IFreelancerRepo frepo,EDeskContext ec)
+        IProjectApplicationRepo papprepo;
+        IProjectAssignedRepo passrepo;
+        ISelectedApplicationRepo sapprepo;
+        public ProjectTaskAssignmentController(IProjectTaskAssignmentRepo repo, IProjectRepo prepo,IProjectTaskRepo ptrepo, IFreelancerRepo frepo, IProjectApplicationRepo papprepo,IProjectAssignedRepo passrepo,ISelectedApplicationRepo sapprepo)
         {
             this.repo = repo;
             this.prepo = prepo;
             this.ptrepo = ptrepo;
             this.frepo = frepo;
-            this.ec = ec;
+            this.papprepo = papprepo;
+            this.passrepo = passrepo;
+            this.sapprepo = sapprepo;
         }
         public IActionResult Index()
         {
@@ -38,10 +42,10 @@ namespace Web.Areas.CompanyArea.Controllers
         public IActionResult ProjectTaskAssignment(Int64 id)
         {
             ViewBag.ProjectTaskId = id;
-            var freelancerId = (from pt in ec.ProjectTasks
-                                join passgn in ec.ProjectAssigneds on pt.ProjectId equals passgn.ProjectId
-                                join sa in ec.SelectedApplications on passgn.SelectedApplicationId equals sa.SelectedApplicationId
-                                join pa in ec.ProjectApplications on sa.ProjectApplicationId equals pa.ProjectApplicationId
+            var freelancerId = (from pt in this.ptrepo.GetAll()
+                                join passgn in this.passrepo.GetAll() on pt.ProjectId equals passgn.ProjectId
+                                join sa in this.sapprepo.GetAll() on passgn.SelectedApplicationId equals sa.SelectedApplicationId
+                                join pa in this.papprepo.GetAll() on sa.ProjectApplicationId equals pa.ProjectApplicationId
                                 where pt.ProjectTaskId == id
                                 select new
                                 {

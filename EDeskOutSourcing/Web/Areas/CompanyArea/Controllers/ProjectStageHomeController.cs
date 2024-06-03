@@ -66,73 +66,40 @@ namespace Web.Areas.CompanyArea.Controllers
         }
 
         [HttpGet]
-        public ActionResult Edit(Int64 id)
+        public ActionResult StageList(Int64 id)
         {
-            ViewBag.ProjectId = new SelectList(this.prepo.GetAll(), "ProjectId", "ProjectName");
-            var rec = from t in this.repo.GetAll()
-                      where t.ProjectId == id
-                      select new ProjectStageVM
-                      {
-                          ProjectId = t.ProjectId,
-                          ProjectStageName = (from t1 in t.ProjectStages select t1.ProjectStageName).ToList(),
-                          DurationInHours = (from t1 in t.ProjectStages select t1.DurationInHours).ToList(),
-                          StageDescription = (from t1 in t.ProjectStages select t1.StageDescription).ToList()
-                      };
-                  ViewBag.ProjectId = new SelectList(this.prepo.GetAll(), "ProjectId", "ProjectName");
-                  return View(rec.FirstOrDefault());
+            return View(this.repo.GetAllById(id));
+        }
+
+
+        [HttpGet]
+        public ActionResult Edit(Int64 id,Int64 id2)
+        {
+            ViewBag.ProjectId = id2;
+            var rec = this.repo.GetById(id);
+            return View(rec);
         }
 
 
         [HttpPost]
-        public IActionResult Edit(ProjectStageVM rec)
+        public IActionResult Edit(ProjectStage rec)
         {
-            ViewBag.ProjectId = new SelectList(this.prepo.GetAll(), "ProjectId", "ProjectName");
+            var id2 = rec.ProjectId;
             if (ModelState.IsValid)
             {
-                // first delete from child table 
-                //var oldskill = this.cntx.EmployeeSkills.Where(p => p.EmployeeID == rec.EmployeeID);
-                //foreach (var temp in oldskill)
-                //{
-                //    this.cntx.EmployeeSkills.Remove(temp);
-                //}
-                //this.cntx.SaveChanges();
-                this.repo.RemoveStage(rec);
-
-                //ProjectStageVM prec = this.repo.GetProject().Find(rec.ProjectId);
-                
-
-                ////find parent table record and modify it
-                //Employee erec = this.cntx.Employees.Find(rec.EmployeeID);
-                //erec.EmpName = rec.Name;
-                //erec.Address = rec.Address;
-                //erec.EmailID = rec.EmailID;
-                //erec.MobileNo = rec.MobileNo;
-
-
-                ////create and add child records
-                //for (int i = 0; i < rec.SkillID.Count(); i++)
-                //{
-                //    EmployeeSkill eskrec = new EmployeeSkill();
-                //    eskrec.SkillID = rec.SkillID[i];
-                //    eskrec.Reamrk = rec.Remark[i];
-                //    eskrec.ExperienceInMonths = rec.Experience[i];
-                //    erec.EmployeeSkills.Add(eskrec);
-                //}
-
-                //this.cntx.SaveChanges();
-                //return RedirectToAction("Index");
+                this.repo.Edit(rec);
+                return RedirectToAction("StageList", new { id = id2 });
             }
-
-            return View(rec);
+            return View();
         }
 
 
 
         [HttpGet]
-        public IActionResult Delete(Int64 id)
+        public IActionResult Delete(Int64 id,Int64 id2)
         {
             this.repo.Delete(id);
-            return RedirectToAction("Index");
+            return RedirectToAction("StageList", new {id=id2});
         }
     }
 }
