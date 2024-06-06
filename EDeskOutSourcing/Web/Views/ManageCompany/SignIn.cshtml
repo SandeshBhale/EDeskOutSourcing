@@ -38,13 +38,34 @@
     <!-- RTL Css -->
     <link rel="stylesheet" href="~/adminbackend/css/rtl.min.css">
 
+    <style>
+        .custom-bg {
+            background-color: #007bff; /* Bootstrap primary color */
+            color: white;
+        }
+
+        .custom-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+
 
 </head>
 <body class=" " data-bs-spy="scroll" data-bs-target="#elements-section" data-bs-offset="0" tabindex="0">
     <div class="wrapper">
         <section class="login-content">
             <div class="row m-0 align-items-center bg-white vh-100">
-                <div class="col-md-6 d-md-block d-none bg-primary p-0 mt-n1 vh-100 overflow-hidden">
+                <div class="col-md-6 d-md-block d-none custom-bg p-0 mt-n1 vh-100 overflow-hidden">
+                    <div class="row justify-content-center vh-100 align-items-center">
+                        <div class="col-8 custom-box">
+                            <p><h5>For Testing</h5></p>
+                            <p><strong>Email Id:</strong> Company@gmail.com</p>
+                            <p><strong>Password:</strong> Company</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <div class="row justify-content-center">
@@ -73,10 +94,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 d-flex justify-content-between">
-                                                <div class="form-check mb-3">
-                                                    <input type="checkbox" class="form-check-input" id="customCheck1">
-                                                    <label class="form-check-label" for="customCheck1">Remember Me</label>
-                                                </div>
+                                                <a asp-action="Index" asp-controller="Home" asp-area="">Back To Home</a>
                                                 <a asp-action="SignUp" asp-controller="ManageCompany" asp-area="">Register Company</a>
                                             </div>
                                         </div>
