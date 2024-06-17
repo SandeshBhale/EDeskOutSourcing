@@ -32,63 +32,79 @@
 </head>
 
 <body>
-    <div class="container-xxl bg-white p-0">
+    <div class="container-xxl bg-white p-0 mt-5">
         
-        <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
-                <h1 class="m-0 text-primary">EDesk OutSourcing</h1>
-            </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    @if (Context.Session.GetString("FreelancerId") == null)
-                    {
-                        <a asp-action="SignIn" asp-area="" asp-controller="ManageAdmin">Admin Log-In</a>
-                    }     
-                </div>
+        <div class="container vh-100">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+                <a href="https://sandesh-bhale.revolutioninfosystems.com/" class="navbar-brand d-flex align-items-center text-center py-0 px-4">
+                    <h1 class="m-0 text-danger" >EDesk OutSourcing</h1>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto p p-lg-0">
+                        @if (Context.Session.GetString("FreelancerId") == null)
+                        {
+                            <a asp-action="SignIn" asp-area="" asp-controller="ManageAdmin" style="color:purple;margin-right:1rem"><b>Admin Log-In</b></a>
+                        }
+                    </div>
 
                     @if (Context.Session.GetString("FreelancerId") != null)
                     {
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hi! @Context.Session.GetString("FullName")</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a asp-action="Index" asp-area="FreelancerArea" asp-controller="FreelancerHome" class="dropdown-item">Go To DashBoard</a>
-                            <a asp-action="SignOut" asp-controller="ManageFreelancer" class="dropdown-item">LogOut</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hi! @Context.Session.GetString("FullName")</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a asp-action="Index" asp-area="FreelancerArea" asp-controller="FreelancerHome" class="dropdown-item">Go To DashBoard</a>
+                                <a asp-action="SignOut" asp-controller="ManageFreelancer" class="dropdown-item">LogOut</a>
+                            </div>
                         </div>
-                    </div>
-                    @* <li>
-                        <a href="#" class="text-Info">Hi! @Context.Session.GetString("FullName")</a>
-                        <ul class="submenu">
-                            <li><a asp-action="EditProfile" asp-controller="FreelanerHome" asp-area="FreelancerArea">Edit Profile</a></li>
-                            <li><a asp-action="SignOut" asp-controller="ManageUsers" asp-area="">SignOut</a></li>
-                        </ul>
-                    </li> *@
                     }
 
                     @if (Context.Session.GetString("FreelancerId") == null)
                     {
-                        <a asp-action="SignIn" asp-area="" asp-controller="ManageFreelancer" class="btn btn-primary py-4  mx-2">Freelancer LogIn</a>
-                        <a asp-action="SignIn" asp-area="" asp-controller="ManageCompany" class="btn btn-primary py-4 ">Company LogIn</a>
+                        <a asp-action="SignIn" asp-area="" asp-controller="ManageFreelancer"
+                           style="display: inline-block; padding: 10px 20px; background-color: #2A629A; color: white; text-align: center; border-radius: 5px; font-size: 16px; transition: background-color 0.3s ease;">
+                            Freelancer LogIn
+                        </a>
+                        <a asp-action="SignIn" asp-area="" asp-controller="ManageCompany"
+                           style="display: inline-block; padding: 10px 20px; background-color: #2A629A; color: white; text-align: center; border-radius: 5px; font-size: 16px; transition: background-color 0.3s ease; margin: 10px;">
+                            Company LogIn
+                        </a>
                     }
-                             
-            </div>
-        </nav>
-        <!-- Navbar End -->
 
+                </div>
+            </nav>
+
+            <div class="container" style="position: relative; height: 650px; overflow: hidden;">
+               <img src="~/freelancerfrontend/5153829.jpg" style="object-fit: cover; width: 100%; height: 100%; filter: blur(5px);">
+               <div class="row" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                    <!-- Search Start -->
+                    @await Component.InvokeAsync("LayoutDropdownVC")
+                    <!-- Search End -->
+               </div>
+            </div>
+
+           
+            <!-- Navbar End -->
+        </div>
+
+        
+
+        <div class="container">
+            <!-- Content here if needed -->
+        </div>
+
+
+        <!-- Jobs Start -->
+        <h2 class="text-center mb-5 wow fadeInUp blink" data-wow-delay="0.1s">Jobs Listing</h2>
+
+        @await Component.InvokeAsync("LayoutDropdownListVC", new { id = @ViewBag.rec, id2 = @ViewBag.FreelancerId })
+        <!-- Jobs End -->
         <!-- Carousel Start -->
   
         <!-- Carousel End -->
 
 
-        <!-- Search Start -->
-        @await Component.InvokeAsync("LayoutDropdownVC")
-        <!-- Search End -->
-        <!-- Jobs Start -->
-        @await Component.InvokeAsync("LayoutDropdownListVC",new{id=@ViewBag.rec,id2=@ViewBag.FreelancerId})
-        <!-- Jobs End -->
+
 
         <section class="section dashboard">
             <div class="container-fluid">
@@ -106,62 +122,62 @@
         <!-- Category Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Explore By Category</h1>
+                <h2 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Explore By Category</h2>
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-mail-bulk text-primary mb-4"></i>
-                            <h6 class="mb-3">Marketing</h6>
-                            <p class="mb-0">123 Vacancy</p>
+                            <i class="fa fa-3x fa-mail-bulk text-secondary mb-4"></i>
+                            <h6 class="mb-3" style="color:mediumpurple">Marketing</h6>
+                            <p class="mb-0 text-warning">123 Vacancy</p>
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                         <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-headset text-primary mb-4"></i>
-                            <h6 class="mb-3">Customer Service</h6>
-                            <p class="mb-0">123 Vacancy</p>
+                            <i class="fa fa-3x fa-headset text-secondary mb-4"></i>
+                            <h6 class="mb-3" style="color:mediumpurple">Customer Service</h6>
+                            <p class="mb-0 text-warning">123 Vacancy</p>
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                         <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
-                            <h6 class="mb-3">Human Resource</h6>
-                            <p class="mb-0">123 Vacancy</p>
+                            <i class="fa fa-3x fa-user-tie text-secondary mb-4"></i>
+                            <h6 class="mb-3" style="color:mediumpurple">Human Resource</h6>
+                            <p class="mb-0 text-warning">123 Vacancy</p>
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
                         <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-tasks text-primary mb-4"></i>
-                            <h6 class="mb-3">Project Management</h6>
-                            <p class="mb-0">123 Vacancy</p>
+                            <i class="fa fa-3x fa-tasks text-secondary mb-4"></i>
+                            <h6 class="mb-3" style="color:mediumpurple">Project Management</h6>
+                            <p class="mb-0 text-warning">123 Vacancy</p>
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-chart-line text-primary mb-4"></i>
-                            <h6 class="mb-3">Business Development</h6>
-                            <p class="mb-0">123 Vacancy</p>
+                            <i class="fa fa-3x fa-chart-line text-secondary mb-4"></i>
+                            <h6 class="mb-3" style="color:mediumpurple">Business Development</h6>
+                            <p class="mb-0 text-warning">123 Vacancy</p>
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                         <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-hands-helping text-primary mb-4"></i>
-                            <h6 class="mb-3">Sales & Communication</h6>
-                            <p class="mb-0">123 Vacancy</p>
+                            <i class="fa fa-3x fa-hands-helping text-secondary mb-4"></i>
+                            <h6 class="mb-3" style="color:mediumpurple">Sales & Communication</h6>
+                            <p class="mb-0 text-warning">123 Vacancy</p>
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                         <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-book-reader text-primary mb-4"></i>
-                            <h6 class="mb-3">Teaching & Education</h6>
-                            <p class="mb-0">123 Vacancy</p>
+                            <i class="fa fa-3x fa-book-reader text-secondary mb-4"></i>
+                            <h6 class="mb-3" style="color:mediumpurple">Teaching & Education</h6>
+                            <p class="mb-0 text-warning">123 Vacancy</p>
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
                         <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-drafting-compass text-primary mb-4"></i>
-                            <h6 class="mb-3">Design & Creative</h6>
-                            <p class="mb-0">123 Vacancy</p>
+                            <i class="fa fa-3x fa-drafting-compass text-secondary mb-4"></i>
+                            <h6 class="mb-3" style="color:mediumpurple">Design & Creative</h6>
+                            <p class="mb-0 text-warning">123 Vacancy</p>
                         </a>
                     </div>
                 </div>
@@ -170,7 +186,7 @@
         <!-- Category End -->
 
 
-        <!-- About Start -->
+@*         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5 align-items-center">
@@ -201,56 +217,78 @@
                 </div>
             </div>
         </div>
-        <!-- About End -->
+        <!-- About End --> *@
         
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Company</h5>
-                        <a class="btn btn-link text-white-50" href="">About Us</a>
-                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                        <a class="btn btn-link text-white-50" href="">Our Services</a>
-                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Quick Links</h5>
-                        <a class="btn btn-link text-white-50" href="">About Us</a>
-                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                        <a class="btn btn-link text-white-50" href="">Our Services</a>
-                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Contact</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+        <div class="container-fluid bg-light">
+            <div class="container py-4 mt-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="About">
+                            <h5>About Company</h5>
+                            <p>Revolution Infosystsms established in 2006 by the enttrepreneurs, who believe that technology plays key role in the business development and growth.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Newsletter</h5>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <div class="col-md-3">
+                        <div class="Contact">
+                            <h5>Contact Info</h5>
+                            <p>
+                                Address : Office No.1, Tuljai Classic, First Floor, Akurdi Chowk, Near Shitala Devi Temple, Akurdi - Pune- 35.
+                                <br />
+                                <b> Mobile : +91 9762457230</b>
+                                <br />
+                                <b> Phone : +91 9730010404</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="important Link">
+                            <h5>Important Links</h5>
+                            <a>View Project</a><br />  
+                            <a>Contact Us</a><br />  
+                            <a>Testimonials</a><br />
+                            <a>Properties</a><br />
+                            <a>Support</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="Dev-Details">
+                            <h5>For Queries Contact</h5>
+                            <a href="https://www.linkedin.com/in/sandeshbhale" target="_blank">
+                                <i class="fab fa-linkedin text-secondary"></i> LinkedIn
+                            </a>
+                            <br />
+                            <a href="https://www.instagram.com/sandesh_bhale?igsh=MTRjeDluNWllYnh4bQ==" target="_blank">
+                                <i class="fab fa-instagram text-danger"></i> Instagram
+                            </a>
+                            <br />
+                            <a href="mailto:sandesh.bhale.work@mail.com">
+                                <i class="fas fa-envelope text-danger"></i> Email
+                            </a>
+                            <br />
+                            <a href="https://wa.me/7020285895" target="_blank">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <hr />
+            <br />
+            <div class="container">
+                <p>CopyRight &copy; 2024 All rights reserved to <a href="https://revolutioninfosystems.com/About-US/About-Company#">Revolution Infosystems</a></p>
+            </div>
+
+            <br />
+
         </div>
         <!-- Footer End -->
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        
     </div>
 
     <!-- JavaScript Libraries -->

@@ -32,21 +32,13 @@ namespace Web.Controllers
         [HttpGet]
         public IActionResult ProjectSearch(Int64 skill, Int64 tech, Int64 term)
         {
-            var r = this.prepo.SearchByProperty1(skill, tech, term);
-            //foreach (var temp in r)
-            //{ 
-            //    skill = temp;
-            //    tech= temp;
-            //    term = temp;
-            //}
+            var r = this.prepo.SearchByProperty(skill, tech, term);
 
             int freelancerId = Convert.ToInt32(HttpContext.Session.GetString("FreelancerId"));
             ViewBag.FreelancerId = freelancerId;
-
-            var rec = this.prepo.SearchByProperty(skill, tech, term);
            
-            ViewBag.rec = rec;
-            return View("Index", new {id=rec});
+            ViewBag.rec = r;
+            return View("Index", new {id=r});
         }
 
         [HttpGet]

@@ -1,23 +1,25 @@
-﻿@* <form asp-action="ProjectSearch" method="get"> *@
-    <div class="container-fluid bg-primary mb-5 mt-4 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+﻿<form asp-action="ProjectSearch" method="get">
+    <div class="container-fluid" mb-5 mt-4 bg-primary style="padding: 35px;">
         <div class="container">
-            <h3 style="color:white">Search Job Here</h3>
+            <h3 style="color: purple;font-family:Poppins;font-size:3rem;">Find Your Dream Job</h3>
+            <br>
+            <h5 style="color: black;font-family:Poppins">Search Job Here</h5>
             <div class="row g-2">
                 <div class="col-md-10">
                     <div class="row g-2">
                         <div class="col-md-4">
                             <select class="form-select" name="skill" asp-items="@ViewBag.ProjectSkillId">
-                                <option value="0"> Select Skill </option>
+                                <option value="0"> Skill </option>
                             </select>
                         </div>
                         <div class="col-md-4">
                             <select class="form-select" name="tech" asp-items="@ViewBag.ProjectTechnologyId">
-                                <option value="0"> Select Technoloy </option>
+                                <option value="0"> Technoloy </option>
                             </select>
                         </div>
                         <div class="col-md-4">
                             <select class="form-select" name="term" asp-items="@Html.GetEnumSelectList<ProjectPaymentTerms>()">
-                                <option value="0"> Select Payment Terms </option>
+                                <option value="0"> Payment Terms </option>
                             </select>
                         </div>
                     </div>
@@ -28,4 +30,4 @@
             </div>
         </div>
     </div>
-@* </form> *@
+</form>

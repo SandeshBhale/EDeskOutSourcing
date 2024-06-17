@@ -12,10 +12,10 @@
                 <div class="row g-4">
                     <div class="col-sm-12 col-md-8 d-flex align-items-center">
                         <div class="text-start ps-4">
-                            <h5 class="mb-3">@temp.ProjectName</h5>
+                            <h5 class="mb-3" style="color:mediumpurple">@temp.ProjectName</h5>
                             <span class="text-truncate me-3"><i class="fa fa-solid fa-building text-primary me-2"></i>@temp.Company.CompanyName</span>
-                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>@temp.ExpectedCompletionDurationInDays Days</span>
-                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>@temp.Budget</span>
+                            <span class="text-truncate me-3"><i class="far fa-clock text-secondary me-2"></i>@temp.ExpectedCompletionDurationInDays Days</span>
+                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-warning me-2"></i>@temp.Budget</span>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
@@ -24,7 +24,7 @@
                                 <div class="accordion" id="@accordionId">
                                     <div class="accordion-item">
                                         <h4 class="accordion-header" id="@headingId">
-                                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#@collapseId" aria-expanded="false" aria-controls="@collapseId">
+                                            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#@collapseId" aria-expanded="false" aria-controls="@collapseId">
                                                 <a>View And Apply</a>
                                             </button>
                                         </h4>
@@ -76,7 +76,7 @@
                                     <input type="hidden" name="ProjectName" value="@temp.ProjectName" />
                                     <input type="hidden" name="FreelancerId" value="@ViewBag.FreelancerId" />
                                     <div class="d-flex justify-content-center align-items-center mt-2">
-                                        <input type="submit" class="btn btn-primary" value="Apply Now" />
+                                        <input type="submit" class="btn btn-success" value="Apply Now" />
                                     </div>
                                 </form>
                             </div>
