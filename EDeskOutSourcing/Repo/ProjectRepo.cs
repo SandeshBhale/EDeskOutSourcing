@@ -3,7 +3,9 @@ using Infra;
 using Repo.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -45,24 +47,27 @@ namespace Repo
 
         public List<Project> SearchByProperty(long skill = 0, long tech = 0, long term = 0)
         {
-            //var v =this.ec.ProjectSkill.Select(p => p.ProjectId).ToList();
 
-            var sk = from s in this.ec.ProjectSkill
-                    where s.ProjectSkillId == skill
-                    select s.ProjectId;
+            var sk = from p in this.ec.ProjectSkill
+                     join p1 in this.ec.Skill
+                     on p.SkillId equals skill
+                     join p2 in this.ec.Projects
+                     on p.ProjectId equals p2.ProjectId
+                     select p2.ProjectId;
 
             var tr = from tc in this.ec.Projects
                     where tc.ProjectPaymentTerms == term
                     select tc.ProjectId;
 
-            var te = from ta in this.ec.ProjectTechnology
-                     where ta.ProjectTechnologyId == tech
-                     select ta.ProjectId;
+            var te = from pt in this.ec.ProjectTechnology
+                     join pt1 in this.ec.Technologies
+                     on pt.TechnologiesId equals tech
+                     join pt2 in this.ec.Projects
+                     on pt.ProjectId equals pt2.ProjectId
+                     select pt2.ProjectId;
 
-            // Find common project IDs that match all three criteria
             var commonProjectIds = sk.Intersect(tr).Intersect(te);
 
-            // Retrieve the list of projects that match the common project IDs
             var projects = from p in this.ec.Projects
                            where commonProjectIds.Contains(p.ProjectId)
                            select p;

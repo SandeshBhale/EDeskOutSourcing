@@ -1,7 +1,9 @@
-﻿using Infra;
+﻿using Core;
+using Infra;
 using Microsoft.AspNetCore.Mvc;
 using Repo;
 using Repo.ViewModels;
+using System.Linq;
 
 namespace Web.ViewComponents
 {
@@ -14,7 +16,7 @@ namespace Web.ViewComponents
             this.repo = repo;
         }
 
-        public IViewComponentResult Invoke(Int64 id=0)
+        public IViewComponentResult Invoke(Int64 id = 0)
         {
             if (id == 0)
             {
@@ -40,5 +42,6 @@ namespace Web.ViewComponents
                 return View(v.ToList());
             }
         }
+
     }
 }
