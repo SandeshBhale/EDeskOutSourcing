@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LJTee5STdvWk+RVfsyaje3CWgVcvv8e2Oays+CmhPFU=",
+  "Hash": "B12hohiXfSNaiizD7xRLIQ3EoX1mt5m54ms9v4lmeoM=",
   "Source": "Web",
   "BasePath": "_content/Web",
   "Mode": "Default",
@@ -13944,6 +13944,25 @@
       "OriginalItemSpec": "wwwroot\\AdminBackend\\vendor\\swiperSlider\\swiper-bundle.min.js"
     },
     {
+      "Identity": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\AdminBackend\\white.png",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "AdminBackend/white.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AdminBackend\\white.png"
+    },
+    {
       "Identity": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\FreelancerFrontend\\5153829.jpg",
       "SourceId": "Web",
       "SourceType": "Discovered",
@@ -16222,6 +16241,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\FreelancerFrontend\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Identity": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\FreelancerFrontend\\white.png",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "FreelancerFrontend/white.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\FreelancerFrontend\\white.png"
     },
     {
       "Identity": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\jquery\\jquery.js",

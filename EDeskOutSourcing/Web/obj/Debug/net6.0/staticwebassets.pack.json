@@ -2933,6 +2933,10 @@
       "PackagePath": "staticwebassets\\AdminBackend\\vendor\\swiperSlider\\swiper-bundle.min.js"
     },
     {
+      "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\AdminBackend\\white.png",
+      "PackagePath": "staticwebassets\\AdminBackend\\white.png"
+    },
+    {
       "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\FreelancerFrontend\\5153829.jpg",
       "PackagePath": "staticwebassets\\FreelancerFrontend\\5153829.jpg"
     },
@@ -3411,6 +3415,10 @@
     {
       "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\FreelancerFrontend\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
       "PackagePath": "staticwebassets\\FreelancerFrontend\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\FreelancerFrontend\\white.png",
+      "PackagePath": "staticwebassets\\FreelancerFrontend\\white.png"
     },
     {
       "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectDocument\\CAE 2 QUESTION PAPER.pdf",
