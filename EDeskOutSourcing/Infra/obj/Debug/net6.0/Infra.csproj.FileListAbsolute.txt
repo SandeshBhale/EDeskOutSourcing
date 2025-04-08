@@ -51,3 +51,6 @@ C:\Users\SANDESH\Desktop\EDeskProject\EDeskOutSourcing\Infra\obj\Debug\net6.0\re
 C:\Users\SANDESH\Desktop\EDeskProject\EDeskOutSourcing\Infra\obj\Debug\net6.0\Infra.pdb
 C:\Users\SANDESH\Desktop\EDeskProject\EDeskOutSourcing\Infra\obj\Debug\net6.0\Infra.genruntimeconfig.cache
 C:\Users\SANDESH\Desktop\EDeskProject\EDeskOutSourcing\Infra\obj\Debug\net6.0\ref\Infra.dll
+C:\Users\SANDESH\Desktop\RI-Tech\EDeskProject\EDeskOutSourcing\Infra\obj\Debug\net6.0\Infra.dll
+C:\Users\SANDESH\Desktop\RI-Tech\EDeskProject\EDeskOutSourcing\Infra\obj\Debug\net6.0\refint\Infra.dll
+C:\Users\SANDESH\Desktop\RI-Tech\EDeskProject\EDeskOutSourcing\Infra\obj\Debug\net6.0\Infra.pdb

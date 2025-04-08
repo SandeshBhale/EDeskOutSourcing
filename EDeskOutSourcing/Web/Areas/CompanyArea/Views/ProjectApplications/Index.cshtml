@@ -7,7 +7,8 @@
         {
             ProjectName = group.Key,
             ApplicationCount = group.Count(),
-            ProjectApplicationId = group.First().ProjectApplicationId, // Assuming you want to use the ID of the first application for the actions
+            ProjectApplicationId = group.First().ProjectApplicationId, 
+            // Assuming you want to use the ID of the first application for the actions
             ProjectId =group.First().ProjectId
         })
         .ToList();

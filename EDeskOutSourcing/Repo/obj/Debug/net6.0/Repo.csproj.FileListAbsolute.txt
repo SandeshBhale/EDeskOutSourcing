@@ -51,3 +51,6 @@ C:\Users\SANDESH\Desktop\EDeskProject\EDeskOutSourcing\Repo\obj\Debug\net6.0\Rep
 C:\Users\SANDESH\Desktop\EDeskProject\EDeskOutSourcing\Repo\obj\Debug\net6.0\refint\Repo.dll
 C:\Users\SANDESH\Desktop\EDeskProject\EDeskOutSourcing\Repo\obj\Debug\net6.0\Repo.pdb
 C:\Users\SANDESH\Desktop\EDeskProject\EDeskOutSourcing\Repo\obj\Debug\net6.0\ref\Repo.dll
+C:\Users\SANDESH\Desktop\RI-Tech\EDeskProject\EDeskOutSourcing\Repo\obj\Debug\net6.0\Repo.dll
+C:\Users\SANDESH\Desktop\RI-Tech\EDeskProject\EDeskOutSourcing\Repo\obj\Debug\net6.0\refint\Repo.dll
+C:\Users\SANDESH\Desktop\RI-Tech\EDeskProject\EDeskOutSourcing\Repo\obj\Debug\net6.0\Repo.pdb

@@ -2329,6 +2329,10 @@
       "PackagePath": "staticwebassets\\AdminBackend\\vendor\\fullcalendar\\bootstrap\\main.min.js"
     },
     {
+      "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\AdminBackend\\vendor\\fullcalendar\\bootstrap\\package-lock.json",
+      "PackagePath": "staticwebassets\\AdminBackend\\vendor\\fullcalendar\\bootstrap\\package-lock.json"
+    },
+    {
       "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\AdminBackend\\vendor\\fullcalendar\\bootstrap\\package.json",
       "PackagePath": "staticwebassets\\AdminBackend\\vendor\\fullcalendar\\bootstrap\\package.json"
     },
@@ -3425,8 +3429,20 @@
       "PackagePath": "staticwebassets\\ProjectDocument\\CAE 2 QUESTION PAPER.pdf"
     },
     {
+      "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectDocument\\SandeshBhaleCV.pdf",
+      "PackagePath": "staticwebassets\\ProjectDocument\\SandeshBhaleCV.pdf"
+    },
+    {
       "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectTaskDocument\\BCNF.jpg",
       "PackagePath": "staticwebassets\\ProjectTaskDocument\\BCNF.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectTaskDocument\\Certificate .Net Sandesh Bhale.pdf",
+      "PackagePath": "staticwebassets\\ProjectTaskDocument\\Certificate .Net Sandesh Bhale.pdf"
+    },
+    {
+      "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\ProjectTaskDocument\\Sandesh.Net.docx",
+      "PackagePath": "staticwebassets\\ProjectTaskDocument\\Sandesh.Net.docx"
     },
     {
       "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\jquery-validate\\additional-methods.js",
@@ -3975,6 +3991,10 @@
     {
       "Id": "C:\\Users\\SANDESH\\Desktop\\EDeskProject\\EDeskOutSourcing\\Web\\wwwroot\\jquery\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Web.Microsoft.AspNetCore.StaticWebAssets.props",
